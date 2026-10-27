@@ -1,0 +1,40 @@
+{
+ "bbbs": "ff8081819e48b44c019ef8a2eb573b4e",
+ "ossFile": {
+  "ossWordPath": "prod/20260515/46311cb4124043a594d23951632c58d2.docx",
+  "ossWordOfdPath": "prod/20260515/46311cb4124043a594d23951632c58d2.ofd",
+  "ossWordOfdSize": 190594,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": null,
+ "xgzl": [
+  {
+   "fileId": "362cdb5bcce044aba3198d507f75da4f",
+   "title": "中华人民共和国国务院令第839号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "50514c0b6f8f4ef0921527af73d116e4",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-05-15",
+ "sxrq": "2026-06-15",
+ "title": "中华人民共和国矿产资源法实施条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

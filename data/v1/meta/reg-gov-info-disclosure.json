@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-gov-info-disclosure",
+ "catalog_title": "中华人民共和国政府信息公开条例",
+ "title": "中华人民共和国政府信息公开条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2019-04-03",
+ "effective_date": "2019-05-15",
+ "bbbs": "ff8080816f3e98bd016f41f2862e0211",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f41f2862e0211",
+ "detail_file": "data/v1/meta/reg-gov-info-disclosure.json",
+ "raw_file": "data/v1/raw/reg-gov-info-disclosure.docx",
+ "sha256": "f05dc7ff7b82e155b466b0afe7d266b1a953afdddeb64a07be14bba04ffd2c96",
+ "bytes": 27979,
+ "flk_oss_word_path": "prod/20190403/36300be845c24304bec050972fd070c0.docx",
+ "collected_at": "2026-10-27T18:31:30+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-mineral-resources",
+ "catalog_title": "中华人民共和国矿产资源法",
+ "title": "中华人民共和国矿产资源法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2024-11-08",
+ "effective_date": "2025-07-01",
+ "bbbs": "ff808181927b2d1a01930c4a79406d06",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927b2d1a01930c4a79406d06",
+ "detail_file": "data/v1/meta/law-mineral-resources.json",
+ "raw_file": "data/v1/raw/law-mineral-resources.docx",
+ "sha256": "ed8649924f4a9a85ecd197e9caa495b6207964318fddcc042456fec06a2c5189",
+ "bytes": 28148,
+ "flk_oss_word_path": "prod/20241108/11fdbcb04db548bc9979d96cac4bffde.docx",
+ "collected_at": "2026-10-27T18:27:22+08:00",
+ "collector_version": "1.0"
+}

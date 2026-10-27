@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-resettlement",
+ "catalog_title": "大中型水利水电工程建设征地补偿和移民安置条例",
+ "title": "大中型水利水电工程建设征地补偿和移民安置条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-04-14",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f413b854d1e02",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f413b854d1e02",
+ "detail_file": "data/v1/meta/reg-resettlement.json",
+ "raw_file": "data/v1/raw/reg-resettlement.docx",
+ "sha256": "a22fc69af4c0931fcc6b3c83c861ad4ad0c12c24d5048eadf5cfc3d0a6d19f7e",
+ "bytes": 25478,
+ "flk_oss_word_path": "prod/20170414/82002f125aaf4421b4299f9b12d5bce0.docx",
+ "collected_at": "2026-10-27T18:31:25+08:00",
+ "collector_version": "1.0"
+}

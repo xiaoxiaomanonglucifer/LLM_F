@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff54ab801a0ae67585e2a9c",
+ "ossFile": {
+  "ossWordPath": "prod/20260130/b1620eaf15e844da9995c2b97c89fc94.docx",
+  "ossWordOfdPath": "prod/20260130/b1620eaf15e844da9995c2b97c89fc94.ofd",
+  "ossWordOfdSize": 142707,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54ab801a0ae67585e2a9c",
+   "title": "风景名胜区条例",
+   "gbrq": "2026-01-30",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8080816f3cbb3c016f413c3c5b1e1c",
+   "title": "风景名胜区条例",
+   "gbrq": "2016-02-06",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "91c389fba7e142419221ce8ef32b5f96",
+   "title": "中华人民共和国国务院令第829号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "06f991f7ab414d7e9067a3f3fe20b4e6",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "43634979206d4b629f76b90443452ca4",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-01-30",
+ "sxrq": "2026-03-20",
+ "title": "风景名胜区条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

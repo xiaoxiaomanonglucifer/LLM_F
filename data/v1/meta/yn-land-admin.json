@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-land-admin",
+ "catalog_title": "云南省土地管理条例",
+ "title": "云南省土地管理条例",
+ "level": "地方性法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2024-11-28",
+ "effective_date": "2025-01-01",
+ "bbbs": "ff808181927f127601939b2d93da2ce5",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927f127601939b2d93da2ce5",
+ "detail_file": "data/v1/meta/yn-land-admin.json",
+ "raw_file": "data/v1/raw/yn-land-admin.docx",
+ "sha256": "570f14a8013d4dd6d6361dec08f1398aa79d1b1e4b97dcf27962645640640811",
+ "bytes": 29040,
+ "flk_oss_word_path": "prod/20241128/3ffbf2d422874203bd4546d7cc35911e.docx",
+ "collected_at": "2026-10-27T18:31:39+08:00",
+ "collector_version": "1.0"
+}

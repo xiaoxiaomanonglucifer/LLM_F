@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-geohazard",
+ "catalog_title": "地质灾害防治条例",
+ "title": "地质灾害防治条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2003-11-24",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40eb6e400b4b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40eb6e400b4b",
+ "detail_file": "data/v1/meta/reg-geohazard.json",
+ "raw_file": "data/v1/raw/reg-geohazard.docx",
+ "sha256": "2e7b2fe46acbaaaf6b102f4883eb2a5c497e730b07d60f339e0cbf9b9d84c76f",
+ "bytes": 23842,
+ "flk_oss_word_path": "prod/20031124/fb3e2bd682c6499aa1c394c0c44cf2ed.docx",
+ "collected_at": "2026-10-27T18:30:19+08:00",
+ "collector_version": "1.0"
+}

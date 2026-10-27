@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-surveying-mapping",
+ "catalog_title": "云南省测绘条例",
+ "title": "云南省测绘条例",
+ "level": "地方性法规",
+ "domain": "测绘地理信息",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2020-03-30",
+ "effective_date": "2020-05-01",
+ "bbbs": "ff808081713927d1017162e1c68231d0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808081713927d1017162e1c68231d0",
+ "detail_file": "data/v1/meta/yn-surveying-mapping.json",
+ "raw_file": "data/v1/raw/yn-surveying-mapping.docx",
+ "sha256": "1d7be674864ff276531d29e9d51553d0e72e3357b6af6938eab09533a2d61da9",
+ "bytes": 67753,
+ "flk_oss_word_path": "prod/20200330/be671934f6cb41dbb283baca37c66e58.docx",
+ "collected_at": "2026-10-27T18:32:05+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-basic-surveying",
+ "catalog_title": "基础测绘条例",
+ "title": "基础测绘条例",
+ "level": "行政法规",
+ "domain": "测绘地理信息",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2009-05-12",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40d9238f070c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40d9238f070c",
+ "detail_file": "data/v1/meta/reg-basic-surveying.json",
+ "raw_file": "data/v1/raw/reg-basic-surveying.docx",
+ "sha256": "1a2666da3e21bfd17291adfe245b91e19d8068efd8f4f0dfb778bd3e855bfd51",
+ "bytes": 24512,
+ "flk_oss_word_path": "prod/20090512/f6a8d86c26e74e6c80f90c1754b2ff64.docx",
+ "collected_at": "2026-10-27T18:30:39+08:00",
+ "collector_version": "1.0"
+}

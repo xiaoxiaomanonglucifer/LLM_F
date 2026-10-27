@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-land-admin",
+ "catalog_title": "中华人民共和国土地管理法实施条例",
+ "title": "中华人民共和国土地管理法实施条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2021-07-02",
+ "effective_date": "2021-09-01",
+ "bbbs": "ff8081817b63b895017b7b071b6843c0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081817b63b895017b7b071b6843c0",
+ "detail_file": "data/v1/meta/reg-land-admin.json",
+ "raw_file": "data/v1/raw/reg-land-admin.docx",
+ "sha256": "5190d170e64b4cf3ca9303f50f5be19b2d0a04c36f2f91b0c507af6b8c2301eb",
+ "bytes": 27605,
+ "flk_oss_word_path": "prod/20210702/9deff23a09eb4ef48e3afeec93715a88.docx",
+ "collected_at": "2026-10-27T18:29:11+08:00",
+ "collector_version": "1.0"
+}

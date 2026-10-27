@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-black-soil",
+ "catalog_title": "中华人民共和国黑土地保护法",
+ "title": "中华人民共和国黑土地保护法",
+ "level": "法律",
+ "domain": "土地管理",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2022-06-24",
+ "effective_date": "2022-08-01",
+ "bbbs": "ff808181818e90e70181947372d60184",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181818e90e70181947372d60184",
+ "detail_file": "data/v1/meta/law-black-soil.json",
+ "raw_file": "data/v1/raw/law-black-soil.docx",
+ "sha256": "1d06a757ac026fd8408492254f55fbe3d4f06c71b5d2ad15d81a71da23b75a1c",
+ "bytes": 21271,
+ "flk_oss_word_path": "prod/20220624/324cadf10d454146b770dec09b6ac5f9.docx",
+ "collected_at": "2026-10-27T18:27:02+08:00",
+ "collector_version": "1.0"
+}

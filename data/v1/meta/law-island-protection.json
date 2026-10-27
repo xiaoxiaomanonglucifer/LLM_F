@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-island-protection",
+ "catalog_title": "中华人民共和国海岛保护法",
+ "title": "中华人民共和国海岛保护法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2009-12-26",
+ "effective_date": "2010-03-01",
+ "bbbs": "2c909fdd678bf17901678bf707d50569",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf707d50569",
+ "detail_file": "data/v1/meta/law-island-protection.json",
+ "raw_file": "data/v1/raw/law-island-protection.docx",
+ "sha256": "f978f1f2fc35f2824fd23b1723e319e39457ce10e8917541ce0c3298ebfe53b6",
+ "bytes": 26313,
+ "flk_oss_word_path": "prod/20091226/bad33ab704e1464bb3acd0860f297dfa.docx",
+ "collected_at": "2026-10-27T18:27:36+08:00",
+ "collector_version": "1.0"
+}

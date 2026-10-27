@@ -1,0 +1,79 @@
+# 全局配置（R2 维护）
+# 任何影响实验结果的参数改动都必须写入 CHANGELOG.md
+paths:
+  data_dir: data/v1
+  raw_dir: data/v1/raw
+  meta_dir: data/v1/meta
+  documents_file: data/v1/documents.jsonl
+  articles_file: data/v1/articles.jsonl
+  manifest_file: data/v1/manifest.json
+  corpus_stats_file: data/v1/corpus_stats.json
+  catalog_file: config/corpus_catalog.yaml
+  index_dir: data/v1/index
+  chroma_dir: data/v1/index/chroma
+  bm25_file: data/v1/index/bm25.pkl
+  graph_dir: data/v1/graph
+  results_dir: results
+
+corpus:
+  request_interval_sec: 1.2
+  request_timeout_sec: 60
+  max_retries: 4
+  user_agent: "legal-rag-course-project/1.0 (Yunnan University; R2 corpus build)"
+
+embedding:
+  # 正式实验固定 BGE-M3（1024 维）；本地无权重时可用 --embedding-model 覆盖
+  model: BAAI/bge-m3
+  batch_size: 16
+  normalize: true
+  device: cpu
+  max_seq_length: 512
+
+vector_store:
+  provider: chroma
+  collection: legal_articles_v1
+  distance: cosine
+
+bm25:
+  k1: 1.5
+  b: 0.75
+  # jieba 分词 + 中文二元字符，提升条文号/机构名的召回
+  use_char_bigram: true
+
+retrieval:
+  top_k: 5
+  candidate_k: 30
+  rrf_k: 60
+  # G1/G2 使用的信号；G0 不检索
+  g1_signals: [dense, bm25]
+  g2_signals: [dense, bm25, graph]
+
+generation:
+  # Ollama 的 OpenAI 兼容端点；GPU 节点换成 vLLM 的 /v1 地址即可
+  base_url: http://127.0.0.1:11434/v1
+  api_key: ollama
+  model: qwen2.5:7b-instruct
+  temperature: 0.1
+  top_p: 0.9
+  seed: 42
+  max_tokens: 1024
+  timeout_sec: 300
+  max_retries: 2
+
+query_rewrite:
+  enabled: true
+  use_llm: false
+
+graph:
+  uri: bolt://127.0.0.1:7687
+  user: neo4j
+  database: neo4j
+  # 密码只从环境变量 NEO4J_PASSWORD 读取，不写入仓库
+  max_hops: 1
+  extract_model: qwen2.5:7b-instruct
+  extract_batch_articles: 8
+
+evaluation:
+  # 由 R3 交付；R2 只读取并产出 results
+  questions_file: data/eval/v1/questions.jsonl
+  output_format_version: "1.0"

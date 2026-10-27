@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-tendering",
+ "catalog_title": "中华人民共和国招标投标法",
+ "title": "中华人民共和国招标投标法",
+ "level": "法律",
+ "domain": "行政程序",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2017-12-27",
+ "effective_date": "2017-12-28",
+ "bbbs": "2c909fdd678bf17901678bf88f170b31",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf88f170b31",
+ "detail_file": "data/v1/meta/law-tendering.json",
+ "raw_file": "data/v1/raw/law-tendering.docx",
+ "sha256": "a1fd6eb6f87c529ad5a569669ea2ae7de84abb025f4e892595b4aca788ee85f4",
+ "bytes": 23821,
+ "flk_oss_word_path": "prod/20171227/68bfaca82f554cbf9a69f28af43dc0a7.docx",
+ "collected_at": "2026-10-27T18:29:06+08:00",
+ "collector_version": "1.0"
+}

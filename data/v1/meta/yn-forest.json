@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-forest",
+ "catalog_title": "云南省森林条例",
+ "title": "云南省森林条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2018-11-29",
+ "effective_date": "2018-11-29",
+ "bbbs": "ff808181927f09310192b346f93e0c19",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927f09310192b346f93e0c19",
+ "detail_file": "data/v1/meta/yn-forest.json",
+ "raw_file": "data/v1/raw/yn-forest.docx",
+ "sha256": "4e89323a58aa23c97c199fb875ffa819b5f15511d07ad0753cd7754c73aa1377",
+ "bytes": 24984,
+ "flk_oss_word_path": "prod/20181129/d4b1527b8a78465f9946b1786c97e40a.docx",
+ "collected_at": "2026-10-27T18:32:14+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-rural-collective",
+ "catalog_title": "中华人民共和国农村集体经济组织法",
+ "title": "中华人民共和国农村集体经济组织法",
+ "level": "法律",
+ "domain": "土地管理",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2024-06-28",
+ "effective_date": "2025-05-01",
+ "bbbs": "ff8081818d6a463901905f2cc2c12d3b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818d6a463901905f2cc2c12d3b",
+ "detail_file": "data/v1/meta/law-rural-collective.json",
+ "raw_file": "data/v1/raw/law-rural-collective.docx",
+ "sha256": "03c2a9a411993e345b4ee228df57f9031242ac8d997b8e2618624c1df86788d1",
+ "bytes": 27759,
+ "flk_oss_word_path": "prod/20240628/e4f3f79c348146b8918d1e9c2ac9fda0.docx",
+ "collected_at": "2026-10-27T18:27:08+08:00",
+ "collector_version": "1.0"
+}

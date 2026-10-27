@@ -1,0 +1,28 @@
+# R2 工程环境（Python 3.10+，建议 3.11）
+# 安装：
+#   python -m venv .venv
+#   .\.venv\Scripts\python.exe -m pip install -U pip
+#   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# 本机已有的可复用环境：E:\演绎\LLM\第二次作业\rag_home\.venv
+# 其中已装好 torch/sentence-transformers/chromadb/rank-bm25/jieba/openai。
+
+# ---- 采集与解析 ----
+requests>=2.31
+PyYAML>=6.0
+
+# ---- 向量化与索引 ----
+numpy>=1.24
+torch>=2.1
+transformers>=4.41,<4.46
+sentence-transformers>=2.7,<4
+chromadb>=0.5
+rank-bm25>=0.2.2
+jieba>=0.42
+
+# ---- 生成与图谱 ----
+openai>=1.30
+neo4j>=5.20
+
+# ---- 测试 ----
+pytest>=8.0

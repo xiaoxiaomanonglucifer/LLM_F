@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-land-admin",
+ "catalog_title": "中华人民共和国土地管理法",
+ "title": "中华人民共和国土地管理法",
+ "level": "法律",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2019-08-26",
+ "effective_date": "2020-01-01",
+ "bbbs": "ff8080816f3cbb3c016f4626903427fc",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4626903427fc",
+ "detail_file": "data/v1/meta/law-land-admin.json",
+ "raw_file": "data/v1/raw/law-land-admin.docx",
+ "sha256": "edef5d65ebdc3089889cecfbd9ee49064665877fd4ff04d8f4212ccce3932cd5",
+ "bytes": 30181,
+ "flk_oss_word_path": "prod/20190826/9b564c5fdbc248df85c0dc1fbfa71cc7.docx",
+ "collected_at": "2026-10-27T18:26:40+08:00",
+ "collector_version": "1.0"
+}

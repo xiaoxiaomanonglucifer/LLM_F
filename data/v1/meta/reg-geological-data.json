@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-geological-data",
+ "catalog_title": "地质资料管理条例",
+ "title": "地质资料管理条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-03-01",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e98bd016f42435ae50416",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f42435ae50416",
+ "detail_file": "data/v1/meta/reg-geological-data.json",
+ "raw_file": "data/v1/raw/reg-geological-data.docx",
+ "sha256": "c4b79532740eb39fe8c9658a62efcfb293dc7d45401df46679999e9dfffb1c15",
+ "bytes": 20816,
+ "flk_oss_word_path": "prod/20170301/5d74a804adf34388bc2e58e2c93aad75.docx",
+ "collected_at": "2026-10-27T18:30:15+08:00",
+ "collector_version": "1.0"
+}

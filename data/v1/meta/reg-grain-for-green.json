@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-grain-for-green",
+ "catalog_title": "退耕还林条例",
+ "title": "退耕还林条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2016-02-06",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e98bd016f425a4b32054c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f425a4b32054c",
+ "detail_file": "data/v1/meta/reg-grain-for-green.json",
+ "raw_file": "data/v1/raw/reg-grain-for-green.docx",
+ "sha256": "74c49250e0a395879d4f96383982d523ffddd936a8b76755ea973ff83faebae0",
+ "bytes": 25311,
+ "flk_oss_word_path": "prod/20160206/c97e1ddfc5214a34aedcdc0a9ce82e66.docx",
+ "collected_at": "2026-10-27T18:31:20+08:00",
+ "collector_version": "1.0"
+}

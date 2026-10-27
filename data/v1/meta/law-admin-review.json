@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-admin-review",
+ "catalog_title": "中华人民共和国行政复议法",
+ "title": "中华人民共和国行政复议法",
+ "level": "法律",
+ "domain": "行政程序",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2023-09-01",
+ "effective_date": "2024-01-01",
+ "bbbs": "ff8081818a21e6c3018a508d491a0c98",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818a21e6c3018a508d491a0c98",
+ "detail_file": "data/v1/meta/law-admin-review.json",
+ "raw_file": "data/v1/raw/law-admin-review.docx",
+ "sha256": "2af4439512c5ffafc8d40e4412e06636721d18410b0cb474301bc825c96a5dde",
+ "bytes": 36285,
+ "flk_oss_word_path": "prod/20230901/951d063515dd48a19047d1df93c30dfe.docx",
+ "collected_at": "2026-10-27T18:28:51+08:00",
+ "collector_version": "1.0"
+}

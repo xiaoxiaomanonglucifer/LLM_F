@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-rural-land-contract",
+ "catalog_title": "中华人民共和国农村土地承包法",
+ "title": "中华人民共和国农村土地承包法",
+ "level": "法律",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-12-29",
+ "effective_date": "2019-01-01",
+ "bbbs": "ff8080816f135f46016f2104531f1774",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f2104531f1774",
+ "detail_file": "data/v1/meta/law-rural-land-contract.json",
+ "raw_file": "data/v1/raw/law-rural-land-contract.docx",
+ "sha256": "bb4f6f741d7246f1478b10bf0c6c5ee0d9c59523552eccdd38b8fc0ec84d261b",
+ "bytes": 28217,
+ "flk_oss_word_path": "prod/20181229/705a0fca0e664ae09e64eec65d73baac.docx",
+ "collected_at": "2026-10-27T18:26:53+08:00",
+ "collector_version": "1.0"
+}

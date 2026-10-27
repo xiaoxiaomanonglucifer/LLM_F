@@ -1,0 +1,77 @@
+{
+ "bbbs": "ff808181927f0931019292f684b9308f",
+ "ossFile": {
+  "ossWordPath": "prod/20181129/771fa6250c114aa4bfa7ae5a7ce41ab5.docx",
+  "ossWordOfdPath": "prod/20181129/771fa6250c114aa4bfa7ae5a7ce41ab5.ofd",
+  "ossWordOfdSize": 90650,
+  "ossPdfPath": "prod/20181129/a896d100837c46249e597397a880b3d4.pdf",
+  "ossPdfOfdPath": "prod/20181129/a896d100837c46249e597397a880b3d4.ofd",
+  "ossPdfOfdSize": 725978
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff808181927f0931019292f684b9308f",
+   "title": "云南省地质环境保护条例",
+   "gbrq": "2018-11-29",
+   "highLight": true
+  },
+  {
+   "bbbs": "4028abcc612777930161283db8ea7d33",
+   "title": "云南省地质环境保护条例",
+   "gbrq": "2015-09-25",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "ff808181927b083b0192bc279cce20a3",
+   "title": "云南省第十三届人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b083b0192bc26aa5c2037",
+   "title": "云南省人民代表大会常务委员会关于废止和修改部分地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181966737700196d84d6e945bf6",
+   "title": "云南省人民代表大会常务委员会关于废止和修改部分地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b2d1a0192bc27909c20cb",
+   "title": "关于废止和修改部分地方性法规的决定（草案）的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b083b0192bc278b72209c",
+   "title": "云南省人民代表大会法制委员会关于云南省人民政府提请审议的《关于废止和修改部分地方性法规的决定（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "云南省人民代表大会常务委员会",
+ "gbrq": "2018-11-29",
+ "sxrq": "2018-11-29",
+ "title": "云南省地质环境保护条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

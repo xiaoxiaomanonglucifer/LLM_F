@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-soil-conservation",
+ "catalog_title": "中华人民共和国水土保持法",
+ "title": "中华人民共和国水土保持法",
+ "level": "法律",
+ "domain": "资源环境",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2010-12-25",
+ "effective_date": "2011-03-01",
+ "bbbs": "2c909fdd678bf17901678bf7163c05d7",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7163c05d7",
+ "detail_file": "data/v1/meta/law-soil-conservation.json",
+ "raw_file": "data/v1/raw/law-soil-conservation.docx",
+ "sha256": "0408e2cd2d107cb134e015600b4f0c97715d353a2a10f267e6865603cdab57b1",
+ "bytes": 23685,
+ "flk_oss_word_path": "prod/20101225/a2fa265342704b9f9038fbbbcf0d1b5f.docx",
+ "collected_at": "2026-10-27T18:28:16+08:00",
+ "collector_version": "1.0"
+}

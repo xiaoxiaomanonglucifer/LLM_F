@@ -1,0 +1,69 @@
+{
+ "bbbs": "ff808181999a5c1a0199c6a07d4530af",
+ "ossFile": {
+  "ossWordPath": "prod/20250924/7f04691ba247450dbb686fa4a01ec311.docx",
+  "ossWordOfdPath": "prod/20250924/7f04691ba247450dbb686fa4a01ec311.ofd",
+  "ossWordOfdSize": 162002,
+  "ossPdfPath": "prod/20250924/3e3b799b09e14d6c9ca60fe7f254e8f4.pdf",
+  "ossPdfOfdPath": "prod/20250924/3e3b799b09e14d6c9ca60fe7f254e8f4.ofd",
+  "ossPdfOfdSize": 913855
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff808181999a5c1a0199c6a07d4530af",
+   "title": "云南省湿地保护条例",
+   "gbrq": "2025-09-24",
+   "highLight": true
+  },
+  {
+   "bbbs": "4028abcc61277793016127e25bfa214a",
+   "title": "云南省湿地保护条例",
+   "gbrq": "2013-09-25",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "ff80818198794ccd0199d127c386110a",
+   "title": "云南省人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff80818198794ccd0199d127b5761103",
+   "title": "关于《云南省湿地保护条例（修订草案）》的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff80818198794ccd0199d127aef810fe",
+   "title": "云南省人民代表大会法制委员会关于《云南省湿地保护条例（修订草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181987921230199d127ca0c11f5",
+   "title": "云南省人民代表大会农业与农村委员会关于《云南省湿地保护条例（修订草案）》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "云南省人民代表大会常务委员会",
+ "gbrq": "2025-09-24",
+ "sxrq": "2026-01-01",
+ "title": "云南省湿地保护条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

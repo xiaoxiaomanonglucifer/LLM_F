@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-urban-land-tax",
+ "catalog_title": "中华人民共和国城镇土地使用税暂行条例",
+ "title": "中华人民共和国城镇土地使用税暂行条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2019-03-02",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f414f9d74216e",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414f9d74216e",
+ "detail_file": "data/v1/meta/reg-urban-land-tax.json",
+ "raw_file": "data/v1/raw/reg-urban-land-tax.docx",
+ "sha256": "5c39fb724dd9f35e7609f1b22e4c059e32c654b08de68000c6bf34a9e67321e3",
+ "bytes": 17601,
+ "flk_oss_word_path": "prod/20190302/6c72105343f74d3b8a32e1ba97a60e76.docx",
+ "collected_at": "2026-10-27T18:29:49+08:00",
+ "collector_version": "1.0"
+}

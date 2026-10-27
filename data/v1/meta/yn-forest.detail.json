@@ -1,0 +1,69 @@
+{
+ "bbbs": "ff808181927f09310192b346f93e0c19",
+ "ossFile": {
+  "ossWordPath": "prod/20181129/d4b1527b8a78465f9946b1786c97e40a.docx",
+  "ossWordOfdPath": "prod/20181129/d4b1527b8a78465f9946b1786c97e40a.ofd",
+  "ossWordOfdSize": 159930,
+  "ossPdfPath": "prod/20181129/a948c977ea374e79afb4423db95a5bc3.pdf",
+  "ossPdfOfdPath": "prod/20181129/a948c977ea374e79afb4423db95a5bc3.ofd",
+  "ossPdfOfdSize": 745558
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff808181927f09310192b346f93e0c19",
+   "title": "云南省森林条例",
+   "gbrq": "2018-11-29",
+   "highLight": true
+  },
+  {
+   "bbbs": "4028abcc6127779301612855d8ae1535",
+   "title": "云南省森林条例",
+   "gbrq": "2012-03-31",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "ff808181927b083b0192bc23b4801ebe",
+   "title": "云南省第十三届人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b083b0192bc236a461e99",
+   "title": "云南省人民代表大会常务委员会关于废止和修改部分地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b083b0192bc23a9791eb7",
+   "title": "关于废止和修改部分地方性法规的决定（草案）的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff808181927b083b0192bc23a3fb1eb3",
+   "title": "云南省人民代表大会法制委员会关于云南省人民政府提请审议的《关于废止和修改部分地方性法规的决定（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "云南省人民代表大会常务委员会",
+ "gbrq": "2018-11-29",
+ "sxrq": "2018-11-29",
+ "title": "云南省森林条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

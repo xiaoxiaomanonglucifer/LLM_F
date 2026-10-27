@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-nature-reserve",
+ "catalog_title": "中华人民共和国自然保护区条例",
+ "title": "中华人民共和国自然保护区条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-02-03",
+ "effective_date": "2026-03-15",
+ "bbbs": "ff8081819c230fa1019c4551f8c8511b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819c230fa1019c4551f8c8511b",
+ "detail_file": "data/v1/meta/reg-nature-reserve.json",
+ "raw_file": "data/v1/raw/reg-nature-reserve.docx",
+ "sha256": "780c8a4414b5355915fa4a6c8ef1da3ba943cced9dad673bb560cf062fc0eda5",
+ "bytes": 25290,
+ "flk_oss_word_path": "prod/20260203/0db573fb888d4a3c9406c9871d2d2a0d.docx",
+ "collected_at": "2026-10-27T18:31:11+08:00",
+ "collector_version": "1.0"
+}

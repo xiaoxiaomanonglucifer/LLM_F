@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-coal",
+ "catalog_title": "中华人民共和国煤炭法",
+ "title": "中华人民共和国煤炭法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2016-11-07",
+ "effective_date": "2016-11-07",
+ "bbbs": "2c909fdd678bf17901678bf8313d098d",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8313d098d",
+ "detail_file": "data/v1/meta/law-coal.json",
+ "raw_file": "data/v1/raw/law-coal.docx",
+ "sha256": "5c844bd0d56ecc6990695d668c41c32bd84bc3560935d72bf3fd7f101853914c",
+ "bytes": 21904,
+ "flk_oss_word_path": "prod/20161107/0c75d03c7b304e2e986c03cf129f7231.docx",
+ "collected_at": "2026-10-27T18:27:26+08:00",
+ "collector_version": "1.0"
+}

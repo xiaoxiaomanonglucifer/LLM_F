@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-forest-implementation",
+ "catalog_title": "中华人民共和国森林法实施条例",
+ "title": "中华人民共和国森林法实施条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2018-03-19",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f410a7d6612f4",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f410a7d6612f4",
+ "detail_file": "data/v1/meta/reg-forest-implementation.json",
+ "raw_file": "data/v1/raw/reg-forest-implementation.docx",
+ "sha256": "055532d54f6636b8d56e5e5597b3deb963ecbcb6964e50c4083e3bf27d2d00a0",
+ "bytes": 28879,
+ "flk_oss_word_path": "prod/20180319/1fbe5d34494e40a7bb0c66c442a1e4bc.docx",
+ "collected_at": "2026-10-27T18:30:55+08:00",
+ "collector_version": "1.0"
+}

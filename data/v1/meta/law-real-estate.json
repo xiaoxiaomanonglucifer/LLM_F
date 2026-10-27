@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-real-estate",
+ "catalog_title": "中华人民共和国城市房地产管理法",
+ "title": "中华人民共和国城市房地产管理法",
+ "level": "法律",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2019-08-26",
+ "effective_date": "2020-01-01",
+ "bbbs": "ff8080816f3cbb3c016f462c6cc8280c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f462c6cc8280c",
+ "detail_file": "data/v1/meta/law-real-estate.json",
+ "raw_file": "data/v1/raw/law-real-estate.docx",
+ "sha256": "9d71cd5868f4f400d96fb6e57430efff9ff285f8d8e4dcbb5c4931ed049980f0",
+ "bytes": 28034,
+ "flk_oss_word_path": "prod/20190826/0383cd3f4e1f4891959702bb4e9aa757.docx",
+ "collected_at": "2026-10-27T18:26:57+08:00",
+ "collector_version": "1.0"
+}

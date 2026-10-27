@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-water-implementation",
+ "catalog_title": "云南省实施《中华人民共和国水法》办法",
+ "title": "云南省实施《中华人民共和国水法》办法",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2026-09-18",
+ "effective_date": "2026-09-18",
+ "bbbs": "ff8081819ff54a6401a1380051f5264a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54a6401a1380051f5264a",
+ "detail_file": "data/v1/meta/yn-water-implementation.json",
+ "raw_file": "data/v1/raw/yn-water-implementation.docx",
+ "sha256": "6b2c802888dcfbd220da65c74705eca8de7eec44b5aa9fc9bb9241e820c2e69a",
+ "bytes": 21275,
+ "flk_oss_word_path": "prod/20260918/d29650f7ba854d32b9855e6feb98f629.docx",
+ "collected_at": "2026-10-27T18:32:24+08:00",
+ "collector_version": "1.0"
+}

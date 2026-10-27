@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-basic-farmland",
+ "catalog_title": "基本农田保护条例",
+ "title": "基本农田保护条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-01-08",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40f6b8170e88",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40f6b8170e88",
+ "detail_file": "data/v1/meta/reg-basic-farmland.json",
+ "raw_file": "data/v1/raw/reg-basic-farmland.docx",
+ "sha256": "2ec24ab172c65b92b761c13c116b3295bdecf22bf642150a2365e01814fb1d28",
+ "bytes": 23544,
+ "flk_oss_word_path": "prod/20110108/74531bfbaede43d69a19e90be8765eb0.docx",
+ "collected_at": "2026-10-27T18:29:16+08:00",
+ "collector_version": "1.0"
+}

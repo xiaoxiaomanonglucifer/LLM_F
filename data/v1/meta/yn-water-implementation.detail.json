@@ -1,0 +1,83 @@
+{
+ "bbbs": "ff8081819ff54a6401a1380051f5264a",
+ "ossFile": {
+  "ossWordPath": "prod/20260918/d29650f7ba854d32b9855e6feb98f629.docx",
+  "ossWordOfdPath": "prod/20260918/d29650f7ba854d32b9855e6feb98f629.ofd",
+  "ossWordOfdSize": 158954,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54a6401a1380051f5264a",
+   "title": "云南省实施《中华人民共和国水法》办法",
+   "gbrq": "2026-09-18",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff808181927f0e7b019292f215bb2c51",
+   "title": "云南省实施《中华人民共和国水法》办法",
+   "gbrq": "2018-11-29",
+   "highLight": false
+  },
+  {
+   "bbbs": "4028abcc612777930161284ae40309bc",
+   "title": "云南省实施《中华人民共和国水法》办法",
+   "gbrq": "2015-09-25",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "d1c0a982c77548c08ae9588b954f32bd",
+   "title": "云南省人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "e0121d167d8a40499a7e4a26ba817e4e",
+   "title": "云南省人民代表大会常务委员会关于废止和修改《云南省珍贵树种保护条例》等19件地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "89a5534f51584efd958b6dc1b4753cba",
+   "title": "《关于修改和废止部分地方性法规的决定（草案）》的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "3c4b531ecccf4f649f0ad71fbcea60b1",
+   "title": "云南省人民代表大会法制委员会关于《修改和废止部分地方性法规的决定（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "7b83cb094da6417596561e585ad2a2c0",
+   "title": "云南省人民代表大会常务委员会法制工作委员会关于《修改和废止部分地方性法规的决定（草案）》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "云南省人民代表大会常务委员会",
+ "gbrq": "2026-09-18",
+ "sxrq": "2026-09-18",
+ "title": "云南省实施《中华人民共和国水法》办法",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

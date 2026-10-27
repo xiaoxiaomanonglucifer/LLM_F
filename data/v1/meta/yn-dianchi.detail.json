@@ -1,0 +1,89 @@
+{
+ "bbbs": "ff8081819ff54a6401a1380a82fd2702",
+ "ossFile": {
+  "ossWordPath": "prod/20260918/7af505bd49b845eda7472ac5b348d9de.docx",
+  "ossWordOfdPath": "prod/20260918/7af505bd49b845eda7472ac5b348d9de.ofd",
+  "ossWordOfdSize": 269354,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54a6401a1380a82fd2702",
+   "title": "云南省滇池保护条例",
+   "gbrq": "2026-09-18",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8081818c24e05b018c905df35a2cbf",
+   "title": "云南省滇池保护条例",
+   "gbrq": "2023-11-30",
+   "highLight": false
+  },
+  {
+   "bbbs": "ff8081818e750883018ec57641940534",
+   "title": "云南省滇池保护条例",
+   "gbrq": "2018-11-29",
+   "highLight": false
+  },
+  {
+   "bbbs": "4028abcc61277793016127dc4e0c1b19",
+   "title": "云南省滇池保护条例",
+   "gbrq": "2012-09-28",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "7aa80e59770b4f858d442e0cc14243cb",
+   "title": "云南省人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "d2ab4231295644528bfea5380311123f",
+   "title": "云南省人民代表大会常务委员会关于废止和修改《云南省珍贵树种保护条例》等19件地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ca85b9f3f8f4464eb5f6fb7ebca29f43",
+   "title": "《关于修改和废止部分地方性法规的决定（草案）》的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "e09a2dea4e424a67a19c229e3d378a8f",
+   "title": "云南省人民代表大会法制委员会关于《修改和废止部分地方性法规的决定（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "e3405bc55cb34f2d95aa0266d4fa151f",
+   "title": "云南省人民代表大会常务委员会法制工作委员会关于《修改和废止部分地方性法规的决定（草案）》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "云南省人民代表大会常务委员会",
+ "gbrq": "2026-09-18",
+ "sxrq": "2026-09-18",
+ "title": "云南省滇池保护条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

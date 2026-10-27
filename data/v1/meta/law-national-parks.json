@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-national-parks",
+ "catalog_title": "中华人民共和国国家公园法",
+ "title": "中华人民共和国国家公园法",
+ "level": "法律",
+ "domain": "国土空间规划",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2025-09-12",
+ "effective_date": "2026-01-01",
+ "bbbs": "f3f7217464834db5b5d4f563f40c6dec",
+ "source_url": "https://flk.npc.gov.cn/detail?id=f3f7217464834db5b5d4f563f40c6dec",
+ "detail_file": "data/v1/meta/law-national-parks.json",
+ "raw_file": "data/v1/raw/law-national-parks.docx",
+ "sha256": "6ef892ed8b9fe4abd32885607c0657683b14292b13e7a0bc0c7c04b6d5bc3fb8",
+ "bytes": 24120,
+ "flk_oss_word_path": "prod/20250912/166edf03115d4a5f9855df2b8c383651.docx",
+ "collected_at": "2026-10-27T18:27:17+08:00",
+ "collector_version": "1.0"
+}

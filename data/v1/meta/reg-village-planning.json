@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-village-planning",
+ "catalog_title": "村庄和集镇规划建设管理条例",
+ "title": "村庄和集镇规划建设管理条例",
+ "level": "行政法规",
+ "domain": "国土空间规划",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "1993-06-29",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f410209a01121",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f410209a01121",
+ "detail_file": "data/v1/meta/reg-village-planning.json",
+ "raw_file": "data/v1/raw/reg-village-planning.docx",
+ "sha256": "2920b06b7a50b2e67f3f1bcfe37064be0e7f65125a4e23be325a008c6f5b1bdc",
+ "bytes": 26354,
+ "flk_oss_word_path": "prod/19930629/4f9529f1f8bb462aa8751c52b81558eb.docx",
+ "collected_at": "2026-10-27T18:29:55+08:00",
+ "collector_version": "1.0"
+}

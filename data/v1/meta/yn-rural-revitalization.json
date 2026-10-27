@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-rural-revitalization",
+ "catalog_title": "云南省乡村振兴促进条例",
+ "title": "云南省乡村振兴促进条例",
+ "level": "地方性法规",
+ "domain": "土地管理",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2024-11-28",
+ "effective_date": "2025-01-01",
+ "bbbs": "ff808181927f093101939ac41baf7c6b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927f093101939ac41baf7c6b",
+ "detail_file": "data/v1/meta/yn-rural-revitalization.json",
+ "raw_file": "data/v1/raw/yn-rural-revitalization.docx",
+ "sha256": "3c1f8b6b906d25702f75294165e971f364d56c16d5100eb2c1a4cbb5bdfa6c06",
+ "bytes": 25215,
+ "flk_oss_word_path": "prod/20241128/f0798f617dad47648d2c6efce0de60e1.docx",
+ "collected_at": "2026-10-27T18:32:38+08:00",
+ "collector_version": "1.0"
+}

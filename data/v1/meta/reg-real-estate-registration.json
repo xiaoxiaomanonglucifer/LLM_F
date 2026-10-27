@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-real-estate-registration",
+ "catalog_title": "不动产登记暂行条例",
+ "title": "不动产登记暂行条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2024-03-10",
+ "effective_date": "2024-05-01",
+ "bbbs": "ff8081819c46fdc3019cd18cd0a71cd0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819c46fdc3019cd18cd0a71cd0",
+ "detail_file": "data/v1/meta/reg-real-estate-registration.json",
+ "raw_file": "data/v1/raw/reg-real-estate-registration.docx",
+ "sha256": "d3f317be995062222e98c5d3d8fcbb58123c72ac35d3047512f464656405e899",
+ "bytes": 22716,
+ "flk_oss_word_path": "prod/20240310/d8c65116db3945328e0fe0a02d55d7c2.docx",
+ "collected_at": "2026-10-27T18:29:31+08:00",
+ "collector_version": "1.0"
+}

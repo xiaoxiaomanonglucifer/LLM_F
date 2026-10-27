@@ -1,0 +1,460 @@
+# 语料目录（R2 维护）
+# 说明：
+#   1) title 为《国家法律法规数据库》中的精确标题，采集时按标题精确匹配；
+#   2) 只收录“有效”(sxx=3) 版本，历史版本不入库；
+#   3) id 用于文件名与引用，发布后不得更改；
+#   4) 采集结果以 data/v1/manifest.json 为准，未匹配到的标题会记入 missing。
+version: v1
+as_of: "2026-10-27"
+source:
+  name: 国家法律法规数据库
+  url: https://flk.npc.gov.cn
+  license_note: 法规原文依《著作权法》第五条不适用著作权法，可自由复制、分发与加工。
+
+documents:
+  # ---------------- 法律：土地管理 ----------------
+  - id: law-land-admin
+    title: 中华人民共和国土地管理法
+    level: 法律
+    domain: 土地管理
+    priority: core
+  - id: law-rural-land-contract
+    title: 中华人民共和国农村土地承包法
+    level: 法律
+    domain: 土地管理
+    priority: core
+  - id: law-real-estate
+    title: 中华人民共和国城市房地产管理法
+    level: 法律
+    domain: 土地管理
+    priority: core
+  - id: law-black-soil
+    title: 中华人民共和国黑土地保护法
+    level: 法律
+    domain: 土地管理
+    priority: normal
+  - id: law-rural-collective
+    title: 中华人民共和国农村集体经济组织法
+    level: 法律
+    domain: 土地管理
+    priority: normal
+  # ---------------- 法律：国土空间规划 ----------------
+  - id: law-urban-rural-planning
+    title: 中华人民共和国城乡规划法
+    level: 法律
+    domain: 国土空间规划
+    priority: core
+  - id: law-national-parks
+    title: 中华人民共和国国家公园法
+    level: 法律
+    domain: 国土空间规划
+    priority: normal
+  # ---------------- 法律：矿产资源 ----------------
+  - id: law-mineral-resources
+    title: 中华人民共和国矿产资源法
+    level: 法律
+    domain: 矿产资源
+    priority: core
+  - id: law-coal
+    title: 中华人民共和国煤炭法
+    level: 法律
+    domain: 矿产资源
+    priority: normal
+  # ---------------- 法律：海域海岛 ----------------
+  - id: law-sea-area-use
+    title: 中华人民共和国海域使用管理法
+    level: 法律
+    domain: 海域海岛
+    priority: core
+  - id: law-island-protection
+    title: 中华人民共和国海岛保护法
+    level: 法律
+    domain: 海域海岛
+    priority: normal
+  - id: law-territorial-sea
+    title: 中华人民共和国领海及毗连区法
+    level: 法律
+    domain: 海域海岛
+    priority: normal
+  - id: law-eez
+    title: 中华人民共和国专属经济区和大陆架法
+    level: 法律
+    domain: 海域海岛
+    priority: normal
+  - id: law-deep-sea
+    title: 中华人民共和国深海海底区域资源勘探开发法
+    level: 法律
+    domain: 海域海岛
+    priority: normal
+  # ---------------- 法律：测绘地理信息 ----------------
+  - id: law-surveying-mapping
+    title: 中华人民共和国测绘法
+    level: 法律
+    domain: 测绘地理信息
+    priority: core
+  # ---------------- 法律：资源环境 ----------------
+  - id: law-forest
+    title: 中华人民共和国森林法
+    level: 法律
+    domain: 资源环境
+    priority: core
+  - id: law-grassland
+    title: 中华人民共和国草原法
+    level: 法律
+    domain: 资源环境
+    priority: core
+  - id: law-water
+    title: 中华人民共和国水法
+    level: 法律
+    domain: 资源环境
+    priority: core
+  - id: law-soil-conservation
+    title: 中华人民共和国水土保持法
+    level: 法律
+    domain: 资源环境
+    priority: core
+  - id: law-flood-control
+    title: 中华人民共和国防洪法
+    level: 法律
+    domain: 资源环境
+    priority: normal
+  - id: law-wetland
+    title: 中华人民共和国湿地保护法
+    level: 法律
+    domain: 资源环境
+    priority: core
+  - id: law-yangtze
+    title: 中华人民共和国长江保护法
+    level: 法律
+    domain: 资源环境
+    priority: normal
+  - id: law-desertification
+    title: 中华人民共和国防沙治沙法
+    level: 法律
+    domain: 资源环境
+    priority: normal
+  - id: law-environment
+    title: 中华人民共和国环境保护法
+    level: 法律
+    domain: 资源环境
+    priority: normal
+  - id: law-soil-pollution
+    title: 中华人民共和国土壤污染防治法
+    level: 法律
+    domain: 资源环境
+    priority: normal
+  # ---------------- 法律：行政程序 ----------------
+  - id: law-admin-penalty
+    title: 中华人民共和国行政处罚法
+    level: 法律
+    domain: 行政程序
+    priority: core
+  - id: law-admin-license
+    title: 中华人民共和国行政许可法
+    level: 法律
+    domain: 行政程序
+    priority: normal
+  - id: law-admin-review
+    title: 中华人民共和国行政复议法
+    level: 法律
+    domain: 行政程序
+    priority: core
+  - id: law-admin-litigation
+    title: 中华人民共和国行政诉讼法
+    level: 法律
+    domain: 行政程序
+    priority: normal
+  - id: law-state-compensation
+    title: 中华人民共和国国家赔偿法
+    level: 法律
+    domain: 行政程序
+    priority: normal
+  - id: law-tendering
+    title: 中华人民共和国招标投标法
+    level: 法律
+    domain: 行政程序
+    priority: normal
+
+  # ---------------- 行政法规 ----------------
+  - id: reg-land-admin
+    title: 中华人民共和国土地管理法实施条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-basic-farmland
+    title: 基本农田保护条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-land-reclamation
+    title: 土地复垦条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-land-survey
+    title: 土地调查条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-real-estate-registration
+    title: 不动产登记暂行条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-house-expropriation
+    title: 国有土地上房屋征收与补偿条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-land-transfer
+    title: 中华人民共和国城镇国有土地使用权出让和转让暂行条例
+    level: 行政法规
+    domain: 土地管理
+    priority: core
+  - id: reg-land-vat
+    title: 中华人民共和国土地增值税暂行条例
+    level: 行政法规
+    domain: 土地管理
+    priority: normal
+  - id: reg-urban-land-tax
+    title: 中华人民共和国城镇土地使用税暂行条例
+    level: 行政法规
+    domain: 土地管理
+    priority: normal
+  - id: reg-farmland-occupation-tax
+    title: 中华人民共和国耕地占用税暂行条例
+    level: 行政法规
+    domain: 土地管理
+    priority: normal
+  - id: reg-village-planning
+    title: 村庄和集镇规划建设管理条例
+    level: 行政法规
+    domain: 国土空间规划
+    priority: core
+  - id: reg-historic-towns
+    title: 历史文化名城名镇名村保护条例
+    level: 行政法规
+    domain: 国土空间规划
+    priority: normal
+  - id: reg-planning-eia
+    title: 规划环境影响评价条例
+    level: 行政法规
+    domain: 国土空间规划
+    priority: normal
+  - id: reg-mineral-implementation
+    title: 中华人民共和国矿产资源法实施条例
+    level: 行政法规
+    domain: 矿产资源
+    priority: core
+  - id: reg-geological-data
+    title: 地质资料管理条例
+    level: 行政法规
+    domain: 矿产资源
+    priority: core
+  - id: reg-geohazard
+    title: 地质灾害防治条例
+    level: 行政法规
+    domain: 矿产资源
+    priority: core
+  - id: reg-mining-registration
+    title: 矿产资源开采登记管理办法
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-mining-exploration
+    title: 矿产资源勘查区块登记管理办法
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-mining-transfer
+    title: 探矿权采矿权转让管理办法
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-mineral-compensation
+    title: 矿产资源补偿费征收管理规定
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-offshore-oil
+    title: 中华人民共和国对外合作开采海洋石油资源条例
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-onshore-oil
+    title: 中华人民共和国对外合作开采陆上石油资源条例
+    level: 行政法规
+    domain: 矿产资源
+    priority: normal
+  - id: reg-basic-surveying
+    title: 基础测绘条例
+    level: 行政法规
+    domain: 测绘地理信息
+    priority: core
+  - id: reg-maps
+    title: 地图管理条例
+    level: 行政法规
+    domain: 测绘地理信息
+    priority: core
+  - id: reg-survey-marks
+    title: 测量标志保护条例
+    level: 行政法规
+    domain: 测绘地理信息
+    priority: normal
+  - id: reg-survey-results
+    title: 中华人民共和国测绘成果管理条例
+    level: 行政法规
+    domain: 测绘地理信息
+    priority: core
+  - id: reg-forest-implementation
+    title: 中华人民共和国森林法实施条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-soil-conservation-implementation
+    title: 中华人民共和国水土保持法实施条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-water-permit
+    title: 取水许可和水资源费征收管理条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-farmland-water
+    title: 农田水利条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-nature-reserve
+    title: 中华人民共和国自然保护区条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-scenic-areas
+    title: 风景名胜区条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-grain-for-green
+    title: 退耕还林条例
+    level: 行政法规
+    domain: 资源环境
+    priority: normal
+  - id: reg-resettlement
+    title: 大中型水利水电工程建设征地补偿和移民安置条例
+    level: 行政法规
+    domain: 土地管理
+    priority: normal
+  - id: reg-gov-info-disclosure
+    title: 中华人民共和国政府信息公开条例
+    level: 行政法规
+    domain: 行政程序
+    priority: normal
+  - id: reg-admin-review-implementation
+    title: 中华人民共和国行政复议法实施条例
+    level: 行政法规
+    domain: 行政程序
+    priority: normal
+
+  # ---------------- 云南省地方性法规 ----------------
+  - id: yn-land-admin
+    title: 云南省土地管理条例
+    level: 地方性法规
+    domain: 土地管理
+    priority: core
+  - id: yn-land-admin-implementation
+    title: 云南省实施《中华人民共和国土地管理法》办法
+    level: 地方性法规
+    domain: 土地管理
+    priority: core
+  - id: yn-basic-farmland
+    title: 云南省基本农田保护条例
+    level: 地方性法规
+    domain: 土地管理
+    priority: core
+  - id: yn-urban-rural-planning
+    title: 云南省城乡规划条例
+    level: 地方性法规
+    domain: 国土空间规划
+    priority: core
+  - id: yn-mineral-resources
+    title: 云南省矿产资源管理条例
+    level: 地方性法规
+    domain: 矿产资源
+    priority: core
+  - id: yn-geological-environment
+    title: 云南省地质环境保护条例
+    level: 地方性法规
+    domain: 矿产资源
+    priority: core
+  - id: yn-surveying-mapping
+    title: 云南省测绘条例
+    level: 地方性法规
+    domain: 测绘地理信息
+    priority: core
+  - id: yn-wetland
+    title: 云南省湿地保护条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: core
+  - id: yn-forest
+    title: 云南省森林条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-soil-conservation
+    title: 云南省水土保持条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-water-implementation
+    title: 云南省实施《中华人民共和国水法》办法
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-soil-conservation-implementation
+    title: 云南省实施《中华人民共和国水土保持法》办法
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-ecology
+    title: 云南省生态环境保护条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-rural-revitalization
+    title: 云南省乡村振兴促进条例
+    level: 地方性法规
+    domain: 土地管理
+    priority: normal
+  - id: yn-dianchi
+    title: 云南省滇池保护条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-yangzonghai
+    title: 云南省阳宗海保护条例
+    level: 地方性法规
+    domain: 资源环境
+    priority: normal
+  - id: yn-historic-towns
+    title: 云南省历史文化名城名镇名村保护条例
+    level: 地方性法规
+    domain: 国土空间规划
+    priority: normal
+  - id: km-urban-rural-planning
+    title: 昆明市城乡规划条例
+    level: 地方性法规
+    domain: 国土空间规划
+    priority: normal
+  - id: km-real-estate
+    title: 昆明市城市房地产交易管理条例
+    level: 地方性法规
+    domain: 土地管理
+    priority: normal
+  - id: yn-geohazard
+    title: 云南省地质灾害防治条例
+    level: 地方性法规
+    domain: 矿产资源
+    priority: normal

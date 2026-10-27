@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-urban-rural-planning",
+ "catalog_title": "云南省城乡规划条例",
+ "title": "云南省城乡规划条例",
+ "level": "地方性法规",
+ "domain": "国土空间规划",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc61277793016127cc23d50c72",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc61277793016127cc23d50c72",
+ "detail_file": "data/v1/meta/yn-urban-rural-planning.json",
+ "raw_file": "data/v1/raw/yn-urban-rural-planning.docx",
+ "sha256": "dfc8ef7f902bbd1f0b7185e6603958f8d406974e41afa0370e6e731241cc1dff",
+ "bytes": 45534,
+ "flk_oss_word_path": "prod/19700101/638793d5207c4e59bc21a8500366529a.docx",
+ "collected_at": "2026-10-27T18:31:50+08:00",
+ "collector_version": "1.0"
+}

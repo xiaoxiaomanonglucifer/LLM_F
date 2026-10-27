@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-geological-environment",
+ "catalog_title": "云南省地质环境保护条例",
+ "title": "云南省地质环境保护条例",
+ "level": "地方性法规",
+ "domain": "矿产资源",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2018-11-29",
+ "effective_date": "2018-11-29",
+ "bbbs": "ff808181927f0931019292f684b9308f",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927f0931019292f684b9308f",
+ "detail_file": "data/v1/meta/yn-geological-environment.json",
+ "raw_file": "data/v1/raw/yn-geological-environment.docx",
+ "sha256": "4e9daa2e8c65b70048f6033e30ee1be1d810f96aea721e6135c8e1cbbe8413fc",
+ "bytes": 18485,
+ "flk_oss_word_path": "prod/20181129/771fa6250c114aa4bfa7ae5a7ce41ab5.docx",
+ "collected_at": "2026-10-27T18:32:01+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,17 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: legal-rag-neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?请在 .env 中设置 NEO4J_PASSWORD}"
+      NEO4J_server_memory_heap_initial__size: "512m"
+      NEO4J_server_memory_heap_max__size: "2g"
+      NEO4J_server_memory_pagecache_size: "512m"
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+      - ./import:/var/lib/neo4j/import

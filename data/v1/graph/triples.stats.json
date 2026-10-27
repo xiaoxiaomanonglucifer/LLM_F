@@ -1,0 +1,6 @@
+{
+ "articles_total": 4104,
+ "triples": 3476,
+ "method": "rule",
+ "out": "E:\\演绎\\LLM\\大作业\\data\\v1\\graph\\triples.jsonl"
+}

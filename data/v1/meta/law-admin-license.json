@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-admin-license",
+ "catalog_title": "中华人民共和国行政许可法",
+ "title": "中华人民共和国行政许可法",
+ "level": "法律",
+ "domain": "行政程序",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2019-04-23",
+ "effective_date": "2019-04-23",
+ "bbbs": "ff8080816f135f46016f216bf96b1ae6",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f216bf96b1ae6",
+ "detail_file": "data/v1/meta/law-admin-license.json",
+ "raw_file": "data/v1/raw/law-admin-license.docx",
+ "sha256": "ce59b6f49a9e1f5e322d9c9fb75979bd0e6b80de2b72ab9a4c9803faff2d26e0",
+ "bytes": 32971,
+ "flk_oss_word_path": "prod/20190423/db7b58dcdc1b4840a5063f882b4a1f98.docx",
+ "collected_at": "2026-10-27T18:28:46+08:00",
+ "collector_version": "1.0"
+}

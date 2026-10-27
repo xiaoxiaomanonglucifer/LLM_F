@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-offshore-oil",
+ "catalog_title": "中华人民共和国对外合作开采海洋石油资源条例",
+ "title": "中华人民共和国对外合作开采海洋石油资源条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2013-07-18",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40d03c4005e7",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40d03c4005e7",
+ "detail_file": "data/v1/meta/reg-offshore-oil.json",
+ "raw_file": "data/v1/raw/reg-offshore-oil.docx",
+ "sha256": "04933ee7928ef76b52561465fdbfbd001fce330ca28e14ef7c59f6d8fc574cab",
+ "bytes": 23060,
+ "flk_oss_word_path": "prod/20130718/d2fbc930ed2b40c280760cb988f0ef13.docx",
+ "collected_at": "2026-10-27T18:30:29+08:00",
+ "collector_version": "1.0"
+}

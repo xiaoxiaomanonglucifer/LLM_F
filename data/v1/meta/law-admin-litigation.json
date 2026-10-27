@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-admin-litigation",
+ "catalog_title": "中华人民共和国行政诉讼法",
+ "title": "中华人民共和国行政诉讼法",
+ "level": "法律",
+ "domain": "行政程序",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会",
+ "promulgation_date": "2017-06-27",
+ "effective_date": "2017-07-01",
+ "bbbs": "2c909fdd678bf17901678bf858550a0f",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf858550a0f",
+ "detail_file": "data/v1/meta/law-admin-litigation.json",
+ "raw_file": "data/v1/raw/law-admin-litigation.docx",
+ "sha256": "0ee676b738e8173f6c442342595b0282552964ad1446eeec557beafa5f819472",
+ "bytes": 36113,
+ "flk_oss_word_path": "prod/20170627/5b0d1e1bf9a94612bec9b59b3d7a72d8.docx",
+ "collected_at": "2026-10-27T18:28:56+08:00",
+ "collector_version": "1.0"
+}

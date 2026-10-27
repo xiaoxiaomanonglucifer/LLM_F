@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-deep-sea",
+ "catalog_title": "中华人民共和国深海海底区域资源勘探开发法",
+ "title": "中华人民共和国深海海底区域资源勘探开发法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2016-02-26",
+ "effective_date": "2016-05-01",
+ "bbbs": "2c909fdd678bf17901678bf8021508bb",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf8021508bb",
+ "detail_file": "data/v1/meta/law-deep-sea.json",
+ "raw_file": "data/v1/raw/law-deep-sea.docx",
+ "sha256": "f909b4126b7e1ed9278e50d3747518a689c37764cd52668d407c723c335c5313",
+ "bytes": 18937,
+ "flk_oss_word_path": "prod/20160226/f2a610d5285b4c4fb20279a0bceae7d0.docx",
+ "collected_at": "2026-10-27T18:27:50+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-mineral-implementation",
+ "catalog_title": "中华人民共和国矿产资源法实施条例",
+ "title": "中华人民共和国矿产资源法实施条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-05-15",
+ "effective_date": "2026-06-15",
+ "bbbs": "ff8081819e48b44c019ef8a2eb573b4e",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819e48b44c019ef8a2eb573b4e",
+ "detail_file": "data/v1/meta/reg-mineral-implementation.json",
+ "raw_file": "data/v1/raw/reg-mineral-implementation.docx",
+ "sha256": "c2df995d9fbb0cc562cbef18bdc981fb2a0662508d67b71c5a899832d9e47db2",
+ "bytes": 32976,
+ "flk_oss_word_path": "prod/20260515/46311cb4124043a594d23951632c58d2.docx",
+ "collected_at": "2026-10-27T18:30:10+08:00",
+ "collector_version": "1.0"
+}

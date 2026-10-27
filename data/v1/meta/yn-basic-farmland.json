@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-basic-farmland",
+ "catalog_title": "云南省基本农田保护条例",
+ "title": "云南省基本农田保护条例",
+ "level": "地方性法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc612777930161284761a00676",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc612777930161284761a00676",
+ "detail_file": "data/v1/meta/yn-basic-farmland.json",
+ "raw_file": "data/v1/raw/yn-basic-farmland.docx",
+ "sha256": "eae3814e2390e01cad40dcb9c1586f4eecacdad49612a02f642d93761b4f4338",
+ "bytes": 21284,
+ "flk_oss_word_path": "prod/19700101/9d4d9a2281f54b12b20841a870b94257.docx",
+ "collected_at": "2026-10-27T18:31:46+08:00",
+ "collector_version": "1.0"
+}

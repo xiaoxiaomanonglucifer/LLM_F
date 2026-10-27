@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-historic-towns",
+ "catalog_title": "历史文化名城名镇名村保护条例",
+ "title": "历史文化名城名镇名村保护条例",
+ "level": "行政法规",
+ "domain": "国土空间规划",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-10-07",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e98bd016f423e509103d6",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f423e509103d6",
+ "detail_file": "data/v1/meta/reg-historic-towns.json",
+ "raw_file": "data/v1/raw/reg-historic-towns.docx",
+ "sha256": "e8ece7adeb7ce2527fb66842e59bf8bbb49fe7e6360b144ee29fa0941d606ba5",
+ "bytes": 27262,
+ "flk_oss_word_path": "prod/20171007/5f06cdee537f4375a3f7112058bfa133.docx",
+ "collected_at": "2026-10-27T18:30:01+08:00",
+ "collector_version": "1.0"
+}

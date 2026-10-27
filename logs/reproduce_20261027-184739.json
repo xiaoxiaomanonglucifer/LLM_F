@@ -1,0 +1,41 @@
+{
+ "started_at": "20261027-184739",
+ "finished_at": "2026-10-27T18:47:53",
+ "elapsed_sec": 14.2,
+ "run_id": "repro-local-1",
+ "embedding_model": "hashing",
+ "mock": true,
+ "steps": [
+  {
+   "step": "build_corpus",
+   "status": "ok",
+   "returncode": 0,
+   "elapsed_sec": 0.6
+  },
+  {
+   "step": "extract_triples",
+   "status": "ok",
+   "returncode": 0,
+   "elapsed_sec": 0.3
+  },
+  {
+   "step": "build_index",
+   "status": "ok",
+   "returncode": 0,
+   "elapsed_sec": 8.8
+  },
+  {
+   "step": "unit_tests",
+   "status": "ok",
+   "returncode": 0,
+   "elapsed_sec": 0.7
+  },
+  {
+   "step": "dev_experiment",
+   "status": "ok",
+   "returncode": 0,
+   "elapsed_sec": 3.8
+  }
+ ],
+ "log": "E:\\演绎\\LLM\\大作业\\logs\\reproduce_20261027-184739.log"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-grassland",
+ "catalog_title": "中华人民共和国草原法",
+ "title": "中华人民共和国草原法",
+ "level": "法律",
+ "domain": "资源环境",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2021-04-29",
+ "effective_date": "2021-04-29",
+ "bbbs": "ff8081817ab22b8a017abd5ad286057a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081817ab22b8a017abd5ad286057a",
+ "detail_file": "data/v1/meta/law-grassland.json",
+ "raw_file": "data/v1/raw/law-grassland.docx",
+ "sha256": "1aaf22c7e3abe80ff4a79999d860869d92be6b67359331d327b6be9e0525aac0",
+ "bytes": 25282,
+ "flk_oss_word_path": "prod/20210429/f21f4ea06ee14032a82c5da053c1f411.docx",
+ "collected_at": "2026-10-27T18:28:06+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-yangzonghai",
+ "catalog_title": "云南省阳宗海保护条例",
+ "title": "云南省阳宗海保护条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2026-09-18",
+ "effective_date": "2026-09-18",
+ "bbbs": "ff8081819ff54a6401a1380c6af42733",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54a6401a1380c6af42733",
+ "detail_file": "data/v1/meta/yn-yangzonghai.json",
+ "raw_file": "data/v1/raw/yn-yangzonghai.docx",
+ "sha256": "f1324f338e20d4eb8c303602308947a4c4242faad20bd4a745e74070e0adc277",
+ "bytes": 31806,
+ "flk_oss_word_path": "prod/20260918/a39a15b057d942629a29aad9554d0eca.docx",
+ "collected_at": "2026-10-27T18:32:48+08:00",
+ "collector_version": "1.0"
+}

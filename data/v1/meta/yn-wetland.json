@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-wetland",
+ "catalog_title": "云南省湿地保护条例",
+ "title": "云南省湿地保护条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2025-09-24",
+ "effective_date": "2026-01-01",
+ "bbbs": "ff808181999a5c1a0199c6a07d4530af",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181999a5c1a0199c6a07d4530af",
+ "detail_file": "data/v1/meta/yn-wetland.json",
+ "raw_file": "data/v1/raw/yn-wetland.docx",
+ "sha256": "97a3405d0cb973262551de87dbb1534b9a27d4f897ba53e7abe8f28da22febf6",
+ "bytes": 22228,
+ "flk_oss_word_path": "prod/20250924/7f04691ba247450dbb686fa4a01ec311.docx",
+ "collected_at": "2026-10-27T18:32:10+08:00",
+ "collector_version": "1.0"
+}

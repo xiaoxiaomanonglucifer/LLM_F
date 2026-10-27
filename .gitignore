@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.idea/
+
+# 模型权重（不入库）
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# 索引与中间产物（可由 data/v1 重建）
+data/v1/index/chroma/
+data/v1/index/*.pkl
+results/
+logs/*
+!logs/reproduce_*.json
+!logs/reproduce_*.log
+_extract/
+deploy/neo4j/data/
+deploy/neo4j/logs/
+deploy/neo4j/import/
+
+# 本机配置与密钥
+.env
+.env.*
+!.env.example

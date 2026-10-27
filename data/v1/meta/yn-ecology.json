@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-ecology",
+ "catalog_title": "云南省生态环境保护条例",
+ "title": "云南省生态环境保护条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2026-09-18",
+ "effective_date": "2026-09-18",
+ "bbbs": "ff8081819ff54ab801a1380fabe50f34",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54ab801a1380fabe50f34",
+ "detail_file": "data/v1/meta/yn-ecology.json",
+ "raw_file": "data/v1/raw/yn-ecology.docx",
+ "sha256": "cacad6a9e56a57f8c0e26eba4cedff954e1ecdc6d5dd6273f266b2e12f097563",
+ "bytes": 27821,
+ "flk_oss_word_path": "prod/20260918/a80fd02898c345438c7a196cb892b9c8.docx",
+ "collected_at": "2026-10-27T18:32:33+08:00",
+ "collector_version": "1.0"
+}

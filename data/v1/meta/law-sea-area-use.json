@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-sea-area-use",
+ "catalog_title": "中华人民共和国海域使用管理法",
+ "title": "中华人民共和国海域使用管理法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2001-10-27",
+ "effective_date": "2002-01-01",
+ "bbbs": "2c909fdd678bf17901678bf613e30299",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf613e30299",
+ "detail_file": "data/v1/meta/law-sea-area-use.json",
+ "raw_file": "data/v1/raw/law-sea-area-use.docx",
+ "sha256": "23d3210b38f7a4ce05ac1497b5aa7c837af70bcecf628d9f912618254b893e29",
+ "bytes": 21792,
+ "flk_oss_word_path": "prod/20011027/2d3ff0c4d67d4e43a91d076bfc3df8c6.docx",
+ "collected_at": "2026-10-27T18:27:31+08:00",
+ "collector_version": "1.0"
+}

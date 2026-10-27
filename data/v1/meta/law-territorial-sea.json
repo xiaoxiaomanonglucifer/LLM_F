@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-territorial-sea",
+ "catalog_title": "中华人民共和国领海及毗连区法",
+ "title": "中华人民共和国领海及毗连区法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "1992-02-25",
+ "effective_date": "1992-02-25",
+ "bbbs": "2c909fdd678bf17901678bf5c9fd014f",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf5c9fd014f",
+ "detail_file": "data/v1/meta/law-territorial-sea.json",
+ "raw_file": "data/v1/raw/law-territorial-sea.docx",
+ "sha256": "96ea35891e0abae4dbe65c8758fd979b9de7d466a7c61d46f0edb792a7e9104d",
+ "bytes": 16195,
+ "flk_oss_word_path": "prod/19920225/223495fa982f4190919bd34cee974632.docx",
+ "collected_at": "2026-10-27T18:27:41+08:00",
+ "collector_version": "1.0"
+}

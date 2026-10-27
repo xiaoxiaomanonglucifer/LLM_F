@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-desertification",
+ "catalog_title": "中华人民共和国防沙治沙法",
+ "title": "中华人民共和国防沙治沙法",
+ "level": "法律",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-10-26",
+ "effective_date": "2018-10-26",
+ "bbbs": "ff8080816f135f46016f1cece2851197",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1cece2851197",
+ "detail_file": "data/v1/meta/law-desertification.json",
+ "raw_file": "data/v1/raw/law-desertification.docx",
+ "sha256": "01c77afed2ddc8731e8ec88f94ee496419256b3829e3a6808ddded777c7ea016",
+ "bytes": 22839,
+ "flk_oss_word_path": "prod/20181026/6571f705dd6c4328a7de7f8d4af65094.docx",
+ "collected_at": "2026-10-27T18:28:34+08:00",
+ "collector_version": "1.0"
+}

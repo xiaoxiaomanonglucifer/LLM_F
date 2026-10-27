@@ -1,0 +1,77 @@
+
+===== build_corpus =====
+E:\演绎\LLM\第二次作业\rag_home\.venv\Scripts\python.exe -m legal_rag.corpus.build
+语料构建完成：可索引法规 75 部，按条切分 4104 条，共 51.9 万字；条均 126.6 字；结构告警 0 部。
+documents: E:\演绎\LLM\大作业\data\v1\documents.jsonl
+articles : E:\演绎\LLM\大作业\data\v1\articles.jsonl
+stats    : E:\演绎\LLM\大作业\data\v1\corpus_stats.json
+
+===== extract_triples =====
+E:\演绎\LLM\第二次作业\rag_home\.venv\Scripts\python.exe -m legal_rag.graph.extract
+三元组抽取完成：{'articles_total': 4104, 'triples': 3476, 'method': 'rule', 'out': 'E:\\演绎\\LLM\\大作业\\data\\v1\\graph\\triples.jsonl'}
+
+===== build_index =====
+E:\演绎\LLM\第二次作业\rag_home\.venv\Scripts\python.exe -m legal_rag.index.build_index --embedding-model hashing
+载入 4104 条文本块；嵌入模型：hashing（device=cpu）
+向量化完成：shape=(4104, 512)，耗时 1.6s
+Chroma 写入完成：4104 条，集合 legal_articles_v1
+BM25 写入完成：E:\演绎\LLM\大作业\data\v1\index\bm25.pkl
+索引清单：E:\演绎\LLM\大作业\data\v1\index\index_manifest.json
+
+[stderr]
+[提示] 仓库路径含非 ASCII 字符，Chroma 索引改存至：C:\Users\ASUS\AppData\Local\legal_rag\chroma\09e06fb173（可用 LEGAL_RAG_CHROMA_DIR 覆盖）
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\ASUS\AppData\Local\Temp\jieba.cache
+Loading model cost 0.456 seconds.
+Prefix dict has been built successfully.
+
+===== unit_tests =====
+E:\演绎\LLM\第二次作业\rag_home\.venv\Scripts\python.exe -m unittest discover -s tests
+
+[stderr]
+..Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\ASUS\AppData\Local\Temp\jieba.cache
+Loading model cost 0.417 seconds.
+Prefix dict has been built successfully.
+.........
+----------------------------------------------------------------------
+Ran 11 tests in 0.419s
+
+OK
+
+===== dev_experiment =====
+E:\演绎\LLM\第二次作业\rag_home\.venv\Scripts\python.exe -m legal_rag.pipeline.run_experiment --questions data/eval/dev/questions.jsonl --groups G0,G1,G2 --run-id repro-local-1 --embedding-model hashing --mock
+图谱索引：3476 条三元组，629 个实体
+[G0 r1] 7 题 -> E:\演绎\LLM\大作业\results\repro-local-1\G0_r1.jsonl
+  1/7 dev-001 完成
+  2/7 dev-002 完成
+  3/7 dev-003 完成
+  4/7 dev-004 完成
+  5/7 dev-005 完成
+  6/7 dev-006 完成
+  7/7 dev-007 完成
+[G1 r1] 7 题 -> E:\演绎\LLM\大作业\results\repro-local-1\G1_r1.jsonl
+  1/7 dev-001 完成
+  2/7 dev-002 完成
+  3/7 dev-003 完成
+  4/7 dev-004 完成
+  5/7 dev-005 完成
+  6/7 dev-006 完成
+  7/7 dev-007 完成
+[G2 r1] 7 题 -> E:\演绎\LLM\大作业\results\repro-local-1\G2_r1.jsonl
+  1/7 dev-001 完成
+  2/7 dev-002 完成
+  3/7 dev-003 完成
+  4/7 dev-004 完成
+  5/7 dev-005 完成
+  6/7 dev-006 完成
+  7/7 dev-007 完成
+实验完成：E:\演绎\LLM\大作业\results\repro-local-1
+
+[stderr]
+[警告] 当前索引由调试嵌入器（hashing）构建，结果仅供流程联调，不得作为正式实验数据。
+[提示] 仓库路径含非 ASCII 字符，Chroma 索引改存至：C:\Users\ASUS\AppData\Local\legal_rag\chroma\09e06fb173（可用 LEGAL_RAG_CHROMA_DIR 覆盖）
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\ASUS\AppData\Local\Temp\jieba.cache
+Loading model cost 0.441 seconds.
+Prefix dict has been built successfully.

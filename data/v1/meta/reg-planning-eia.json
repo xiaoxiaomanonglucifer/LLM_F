@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-planning-eia",
+ "catalog_title": "规划环境影响评价条例",
+ "title": "规划环境影响评价条例",
+ "level": "行政法规",
+ "domain": "国土空间规划",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2009-08-17",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40dd0536080e",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40dd0536080e",
+ "detail_file": "data/v1/meta/reg-planning-eia.json",
+ "raw_file": "data/v1/raw/reg-planning-eia.docx",
+ "sha256": "913b2ab7ee1c9b9fb1c0bf938dbd38d7b97e21f1ec3fc61edfa10fb89fac23f4",
+ "bytes": 25756,
+ "flk_oss_word_path": "prod/20090817/9a54ada658bb4080ab02bda33b3ef6c8.docx",
+ "collected_at": "2026-10-27T18:30:05+08:00",
+ "collector_version": "1.0"
+}

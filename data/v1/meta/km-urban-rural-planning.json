@@ -1,0 +1,22 @@
+{
+ "doc_id": "km-urban-rural-planning",
+ "catalog_title": "昆明市城乡规划条例",
+ "title": "昆明市城乡规划条例",
+ "level": "地方性法规",
+ "domain": "国土空间规划",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2017-12-13",
+ "effective_date": "2018-01-01",
+ "bbbs": "4028abcc612777930161282d25cb705a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc612777930161282d25cb705a",
+ "detail_file": "data/v1/meta/km-urban-rural-planning.json",
+ "raw_file": "data/v1/raw/km-urban-rural-planning.docx",
+ "sha256": "75f70627c5d1f1224acfb739cb5aecdb6715da065abfc1d099087f391b1cee53",
+ "bytes": 65775,
+ "flk_oss_word_path": "prod/20171213/7370933495384b77b0449b77ff1d3fe1.docx",
+ "collected_at": "2026-10-27T18:32:54+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-water-permit",
+ "catalog_title": "取水许可和水资源费征收管理条例",
+ "title": "取水许可和水资源费征收管理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-03-01",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f41334bfe1cb3",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f41334bfe1cb3",
+ "detail_file": "data/v1/meta/reg-water-permit.json",
+ "raw_file": "data/v1/raw/reg-water-permit.docx",
+ "sha256": "3280630ad436520f227103b1e7bb619f7e15552f5d3c778ce634b95687326710",
+ "bytes": 26768,
+ "flk_oss_word_path": "prod/20170301/22d2d46b72bc446081bc63143ab06039.docx",
+ "collected_at": "2026-10-27T18:31:01+08:00",
+ "collector_version": "1.0"
+}

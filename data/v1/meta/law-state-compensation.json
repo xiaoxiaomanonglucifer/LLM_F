@@ -1,0 +1,22 @@
+{
+ "doc_id": "law-state-compensation",
+ "catalog_title": "中华人民共和国国家赔偿法",
+ "title": "中华人民共和国国家赔偿法",
+ "level": "法律",
+ "domain": "行政程序",
+ "priority": "normal",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2012-10-26",
+ "effective_date": "2013-01-01",
+ "bbbs": "2c909fdd678bf17901678bf74c26069f",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74c26069f",
+ "detail_file": "data/v1/meta/law-state-compensation.json",
+ "raw_file": "data/v1/raw/law-state-compensation.docx",
+ "sha256": "fcebaea0dd955438e186ec40b29dea2dd2d47297ffc48519b3809d3108df78e8",
+ "bytes": 26267,
+ "flk_oss_word_path": "prod/20121026/2ade833cd65147ceab2c7eeab501ae38.docx",
+ "collected_at": "2026-10-27T18:29:01+08:00",
+ "collector_version": "1.0"
+}

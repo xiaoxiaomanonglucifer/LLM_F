@@ -1,0 +1,27 @@
+{
+ "index_version": "1.0",
+ "built_at": "2026-10-27T18:47:49+08:00",
+ "articles_file": "data/v1/articles.jsonl",
+ "articles_sha256": "6a54c73fc10ef9cddb7dde5a2704b7403fcac3cc7a76be24b5c8a84a24a4bcc2",
+ "article_count": 4104,
+ "embedding_model": "hashing",
+ "embedding_model_debug": true,
+ "embedding_dim": 512,
+ "embedding_normalized": true,
+ "embedding_max_seq_length": 512,
+ "device": "cpu",
+ "vector_store": {
+  "provider": "chroma",
+  "collection": "legal_articles_v1",
+  "distance": "cosine",
+  "path": "C:\\Users\\ASUS\\AppData\\Local\\legal_rag\\chroma\\09e06fb173",
+  "configured_path": "E:\\演绎\\LLM\\大作业\\data\\v1\\index\\chroma"
+ },
+ "bm25": {
+  "k1": 1.5,
+  "b": 0.75,
+  "char_bigram": true
+ },
+ "debug_limit": null,
+ "elapsed_sec": 8.4
+}

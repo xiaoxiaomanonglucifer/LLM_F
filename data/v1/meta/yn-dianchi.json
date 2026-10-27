@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-dianchi",
+ "catalog_title": "云南省滇池保护条例",
+ "title": "云南省滇池保护条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "2026-09-18",
+ "effective_date": "2026-09-18",
+ "bbbs": "ff8081819ff54a6401a1380a82fd2702",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54a6401a1380a82fd2702",
+ "detail_file": "data/v1/meta/yn-dianchi.json",
+ "raw_file": "data/v1/raw/yn-dianchi.docx",
+ "sha256": "2628964e8bd98a8c85884a76abe6fef1251f89c80dffedb2ad09ecf5c76504f0",
+ "bytes": 34696,
+ "flk_oss_word_path": "prod/20260918/7af505bd49b845eda7472ac5b348d9de.docx",
+ "collected_at": "2026-10-27T18:32:43+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-house-expropriation",
+ "catalog_title": "国有土地上房屋征收与补偿条例",
+ "title": "国有土地上房屋征收与补偿条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-01-21",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40fa642a0f58",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40fa642a0f58",
+ "detail_file": "data/v1/meta/reg-house-expropriation.json",
+ "raw_file": "data/v1/raw/reg-house-expropriation.docx",
+ "sha256": "d6ffc494f0ed5ebb82bcedd7fb11ac1cd4ac420fd813b90d634ee68503fd0b51",
+ "bytes": 23879,
+ "flk_oss_word_path": "prod/20110121/9faba480871c458cb07c9cc9978f0537.docx",
+ "collected_at": "2026-10-27T18:29:35+08:00",
+ "collector_version": "1.0"
+}

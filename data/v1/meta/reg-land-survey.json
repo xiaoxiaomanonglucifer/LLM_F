@@ -1,0 +1,22 @@
+{
+ "doc_id": "reg-land-survey",
+ "catalog_title": "土地调查条例",
+ "title": "土地调查条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "priority": "core",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2018-03-19",
+ "effective_date": "2018-03-19",
+ "bbbs": "ff8080816f3e98bd016f423bf73d03a1",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f423bf73d03a1",
+ "detail_file": "data/v1/meta/reg-land-survey.json",
+ "raw_file": "data/v1/raw/reg-land-survey.docx",
+ "sha256": "2902cbcf6365d614ee5c9d2c1d5aaebc3b84b87b1eeb840f40d87e4bc19c8be1",
+ "bytes": 18951,
+ "flk_oss_word_path": "prod/20180319/d97c241b5ef3401c945b5e1607eadb1f.docx",
+ "collected_at": "2026-10-27T18:29:26+08:00",
+ "collector_version": "1.0"
+}

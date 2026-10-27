@@ -1,0 +1,22 @@
+{
+ "doc_id": "yn-soil-conservation-implementation",
+ "catalog_title": "云南省实施《中华人民共和国水土保持法》办法",
+ "title": "云南省实施《中华人民共和国水土保持法》办法",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "云南省人民代表大会常务委员会",
+ "promulgation_date": "1994-07-27",
+ "effective_date": "1994-10-01",
+ "bbbs": "ff808181927f093101938f5804524625",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927f093101938f5804524625",
+ "detail_file": "data/v1/meta/yn-soil-conservation-implementation.json",
+ "raw_file": "data/v1/raw/yn-soil-conservation-implementation.docx",
+ "sha256": "b418cb8ccb7cb4015a28fe7ee94005135f32b9783d8fa64e69d8b6b9ddac9719",
+ "bytes": 19846,
+ "flk_oss_word_path": "prod/19940727/10bdfc1b943c40eba8b7d4f44620304b.docx",
+ "collected_at": "2026-10-27T18:32:28+08:00",
+ "collector_version": "1.0"
+}
