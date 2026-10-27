@@ -14,7 +14,7 @@
 | 5 | 检索-生成流水线 | 完成并联调 | `src/legal_rag/retrieval/`、`pipeline/`、`generation/`；G0/G1/G2 |
 | 6 | 推理服务部署 | 接口完成；正式 7B 待 GPU | OpenAI 兼容客户端（Ollama / vLLM），`src/legal_rag/generation/llm_client.py` |
 | 7 | 可复现运行脚本 | 完成 | `scripts/reproduce.py`；记录 `logs/reproduce_20261027-184739.json` |
-| 8 | Git 提交记录 | 本次初始化并提交 | 仓库根 `git log --oneline` |
+| 8 | Git 提交记录 | 本次初始化并提交 | 初始提交 `fac7de4`；仓库根 `git log --oneline` |
 | 9 | 全流程重跑记录 | 本地调试链路完成 | 上述 reproduce 记录 + `results/repro-local-1/`、`results/dev-mock/`、`results/dev-llm-0.5b/` |
 | 10 | 语料变更登记 | 完成 | `CHANGELOG.md`（v1，含 12 部缺失清单） |
 
@@ -57,7 +57,7 @@ $PY -m legal_rag.pipeline.ask "村里盖房子占了农用地要办什么手续"
 - 按条解析正确跳过目录、保留条内款/项；章/节/条号元数据齐全。
 - 检索：口语化问题“村里盖房子占了农用地要办什么手续”在 G1/G2 首位命中
   《中华人民共和国土地管理法》第六十二条。
-- G0 无证据、G1 五条证据、G2 额外注入图谱一跳子图（约 475 字符）；
+- G0 无证据、G1 五条证据、G2 额外注入图谱一跳子图（7 题上下文 313~438 字符）；
   mock 与 0.5B 均能跑通完整流水线，结果字段与 `docs/data_contract.md` 一致。
 - 0.5B 模型答案方向正确，但未稳定输出“《法规名》第X条”格式；
   引用准确率必须用正式 Qwen2.5-7B-Instruct 评测，不能以 0.5B 结果代替。
