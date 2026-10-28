@@ -8,6 +8,12 @@
 图谱覆盖 84.7% 法条。交付对照与待办见 `docs/r2_delivery.md`，
 语料与索引变更见 `CHANGELOG.md`。
 
+> **路线修订（2026-10-28，v2 规划中）**：按开题答辩反馈，项目范围收窄为
+> **湖南省·未经批准非法占用土地行政处罚**，以真实处罚决定书为核心新增案例层，
+> 建立“案件—法条—裁量”图谱与五步判断链。已完成的法规 RAG 工程全部保留。
+> 方案见 [`docs/route_v2_hunan_illegal_land.md`](docs/route_v2_hunan_illegal_land.md)，
+> 待组内确认后实施。
+
 ## 目录结构
 
 ```
@@ -17,7 +23,8 @@ data/v1/            raw/*.docx、meta/*.json、manifest.json、
                     index/（Chroma + BM25 + index_manifest.json）、graph/triples.jsonl
 data/eval/dev/      流程联调用小题集（非正式评测集，正式集由 R3 交付 data/eval/v1/）
 scripts/            reproduce.py（一键复现）
-docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）
+docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
+                    route_v2_hunan_illegal_land.md（答辩后 v2 路线与数据方案）
 CHANGELOG.md        语料/索引/图谱/流水线变更登记
 src/legal_rag/
   corpus/           FLK 客户端、docx 读取、按条解析、语料构建
