@@ -1,0 +1,23 @@
+{
+ "doc_id": "law-admin-penalty",
+ "catalog_title": "中华人民共和国行政处罚法",
+ "title": "中华人民共和国行政处罚法",
+ "level": "法律",
+ "domain": "行政程序",
+ "jurisdiction": "国家",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会",
+ "promulgation_date": "2021-01-22",
+ "effective_date": "2021-07-15",
+ "bbbs": "ff8080817703add20177373df6a43e33",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080817703add20177373df6a43e33",
+ "detail_file": "data/v2/meta/law-admin-penalty.json",
+ "raw_file": "data/v2/raw/law-admin-penalty.docx",
+ "sha256": "bb7696e614c35b21a6d4f9c962027fbe652ceae9d39b5104c3f07f254f444c68",
+ "bytes": 32952,
+ "flk_oss_word_path": "prod/20210122/f5da60b8f52c4485b562366f4ab4b5d7.docx",
+ "collected_at": "2026-10-31T13:49:31+08:00",
+ "collector_version": "1.0"
+}

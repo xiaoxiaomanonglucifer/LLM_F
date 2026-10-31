@@ -34,7 +34,7 @@ def collect(
     min_docs: int = 50,
 ) -> dict[str, Any]:
     cfg = load_settings()
-    catalog = load_catalog()
+    catalog = load_catalog(Path(cfg["paths"].get("catalog_file", "config/corpus_catalog.yaml")))
     paths = cfg["paths"]
     raw_dir = ensure_dir(Path(paths["raw_dir"]))
     meta_dir = ensure_dir(Path(paths["meta_dir"]))
@@ -87,6 +87,7 @@ def collect(
                 "title": hit.title,
                 "level": entry["level"],
                 "domain": entry["domain"],
+                "jurisdiction": entry.get("jurisdiction", ""),
                 "priority": entry.get("priority", "normal"),
                 "flxz": hit.flxz,
                 "status_code": hit.sxx,

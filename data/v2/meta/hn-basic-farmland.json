@@ -1,0 +1,23 @@
+{
+ "doc_id": "hn-basic-farmland",
+ "catalog_title": "湖南省基本农田保护条例",
+ "title": "湖南省基本农田保护条例",
+ "level": "地方性法规",
+ "domain": "土地管理",
+ "jurisdiction": "湖南",
+ "priority": "core",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "湖南省人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc6127779301612880e74f3a58",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc6127779301612880e74f3a58",
+ "detail_file": "data/v2/meta/hn-basic-farmland.json",
+ "raw_file": "data/v2/raw/hn-basic-farmland.docx",
+ "sha256": "9ef954971b7ae0f54d2e6da834482a4f66249c6452397bfaec9c33d22265d92d",
+ "bytes": 26266,
+ "flk_oss_word_path": "prod/19700101/6aa8dfd1da0d48249c4cd24b14b0798a.docx",
+ "collected_at": "2026-10-31T13:49:57+08:00",
+ "collector_version": "1.0"
+}

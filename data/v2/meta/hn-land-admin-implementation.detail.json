@@ -1,0 +1,48 @@
+{
+ "bbbs": "ff8081817f26b5f7017f29a5b8ea241e",
+ "ossFile": {
+  "ossWordPath": "prod/20220119/09c4317626864fa6ac56e6a1af001042.docx",
+  "ossWordOfdPath": "prod/20220119/09c4317626864fa6ac56e6a1af001042.ofd",
+  "ossWordOfdSize": 191331,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": null,
+ "xgzl": [
+  {
+   "fileId": "ff8081817f48d6f4017f6764688b0e9f",
+   "title": "湖南省第十三届人民代表大会第五次会议 公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff8081817f48f067017f676460c40ee3",
+   "title": "关于《湖南省实施_中华人民共和国土地管理法_办法（草案）》的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff8081817f48f067017f67645b4b0ee0",
+   "title": "湖南省第十三届人民代表大会法制委员会关于《湖南省实施_中华人民共和国土地管理法_办法（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "湖南省人民代表大会",
+ "gbrq": "2022-01-19",
+ "sxrq": "2022-03-01",
+ "title": "湖南省实施《中华人民共和国土地管理法》办法",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

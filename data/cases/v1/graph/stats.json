@@ -1,0 +1,38 @@
+{
+  "cases": 11,
+  "nodes": 30,
+  "edges": 180,
+  "by_behavior": {
+    "未经批准占用土地": 9,
+    "超过批准数量占用土地": 2
+  },
+  "by_land_group": {
+    "其他土地": 7,
+    "其他耕地": 5,
+    "永久基本农田": 2
+  },
+  "by_penalty": {
+    "没收": 9,
+    "罚款": 11,
+    "责令退还": 10,
+    "限期拆除": 3
+  },
+  "articles": 6,
+  "validation": {
+    "cases_with_issues": {
+      "hn-yongzhou-2025-7": [
+        "missing:land_use"
+      ],
+      "hn-yongzhou-2025-10": [
+        "missing:land_use"
+      ],
+      "hn-yongzhou-2025-9": [
+        "missing:land_use"
+      ],
+      "hn-yongzhou-2025-12": [
+        "missing:land_use"
+      ]
+    },
+    "clean_cases": 7
+  }
+}

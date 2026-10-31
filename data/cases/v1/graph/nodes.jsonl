@@ -1,0 +1,30 @@
+{"id": "article:hn-land-admin-implementation#a0055", "type": "Article", "label": "《湖南省实施《中华人民共和国土地管理法》办法》第五十五条", "props": {"article_id": "hn-land-admin-implementation#a0055", "article_num": 55, "cited_article_num": 55, "mapped_from_old_version": false, "role": "湖南裁量幅度"}}
+{"id": "article:law-admin-penalty#a0037", "type": "Article", "label": "《中华人民共和国行政处罚法》第三十七条", "props": {"article_id": "law-admin-penalty#a0037", "article_num": 37, "cited_article_num": 37, "mapped_from_old_version": false, "role": "从旧兼从轻"}}
+{"id": "article:law-land-admin#a0002", "type": "Article", "label": "《中华人民共和国土地管理法》第二条", "props": {"article_id": "law-land-admin#a0002", "article_num": 2, "cited_article_num": 2, "mapped_from_old_version": false, "role": "定性依据"}}
+{"id": "article:law-land-admin#a0044", "type": "Article", "label": "《中华人民共和国土地管理法》第四十四条", "props": {"article_id": "law-land-admin#a0044", "article_num": 44, "cited_article_num": 44, "mapped_from_old_version": false, "role": "定性依据"}}
+{"id": "article:law-land-admin#a0077", "type": "Article", "label": "《中华人民共和国土地管理法》第七十七条", "props": {"article_id": "law-land-admin#a0077", "article_num": 77, "cited_article_num": 77, "mapped_from_old_version": false, "role": "处罚依据"}}
+{"id": "article:reg-land-admin#a0057", "type": "Article", "label": "《中华人民共和国土地管理法实施条例》第五十七条", "props": {"article_id": "reg-land-admin#a0057", "article_num": 57, "cited_article_num": 57, "mapped_from_old_version": false, "role": "罚款幅度"}}
+{"id": "behavior:未经批准占用土地", "type": "Behavior", "label": "未经批准占用土地", "props": {}}
+{"id": "behavior:超过批准数量占用土地", "type": "Behavior", "label": "超过批准数量占用土地", "props": {}}
+{"id": "case:hn-jiangyong-2025-5", "type": "Case", "label": "江永自然资罚字[2025]5号", "props": {"case_id": "hn-jiangyong-2025-5", "region": "江永县", "agency": "江永县自然资源局", "decision_date": "2025-06-04", "scope_status": "included", "area_m2": 5941.25, "fine_amount": 89118.75}}
+{"id": "case:hn-qiyang-2025-4", "type": "Case", "label": "祁自资罚决〔2025〕4号", "props": {"case_id": "hn-qiyang-2025-4", "region": "祁阳市", "agency": "祁阳市自然资源局", "decision_date": "2025-04-25", "scope_status": "included", "area_m2": 1071.0, "fine_amount": 214200.0}}
+{"id": "case:hn-shaoyang-2023-13", "type": "Case", "label": "邵自资罚字(2023)13号", "props": {"case_id": "hn-shaoyang-2023-13", "region": "邵阳市", "agency": "邵阳市自然资源和规划局", "decision_date": "2023-10-16", "scope_status": "included", "area_m2": 1282.0, "fine_amount": 336700.0}}
+{"id": "case:hn-xiangxiang-2025-30", "type": "Case", "label": "湘自资罚字〔2025〕30号", "props": {"case_id": "hn-xiangxiang-2025-30", "region": "湘乡市", "agency": "湘乡市自然资源局", "decision_date": "2025-10-11", "scope_status": "included", "area_m2": 723.14, "fine_amount": 14462.8}}
+{"id": "case:hn-yongzhou-2025-10", "type": "Case", "label": "永自然资罚字〔2025〕10号", "props": {"case_id": "hn-yongzhou-2025-10", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-09-01", "scope_status": "included", "area_m2": 1126.14, "fine_amount": 225228.0}}
+{"id": "case:hn-yongzhou-2025-12", "type": "Case", "label": "永自然资罚字〔2025〕12号", "props": {"case_id": "hn-yongzhou-2025-12", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-10-20", "scope_status": "included", "area_m2": 4649.0, "fine_amount": 96516.32}}
+{"id": "case:hn-yongzhou-2025-5", "type": "Case", "label": "永自然资罚字〔2025〕5号", "props": {"case_id": "hn-yongzhou-2025-5", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-05-16", "scope_status": "included", "area_m2": 5186.0, "fine_amount": 1050400.0}}
+{"id": "case:hn-yongzhou-2025-6", "type": "Case", "label": "永自然资罚字〔2025〕6号", "props": {"case_id": "hn-yongzhou-2025-6", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-06-24", "scope_status": "included", "area_m2": 6625.0, "fine_amount": 2119484.0}}
+{"id": "case:hn-yongzhou-2025-7", "type": "Case", "label": "永自然资罚字〔2025〕7号", "props": {"case_id": "hn-yongzhou-2025-7", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-06-24", "scope_status": "included", "area_m2": 13070.5, "fine_amount": 2614100.0}}
+{"id": "case:hn-yongzhou-2025-8", "type": "Case", "label": "永自然资罚字〔2025〕8号", "props": {"case_id": "hn-yongzhou-2025-8", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-08-07", "scope_status": "included", "area_m2": 5257.51, "fine_amount": 1803234.5}}
+{"id": "case:hn-yongzhou-2025-9", "type": "Case", "label": "永自然资罚字〔2025〕9号", "props": {"case_id": "hn-yongzhou-2025-9", "region": "永州市", "agency": "永州市自然资源和规划局", "decision_date": "2025-09-01", "scope_status": "included", "area_m2": 2186.51, "fine_amount": 218651.0}}
+{"id": "factor:占用永久基本农田", "type": "Factor", "label": "占用永久基本农田", "props": {}}
+{"id": "factor:未造成严重后果", "type": "Factor", "label": "未造成严重后果", "props": {}}
+{"id": "factor:积极配合调查", "type": "Factor", "label": "积极配合调查", "props": {}}
+{"id": "land:其他土地", "type": "LandType", "label": "其他土地", "props": {}}
+{"id": "land:其他耕地", "type": "LandType", "label": "其他耕地", "props": {}}
+{"id": "land:永久基本农田", "type": "LandType", "label": "永久基本农田", "props": {}}
+{"id": "penalty:处分", "type": "PenaltyType", "label": "处分", "props": {}}
+{"id": "penalty:没收", "type": "PenaltyType", "label": "没收", "props": {}}
+{"id": "penalty:罚款", "type": "PenaltyType", "label": "罚款", "props": {}}
+{"id": "penalty:责令退还", "type": "PenaltyType", "label": "责令退还", "props": {}}
+{"id": "penalty:限期拆除", "type": "PenaltyType", "label": "限期拆除", "props": {}}

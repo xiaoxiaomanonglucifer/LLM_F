@@ -31,7 +31,13 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def load_settings(path: Path | None = None) -> dict[str, Any]:
-    cfg = load_yaml(path or DEFAULT_SETTINGS)
+    """加载配置；LEGAL_RAG_SETTINGS 可切换到 v2 等独立数据集。"""
+    chosen = path or os.environ.get("LEGAL_RAG_SETTINGS") or DEFAULT_SETTINGS
+    chosen = Path(chosen)
+    if not chosen.is_absolute():
+        chosen = REPO_ROOT / chosen
+    cfg = load_yaml(chosen)
+    cfg["_settings_file"] = str(chosen)
     # 把 paths 下的相对路径解析成绝对路径，避免依赖 cwd
     for key, value in list(cfg.get("paths", {}).items()):
         p = Path(value)

@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-10-31T14:22:13+08:00",
+ "cases_total": 11,
+ "included": 11,
+ "excluded": 0,
+ "duplicates": 0,
+ "by_region": {
+  "永州市": 7,
+  "江永县": 1,
+  "湘乡市": 1,
+  "祁阳市": 1,
+  "邵阳市": 1
+ },
+ "by_year": {
+  "2023": 1,
+  "2025": 10
+ },
+ "by_behavior": {
+  "未经批准占用土地": 9,
+  "超过批准数量占用土地": 2
+ },
+ "by_project_nature": {
+  "公益": 1,
+  "未知": 8,
+  "非公益": 2
+ },
+ "missing_fine": 0,
+ "missing_area": 0,
+ "missing_violated_articles": 0,
+ "missing_basis_articles": 0,
+ "warning_counts": {
+  "project_nature_unknown": 8,
+  "land_use_missing": 4,
+  "party_missing": 1
+ }
+}

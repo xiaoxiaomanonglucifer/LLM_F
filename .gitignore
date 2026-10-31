@@ -11,9 +11,11 @@ models/
 *.safetensors
 *.gguf
 
-# 索引与中间产物（可由 data/v1 重建）
+# 索引与中间产物（可由 data/v1、data/v2 重建）
 data/v1/index/chroma/
 data/v1/index/*.pkl
+data/v2/index/chroma/
+data/v2/index/*.pkl
 results/
 logs/*
 !logs/reproduce_*.json

@@ -55,6 +55,7 @@ def to_metadata(article: dict[str, Any]) -> dict[str, Any]:
         "law_title": article["law_title"],
         "level": article["level"],
         "domain": article["domain"],
+        "jurisdiction": article.get("jurisdiction", ""),
         "article_no": article["article_no"],
         "article_num": int(article["article_num"]),
         "citation": article["citation"],

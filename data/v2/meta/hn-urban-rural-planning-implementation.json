@@ -1,0 +1,23 @@
+{
+ "doc_id": "hn-urban-rural-planning-implementation",
+ "catalog_title": "湖南省实施《中华人民共和国城乡规划法》办法",
+ "title": "湖南省实施《中华人民共和国城乡规划法》办法",
+ "level": "地方性法规",
+ "domain": "国土空间规划",
+ "jurisdiction": "湖南",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "湖南省人民代表大会常务委员会",
+ "promulgation_date": "2015-12-04",
+ "effective_date": "2016-05-01",
+ "bbbs": "4028abcc6127779301612815a75f566a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc6127779301612815a75f566a",
+ "detail_file": "data/v2/meta/hn-urban-rural-planning-implementation.json",
+ "raw_file": "data/v2/raw/hn-urban-rural-planning-implementation.docx",
+ "sha256": "3fa815f8192b93bda317dd40d1add308d100ffc0f224b15d505db48e77b4e090",
+ "bytes": 34257,
+ "flk_oss_word_path": "prod/20151204/873c7fccf685447b912d5215f956220f.docx",
+ "collected_at": "2026-10-31T13:50:11+08:00",
+ "collector_version": "1.0"
+}

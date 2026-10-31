@@ -1,0 +1,23 @@
+{
+ "doc_id": "hn-land-supervision",
+ "catalog_title": "湖南省土地监察条例",
+ "title": "湖南省土地监察条例",
+ "level": "地方性法规",
+ "domain": "土地管理",
+ "jurisdiction": "湖南",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "湖南省人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc6127779301612880f67a3a61",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc6127779301612880f67a3a61",
+ "detail_file": "data/v2/meta/hn-land-supervision.json",
+ "raw_file": "data/v2/raw/hn-land-supervision.docx",
+ "sha256": "6fa0f869dd4c3e8d8a0841cb67b730ddc9f5f453b44cbc10d27ee1a7113c09c4",
+ "bytes": 27072,
+ "flk_oss_word_path": "prod/19700101/9e79997eaf17402493d6e7f4c4294280.docx",
+ "collected_at": "2026-10-31T13:50:02+08:00",
+ "collector_version": "1.0"
+}

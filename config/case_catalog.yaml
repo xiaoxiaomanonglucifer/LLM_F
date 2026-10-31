@@ -1,0 +1,62 @@
+# 湖南非法占地行政处罚案例来源（R2 维护）
+# 只收录公开的行政处罚决定书/台账；每次采集记录 URL、抓取时间与源文件 sha256。
+version: v1
+as_of: "2026-10-31"
+scope_note: >
+  仅纳入“未经批准占用土地 / 超过批准数量占用土地”及其临时用地、设施农用地子类；
+  未按批准用途使用国有土地、非法采矿、违法建设不纳入案例主集。
+
+sources:
+  - id: yz-2025-ledger
+    kind: ledger
+    region: 永州市
+    region_slug: yongzhou
+    agency: 永州市自然资源和规划局
+    portal: 永州市自然资源和规划局
+    url: https://gtzy.yzcity.gov.cn/gtzy/tjxx/202512/c329e05bca754b44b626c1cd1442e0d3.shtml
+    expected_cases: 7
+    enabled: true
+
+  - id: sy-2023-13
+    kind: decision
+    region: 邵阳市
+    region_slug: shaoyang
+    agency: 邵阳市自然资源和规划局
+    portal: 邵阳市自然资源和规划局
+    url: https://zrzy.shaoyang.gov.cn/sygtj/zrzyzf/202310/d0fff8e60e1e4b63920e40f95223cdd0.shtml
+    decision_no_hint: 邵自资罚字(2023)13号
+    expected_cases: 1
+    enabled: true
+
+  - id: jy-2025-5
+    kind: decision
+    region: 江永县
+    region_slug: jiangyong
+    agency: 江永县自然资源局
+    portal: 江永县人民政府
+    url: https://www.jiangyong.gov.cn/jyzrzyj/0300/202506/478ae5d045ec4f0a87e1aa8570a0ae8c.shtml
+    decision_no_hint: 江永自然资罚字[2025]5号
+    expected_cases: 1
+    enabled: true
+
+  - id: qy-2025-4
+    kind: decision
+    region: 祁阳市
+    region_slug: qiyang
+    agency: 祁阳市自然资源局
+    portal: 祁阳市人民政府
+    url: https://www.qy.gov.cn/qy/zrzyh/202505/bca7e8b0bb224430bebd73bb79c7d64f.shtml
+    decision_no_hint: 祁自资罚决〔2025〕4号
+    expected_cases: 1
+    enabled: true
+
+  - id: xx-2025-30
+    kind: decision
+    region: 湘乡市
+    region_slug: xiangxiang
+    agency: 湘乡市自然资源局
+    portal: 湘乡市人民政府
+    url: http://xxs.gov.cn/2994/22627/22636/content_1409443.html
+    decision_no_hint: 湘自资罚字〔2025〕30号
+    expected_cases: 1
+    enabled: true

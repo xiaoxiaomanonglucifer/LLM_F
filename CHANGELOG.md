@@ -3,6 +3,55 @@
 本文件记录 `data/v1/` 语料、索引、图谱与流水线的每次实质变更。任何新增/替换法规、
 重新切分、重建索引或修改检索/提示词配置，都必须在此登记（时间、原因、影响范围）。
 
+## v2 案例层实施 — 2026-10-31
+
+状态：v2 试点可运行；`data/v1/` 未改动。新增 `data/v2/` 与 `data/cases/v1/`，两者与 v1 隔离。
+
+### 1. v2 语料与索引（`settings_v2.yaml`）
+
+- 目录 `config/corpus_catalog_v2.yaml`：国家核心法 6 部 + 湖南地方立法 5 部，共 11 部。
+- 产出：`data/v2/articles.jsonl` 597 条、约 8.3 万字，结构告警 0；
+  每条新增 `jurisdiction`（national/hunan）。
+- 索引：`data/v2/index/`（hashing 512 维调试嵌入器 + BM25），
+  Chroma 597 条；`data/v2/graph/triples.jsonl` 559 条三元组、147 个实体。
+- **正式实验仍需 GPU 节点用 BGE-M3 重建**；本机调试索引不得作为正式数据。
+
+### 2. 案例层（`data/cases/v1/`）
+
+- 来源 5 个：永州 2025 台账（7 案）、邵阳 2023-13、江永 2025-5、祁阳 2025-4、湘乡 2025-30；
+  URL 与采集时间见 `manifest.json` 与 `config/case_catalog.yaml`。
+- 入库 11 案：9 案未经批准占用 + 2 案超过批准数量；`scope_status=included`。
+- 质检：7 案地类/金额完整；4 案台账只抽到总面积、地类缺失
+  （`hn-yongzhou-2025-7/9/10/12`），系统会要求补充地类而非臆造金额。
+- 旧条号映射：土地管理法 2004 第 76→77；实施条例 2014 第 42→57；
+  保留 `cited_article_num` 与 `mapped_from_old_version`。
+- 脱敏：个人姓名、手机号、身份证号掩码；单位名称保留。`raw/*.txt` 同步脱敏
+  （含法定代表人、联系人及证据清单中的第三人姓名），`text_sha256` 按脱敏后文本重算。
+- 案件图谱：`data/cases/v1/graph/` 30 节点、180 边，含 Neo4j Cypher 与逐案质检统计。
+
+### 3. 代码与实验
+
+- 新增 `src/legal_rag/cases/`：`extract.py`（解析/脱敏/条号映射）、`schema.py`（契约/校验）、
+  `build_case_graph.py`（案件图谱）、`retriever.py`（类案检索）、`case_qa.py`（五步问答）。
+- 新增 `src/legal_rag/pipeline/run_case_experiment.py`：
+  `G0/G1/G2/G2-case/G2-graph` 五组；输出确定性答案、五步中间结果、类案与引用。
+- G0 修复：不再引用条文、不检索类案、不计算罚款；G1 仅法条检索 + 固定法条链。
+- 类案防泄漏：`case_text` 默认不含罚款结果；`exclude_case_id` 排除查询案件自身；
+  类案总数按 `case_top_k` 封顶，图谱关联案排在直接命中之后。
+- 裁量：区分现行标准（2022 年起）与历史行为（2004/2021 等）；
+  历史行为不套用现行幅度，只给旧法条号与版本提示；地类未查全时不给罚款总额。
+- 评测题：`data/cases/v1/questions.jsonl` 17 题（11 案改写 + 6 边界题），
+  含 `exclude_case_id` 与结构化 expected。
+- 测试：新增 `tests/test_cases.py`，全仓 29 项 unittest 通过。
+- 本机 mock：`results/case-smoke-20261031-v2/` 五组 × 17 题，仅流程联调，未调用正式模型。
+  校验结果：G0 引用/类案/罚款均为 0；四组检索型实验 17/17 符合 expected。
+
+### 4. 已知限制
+
+- 案例 11 份，未达到 80–100 份目标；统计检验暂不做结论。
+- 本机 Chroma 为 hashing 调试嵌入器；Qwen2.5-7B-Instruct 未在本机正式运行。
+- 4 案缺地类；历史裁量金额需按行为时标准另行核定。
+
 ## v2 路线修订 — 2026-10-28（规划，未实施）
 
 依据 2026-10-27 开题答辩反馈修订研究边界，**不涉及 `data/v1/` 任何变更**：

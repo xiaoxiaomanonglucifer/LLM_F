@@ -1,0 +1,23 @@
+{
+ "doc_id": "reg-land-reclamation",
+ "catalog_title": "土地复垦条例",
+ "title": "土地复垦条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "jurisdiction": "国家",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-03-05",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40fb7e520f9f",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40fb7e520f9f",
+ "detail_file": "data/v2/meta/reg-land-reclamation.json",
+ "raw_file": "data/v2/raw/reg-land-reclamation.docx",
+ "sha256": "0823198b4f1af552833f2319ebaeaaf33f5160a1559f42fc487ded19fda9e53d",
+ "bytes": 26778,
+ "flk_oss_word_path": "prod/20110305/e50a1c0f12e64017bd5a939729b020cb.docx",
+ "collected_at": "2026-10-31T13:49:47+08:00",
+ "collector_version": "1.0"
+}
