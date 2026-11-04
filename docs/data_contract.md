@@ -41,14 +41,18 @@
 | subjects | str[] | 主体 |
 | actions | str[] | 行为 |
 | penalties | str[] | 处罚 |
-| method | str | `rule` 或 `llm` |
+| method | str | `rule` 或 `llm`；当前正式 `triples.jsonl` 为 `llm`（Qwen2.5-7B-Instruct） |
 | model | str | LLM 抽取时的模型名（规则为空） |
+| extracted_at | str | 抽取时间（ISO 8601，带时区） |
+
+规则抽取旧版归档为 `triples_rule.jsonl` / `triples_rule.stats.json`，仅作对照，不参与正式链路。
 
 图谱导出与导入校验：
 
 - `data/v1/graph/neo4j_import.cypher`：可导入 Neo4j 的 MERGE 语句；
 - `scripts/verify_graph_export.py --triples ... --cypher ...`：校验 triples 与 Cypher 一致；
-- 嵌入式 Neo4j 5.26 实际导入结果为 4,106 节点 / 25,648 关系；运行日志不随仓库分发。
+- 规则版图谱在嵌入式 Neo4j 5.26 的导入结果为 4,106 节点 / 25,648 关系；
+  LLM 版 Cypher 已通过 11 项结构校验，实际导入计数以部署机重新导入为准。
 
 ## 2. 评测集（R3 交付，R2 只读）
 
@@ -59,8 +63,8 @@
 | id | 是 | 题目唯一编号，如 `reg-001` |
 | category | 是 | 常规 / 边界 / 对抗 |
 | question | 是 | 提问原文 |
-| reference_answer | 建议 | 参考答案 |
-| reference_citations | 建议 | 条文引用数组，用于引用准确率与 Recall@N |
+| reference_answer | 正式集必填 | 参考答案（含条文依据） |
+| reference_citations | 正式集必填 | 条文引用数组，用于引用准确率与 Recall@N；需能映射到 `article_id` |
 
 当前仓库只有 `data/eval/dev/questions.jsonl`（7 题，联调用），正式集由 R3 交付。
 
@@ -78,7 +82,7 @@
 | refusal_rule_flag | 规则拒答标记，仅供参考；正式拒答指标由 R3 复核 |
 | evidence | 检索证据数组：article_id、citation、法律名、text、rrf 分数、各信号名次、graph 要素 |
 | graph_context | 仅 G2：拼入提示词的一跳子图谱文本 |
-| prompt_hash | 提示词 SHA256 前 16 位，用于核对三组模板一致 |
+| prompt_hash | 完整消息 SHA256 前 16 位；组间因上下文不同而不同，同题同组跨 repeat 应一致 |
 | prompt_version | 模板版本 |
 | decoding_params | 模型名、temperature、top_p、seed、max_tokens |
 | usage / latency_sec / wall_sec | 用量与耗时 |
@@ -97,4 +101,5 @@ generation_service（base_url/model/backend/quantization）。
 - `--resume` 依据 `question_id` 断点续跑；正式实验前清空或换新 `run_id`。
 - 正式数据必须满足：`index_manifest.embedding_model == 运行日志中的查询模型`，
   且 `run_meta.mock == false`。
-- `results/` 默认被 `.gitignore` 排除；跨机器交接需单独拷贝或按命令重跑。
+- `results/dev-server-v1/` 与 `results/repro-server-1/` 已随仓库提交；新 `run_id`
+  默认被 `.gitignore` 忽略；跨机器交接需单独拷贝或按命令重跑。

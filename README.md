@@ -7,7 +7,8 @@
 当前快照（v1，2026-10-27 冻结，2026-11-03 GPU 节点重建正式索引）：
 
 - 75 部现行有效法规、4,104 条、519,496 字；法律 29、行政法规 29、地方性法规 17。
-- 图谱覆盖 3,476 条法条（84.7%）；Neo4j 导入 4,106 节点 / 25,648 关系。
+- 图谱覆盖 3,694 条法条（90.0%，Qwen2.5-7B-Instruct 抽取）；Cypher 28,453 条语句，
+  11 项结构校验通过；规则抽取版归档为 `data/v1/graph/triples_rule.jsonl`。
 - 索引为 BGE-M3 1024 维、4,104 条，`embedding_model_debug=false`。
 - 仓库内只有 `data/eval/dev/questions.jsonl`（7 题，联调用）；正式评测集
   `data/eval/v1/questions.jsonl`（≥60 题）由 R3 交付，v1 正式主实验待跑。
@@ -22,9 +23,11 @@
 config/             settings.yaml（v1）、corpus_catalog.yaml
 data/v1/            冻结语料：raw/*.docx、meta/*.json、manifest.json、
                     documents.jsonl、articles.jsonl、corpus_stats.json、
-                    index/（Chroma + BM25 + index_manifest.json）、graph/triples.jsonl
+                    index/（Chroma + BM25 + index_manifest.json）、
+                    graph/triples.jsonl（LLM 抽取，正式）、triples_rule.jsonl（规则版归档）
 data/eval/dev/      流程联调用小题集（非正式评测集，正式集由 R3 交付 data/eval/v1/）
-results/            dev-server-v1（7 题 × 3 组 × 2 次）、repro-server-1（全流程复现）
+results/            dev-server-v1（规则图谱）、dev-llm-graph（当前 LLM 图谱）、
+                    repro-server-1（全流程复现）
 scripts/            reproduce.py（一键复现）、verify_graph_export.py（图谱导出校验）
 docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
                     r3_handoff.md（R3 评测交接）
@@ -54,8 +57,8 @@ $PY -m legal_rag.corpus.collect --min-docs 50
 # 2. 按条切分
 $PY -m legal_rag.corpus.build
 
-# 3. 三元组抽取（默认规则抽取；GPU 节点可用 --method llm）
-$PY -m legal_rag.graph.extract
+# 3. 三元组抽取（正式产物为 LLM 抽取；无模型服务时用 --method rule 生成对照版）
+$PY -m legal_rag.graph.extract --method llm --workers 4
 
 # 4. 构建索引（正式实验用 BGE-M3；本地无权重时用 --embedding-model 覆盖）
 $PY -m legal_rag.index.build_index
@@ -81,7 +84,8 @@ $PY scripts/reproduce.py --skip-collect --embedding-model hashing --mock --run-i
 ```
 
 > `data/v1/index/chroma/` 与 `data/v1/index/*.pkl` 默认不入库；新机器拉取后需按第 4 步
-> 重建索引。`results/` 默认被 `.gitignore` 排除，跨机器交接需单独拷贝或按第 5 步重跑。
+> 重建索引。`results/dev-server-v1/` 与 `results/repro-server-1/` 已随仓库提交；
+> 后续新产生的 `results/<run_id>/` 默认被 `.gitignore` 忽略。
 
 ## 实验归因控制（硬约束）
 
@@ -95,7 +99,7 @@ $PY scripts/reproduce.py --skip-collect --embedding-model hashing --mock --run-i
 
 ## 语料与合规
 
-- 来源：国家法律法规数据库（flk.npc.gov.cn）、自然资源部公开政策文本。
+- 来源：国家法律法规数据库（flk.npc.gov.cn）；自然资源部政策文本未纳入 v1。
 - 依据《著作权法》第五条，法律法规及国家机关行政性文件不适用著作权法，可自由复制、
   分发与加工。
 - 语料按 `data/v1/` 版本管理，任何变更写入 `CHANGELOG.md`（原因、时间、操作人）。

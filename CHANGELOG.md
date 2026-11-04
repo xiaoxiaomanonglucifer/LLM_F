@@ -3,6 +3,49 @@
 本文件记录 `data/v1/` 语料、索引、图谱与流水线的每次实质变更。任何新增/替换法规、
 重新切分、重建索引或修改检索/提示词配置，都必须在此登记（时间、原因、影响范围）。
 
+## v1 图谱切换为 LLM 抽取 — 2026-11-04
+
+状态：正式 `data/v1/graph/triples.jsonl` 已由规则抽取替换为
+`Qwen/Qwen2.5-7B-Instruct` 抽取；规则版归档保留，不参与正式链路。
+操作人：R2（GPU 节点执行）。
+
+### 1. 抽取与校验
+
+- 命令：`python -m legal_rag.graph.extract --method llm --workers 4 --resume`。
+- 模型服务：vLLM `Qwen/Qwen2.5-7B-Instruct`（AWQ int4），
+  temperature=0.1、top_p=0.9、seed=42；抽取输出上限 512 tokens。
+- 4,104 条处理结果：`llm_ok` 3,696、`llm_empty` 407、`rule_fallback` 1、`error` 0；
+  正式记录 3,694 条，覆盖 90.01%，涉及全部 75 部法规。
+- 原文回验：主体、行为全部可在条文中逐字匹配（0 例外）；处罚按 16 类规范化，
+  70/801 条规范名不逐字出现（`吊销许可证` 42、`行政处分` 26、`追究刑事责任` 2），
+  来源为“吊销资质证书/营业执照”“给予处分”等表述。
+- 规则兜底仅 1 条：`law-desertification#a0011`（`method=rule`）。
+- 规则版归档：`triples_rule.jsonl`（3,476 条 / 84.7%，630 实体）与
+  `triples_rule.stats.json`；官方文件为 LLM 版。
+
+### 2. 图谱产物
+
+- `data/v1/graph/triples.jsonl`：3,694 条，sha256 `3b131ede…`；
+  类型化实体 4,757 个（主体 1,409、行为 3,281、处罚 67）。
+- `data/v1/graph/triples.stats.json`：记录抽取状态、覆盖率、实体数与关系数。
+- `data/v1/graph/neo4j_import.cypher`：28,453 条语句，sha256 `d6adfc0b…`；
+  预期 8,451 节点 / 24,755 关系（APPLIES_TO 4,578、REGULATES 6,164、
+  PENALTY 801、RELATED_TO 13,212）。
+- `scripts/verify_graph_export.py` 结构校验 11 项 0 失败。
+- 本节点无 Java/Neo4j，**未重新执行实际导入**；上一版规则图谱的
+  4,106 节点 / 25,648 关系仅作历史记录。部署机导入新 Cypher 后可跑 21 项校验。
+
+### 3. 兼容性影响
+
+- `dev-server-v1` 与 `repro-server-1` 的 G2 结果基于规则图谱，不能与 LLM 图谱结果
+  直接比较；正式 `main-v1` 必须使用当前 `triples.jsonl` 重新运行。
+- 新增 `results/dev-llm-graph/`：7 题 × 3 组 × 1 次（BGE-M3 + Qwen2.5-7B-Instruct），
+  G2 7/7 注入图谱上下文、答案含规范引用 7/7；仍为 dev 链路，不得进入正式结果表。
+- 单题 G2 冒烟已通过（3,694 条三元组、4,736 个跨类型去重实体），图谱上下文正常拼入；
+  单题排序变化不作为实验结论，G2 增益由 R3 在 v1 题库上评估。
+- `graph.extract` 的 stats 新增 `model/coverage/实体数/关系数` 字段；
+  `export_neo4j` 修复 `--triples` 传相对路径时的 `relative_to` 报错。
+
 ## 项目收敛为 v1 主线 — 2026-11-04
 
 状态：仓库只保留 v1 全国国土资源法规 RAG；v1 语料、索引、图谱与结果未改动。
@@ -61,7 +104,7 @@
 ## R2 收尾：Neo4j 导出修复与导入校验 — 2026-11-03
 
 状态：v1 图谱 Cypher 已修复并用 Neo4j 5.26.0 嵌入式实例实际导入；在线 Docker 服务未启动。
-操作人：R2。
+操作人：R2。本节计数均属规则版图谱（历史），不适用于 2026-11-04 的 LLM 版。
 
 ### 1. 修复
 
@@ -148,14 +191,16 @@
 - **正式实验必须重建**：2026-11-03 已在 GPU 节点用 BGE-M3（1024 维）重建；
   debug 索引仅用于流程联调，不得与正式结果混用（运行时会打印警告）。
 
-### 4. 图谱（graph 1.0，规则抽取）
+### 4. 图谱（graph 1.0，规则抽取；已被 2026-11-04 LLM 版替换）
 
-- 抽取结果：`data/v1/graph/triples.jsonl`，覆盖 3,476/4,104 条（84.7%）；
+- 抽取结果：当时的 `data/v1/graph/triples.jsonl`（现归档为 `triples_rule.jsonl`），
+  覆盖 3,476/4,104 条（84.7%）；
   实体 630 个（主体 29、行为 35、处罚 566）；含主体法条 1,627 条、含处罚法条 512 条。
 - 图谱结构：Article—APPLIES_TO→Subject、REGULATES→Action、PENALTY→Penalty；
   G2 检索使用实体命中 + 一跳子图（共享实体 ≥2 才加邻接分）。
-- Neo4j 导入脚本：`data/v1/graph/neo4j_import.cypher`（当前 29,128 条语句，含
-  2026-11-03 的转义与稳定排序修复）。导入命令见 `docs/r2_delivery.md`。
+- Neo4j 导入脚本：`data/v1/graph/neo4j_import.cypher`（当时 29,128 条语句，含
+  2026-11-03 的转义与稳定排序修复；2026-11-04 已替换为 LLM 版 28,453 条）。
+  导入命令见 `docs/r2_delivery.md`。
 
 ### 5. 检索-生成流水线（pipeline 1.0，prompt 1.0）
 

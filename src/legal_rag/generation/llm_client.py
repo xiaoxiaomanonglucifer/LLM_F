@@ -9,7 +9,7 @@ import re
 import time
 from typing import Any
 
-from ..graph.schema import Triple
+from ..graph.schema import Triple, sanitize_llm_triple
 
 
 class LLMError(RuntimeError):
@@ -80,9 +80,18 @@ class LLMClient:
 
     def extract_triple(self, article: dict[str, Any]) -> Triple | None:
         prompt = (
-            "请从下面法条中抽取知识图谱三元组，只输出一个 JSON 对象，不要解释。\n"
+            "请从下面法条中抽取知识图谱要素，只输出一个 JSON 对象，不要解释。\n"
             '格式：{"subjects":["主体"],"actions":["行为"],"penalties":["处罚"]}\n'
-            "字段无内容时用空数组。\n\n"
+            "要求：\n"
+            "- subjects：原文中实施行为或承担责任的机关、组织、单位、个人；"
+            "必须是主体，不得填对象、条件、时间、法规名称或行为名称。\n"
+            "- actions：原文规定的核心行为或措施；去掉“不得/应当/可以”等情态词，"
+            "只保留动词或动宾短语，每个不超过 10 个字。\n"
+            "- penalties：逐项检查罚款、责令、拆除、没收、吊销、处分、刑事责任等；"
+            "只保留原文明确写出的处罚，使用简短短语，可分项提取；"
+            "不要把“不得……”等禁止性规定当处罚。\n"
+            "- 只抽取原文明确写出的内容，不推测；没有的字段用空数组；"
+            "数组去重，最多 8 个；禁止把示例词当作答案。\n\n"
             f"法条：{article['citation']}\n{article['text']}"
         )
         result = self.chat(
@@ -90,32 +99,44 @@ class LLMClient:
                 {"role": "system", "content": "你是法律文本信息抽取器，只输出合法 JSON。"},
                 {"role": "user", "content": prompt},
             ],
-            max_tokens=400,
+            max_tokens=512,
         )
         data = _parse_json_object(result["text"])
         if data is None:
             return None
-        return Triple(
-            article_id=article["article_id"],
-            citation=article["citation"],
-            law_title=article["law_title"],
-            subjects=[str(x) for x in data.get("subjects", [])][:8],
-            actions=[str(x) for x in data.get("actions", [])][:8],
-            penalties=[str(x) for x in data.get("penalties", [])][:8],
-            method="llm",
-            model=self.model,
-        )
+        return sanitize_llm_triple(article, data, self.model)
 
 
 def _parse_json_object(text: str) -> dict[str, Any] | None:
     match = re.search(r"\{.*\}", text, re.S)
     if not match:
         return None
-    try:
-        data = json.loads(match.group(0))
-    except json.JSONDecodeError:
-        return None
-    return data if isinstance(data, dict) else None
+    raw = match.group(0)
+    cleaned = re.sub(r',\s*""\s*(?=\})', "", raw)
+    cleaned = re.sub(r",\s*(?=\})", "", cleaned)
+    cleaned = re.sub(r",\s*(?=\])", "", cleaned)
+    for candidate in (raw, cleaned):
+        try:
+            data = json.loads(candidate)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(data, dict):
+            return data
+
+    # 兜底：模型偶尔输出非法尾缀，按字段抢救三个数组
+    data: dict[str, Any] = {}
+    found = False
+    for key in ("subjects", "actions", "penalties"):
+        field = re.search(rf'"{key}"\s*:\s*\[(.*?)\]', raw, re.S)
+        if field is None:
+            continue
+        values = [
+            value.replace('\\"', '"')
+            for value in re.findall(r'"((?:\\.|[^"\\])*)"', field.group(1))
+        ]
+        data[key] = values
+        found = True
+    return data if found else None
 
 
 class MockLLMClient:

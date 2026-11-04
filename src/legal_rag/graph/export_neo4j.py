@@ -109,8 +109,12 @@ def main() -> None:
 
     out_path = Path(args.out or (Path(cfg["paths"]["graph_dir"]) / "neo4j_import.cypher"))
     ensure_dir(out_path.parent)
+    try:
+        source_label = triples_path.resolve().relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        source_label = str(triples_path)
     header = (
-        f"// generated from {triples_path.relative_to(REPO_ROOT).as_posix()}\n"
+        f"// generated from {source_label}\n"
         f"// triples={len(triples)} statements={len(statements)}\n"
         "// 执行：cypher-shell -f neo4j_import.cypher 或在 Neo4j Browser 中逐段运行\n"
     )

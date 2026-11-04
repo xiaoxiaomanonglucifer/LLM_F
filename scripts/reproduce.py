@@ -1,8 +1,9 @@
 """一键复现脚本：采集 -> 切分 -> 三元组 -> 索引 -> 测试 -> 联调实验。
 
 用法：
-  python scripts/reproduce.py --embedding-model hashing --mock
-  python scripts/reproduce.py --skip-collect --embedding-model models/bge-small-zh-v1.5
+  python scripts/reproduce.py --embedding-model hashing --mock   # 离线链路，图谱用规则版
+  python scripts/reproduce.py --skip-collect --embedding-model BAAI/bge-m3  # 正式，图谱用 LLM
+  python scripts/reproduce.py --skip-collect --skip-extract --embedding-model BAAI/bge-m3
 """
 from __future__ import annotations
 
@@ -21,7 +22,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 def main() -> None:
     parser = argparse.ArgumentParser(description="R2 全流程一键复现")
     parser.add_argument("--skip-collect", action="store_true", help="跳过联网采集，复用 data/v1/raw")
+    parser.add_argument("--skip-extract", action="store_true", help="跳过三元组抽取，复用现有图谱")
     parser.add_argument("--skip-index", action="store_true", help="跳过索引重建")
+    parser.add_argument("--extract-method", choices=["rule", "llm"], default=None,
+                        help="图谱抽取方式；默认 mock 用 rule，正式用 llm")
     parser.add_argument("--embedding-model", default=None)
     parser.add_argument("--mock", action="store_true", help="实验阶段使用模拟生成器")
     parser.add_argument("--run-id", default=None)
@@ -38,7 +42,12 @@ def main() -> None:
     if not args.skip_collect:
         steps.append(("collect", [sys.executable, "-m", "legal_rag.corpus.collect", "--min-docs", "50"]))
     steps.append(("build_corpus", [sys.executable, "-m", "legal_rag.corpus.build"]))
-    steps.append(("extract_triples", [sys.executable, "-m", "legal_rag.graph.extract"]))
+    if not args.skip_extract:
+        method = args.extract_method or ("rule" if args.mock else "llm")
+        extract_cmd = [sys.executable, "-m", "legal_rag.graph.extract", "--method", method]
+        if method == "llm":
+            extract_cmd += ["--workers", "4"]
+        steps.append(("extract_triples", extract_cmd))
     if not args.skip_index:
         cmd = [sys.executable, "-m", "legal_rag.index.build_index"]
         if args.embedding_model:

@@ -1,0 +1,15 @@
+{
+ "articles_total": 4104,
+ "triples": 3476,
+ "coverage": 0.847,
+ "method": "rule",
+ "out": "/data_disk/tjh/zp/LLM_FIN/data/v1/graph/triples_rule.jsonl",
+ "subjects": 29,
+ "actions": 35,
+ "penalties": 566,
+ "entities_total": 630,
+ "rel_APPLIES_TO": 2064,
+ "rel_REGULATES": 6282,
+ "rel_PENALTY": 1025,
+ "note": "2026-11-04 archived; superseded by LLM triples.jsonl"
+}
