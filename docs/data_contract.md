@@ -2,6 +2,8 @@
 
 所有接口文件均为 UTF-8 JSONL，一行一条记录；字段新增向后兼容，删除/改名需升版本并写入 CHANGELOG。
 
+> R3 的完整交接包、结果字段用法、指标口径与已知缺口见 `docs/r3_handoff.md`。
+
 ## 1. 语料（R2 交付）
 
 ### data/v1/articles.jsonl（按条切分）
@@ -133,6 +135,11 @@ v2 使用 `LEGAL_RAG_SETTINGS=config/settings_v2.yaml`，只含国家核心法 +
 `mapped_from_old_version`。当前规则：土地管理法 2004 版第 76 条 → 现行第 77 条；
 实施条例 2014 版第 42 条 → 现行第 57 条。
 
+> `policy_citations` 记录裁量基准等政策文件标题，但 `湘自资规〔2022〕1号` 当前未进入
+> `data/v2/articles.jsonl`，其罚款档位由 `cases/schema.py` 维护。R3 计算引用准确率时
+> 应把政策文件作为外部依据单独统计，不能仅因不在法条库中就判为编造；
+> 详见 `docs/r3_handoff.md` 第 4.1 节。
+
 ### 5.3 案件图谱 `data/cases/v1/graph/`
 
 | 文件 | 说明 |
@@ -156,7 +163,8 @@ v2 使用 `LEGAL_RAG_SETTINGS=config/settings_v2.yaml`，只含国家核心法 +
 | expected | 是 | 结构化核对项：`scope_status/behavior/land_groups/area_m2/fine_range/partial_fine_range/needs_land_type/current_standard_applied/version_note_contains/required_citations/required_text/actual_fine` |
 
 当前 17 题：11 题由试点案例改写，6 题为边界题（排除情形、临时用地、设施农用地、
-不符合规划、公益项目、性质未知）。
+不符合规划、公益项目、性质未知）。R3 扩题时保持同一字段契约，新题库建议放入
+`data/cases/v2/questions.jsonl` 等新版本目录，不覆盖试点 17 题。
 
 ### 5.5 案例实验结果 `results/<run_id>/<group>_r<repeat>.jsonl`
 
@@ -170,7 +178,8 @@ v2 使用 `LEGAL_RAG_SETTINGS=config/settings_v2.yaml`，只含国家核心法 +
 | confidence | high / medium / low |
 | steps | `facts/characterization/law_application/discretion/conclusion` 五步中间结果 |
 | similar_cases | 相似案例（含 `case_id/decision_no/score/reasons/fine_amount/fine_rate`） |
-| citations | 引用条文串 |
+| citations | 引用对象数组：`article_id/citation/score/ranks/role/source`；`score` 与 `ranks` 来自检索命中，法条链引用为 null/空；G0 为空数组（2.1 起） |
+| citation_strings | 引用条文串数组，供按 citation 精确匹配的评测脚本使用 |
 | prompt_hash / prompt_version / decoding_params | 提示词与解码快照 |
 | usage / latency_sec / wall_sec | 用量与耗时 |
 

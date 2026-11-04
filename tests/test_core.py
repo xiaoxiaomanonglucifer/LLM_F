@@ -11,6 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from legal_rag.corpus.article_parser import cn_to_int, parse_law  # noqa: E402
+from legal_rag.graph.export_neo4j import build_statements  # noqa: E402
 from legal_rag.graph.index import GraphIndex  # noqa: E402
 from legal_rag.index.bm25 import Bm25Index, tokenize  # noqa: E402
 from legal_rag.pipeline.qa import is_refusal  # noqa: E402
@@ -104,6 +105,35 @@ class TestGraphIndex(unittest.TestCase):
         graph = GraphIndex(self.TRIPLES)
         ranked = graph.search(["完全无关的查询"], top_k=3, seed_ids=["a1"])
         self.assertIn("a2", ranked)
+
+    def test_adjacency_ties_are_sorted(self):
+        graph = GraphIndex(self.TRIPLES)
+        for neighbours in graph.adjacency.values():
+            expected = sorted(neighbours, key=lambda item: (-item[1], item[0]))
+            self.assertEqual(neighbours, expected)
+
+
+class TestGraphExport(unittest.TestCase):
+    def test_newline_in_penalty_is_escaped(self):
+        triples = [{
+            "article_id": "a1",
+            "citation": "《测试法》第一条",
+            "law_title": "测试法",
+            "subjects": [],
+            "actions": [],
+            "penalties": ["责令改正\n并处罚款"],
+        }]
+        statements = build_statements(triples, {}, with_related=False)
+        joined = "\n".join(statements)
+        self.assertIn("责令改正\\n并处罚款", joined)
+        self.assertNotIn("责令改正\n并处罚款", joined)
+
+    def test_export_is_deterministic(self):
+        triples = TestGraphIndex.TRIPLES
+        graph = GraphIndex(triples)
+        first = build_statements(triples, graph.adjacency, with_related=True)
+        second = build_statements(triples, graph.adjacency, with_related=True)
+        self.assertEqual(first, second)
 
 
 class TestQueryRewrite(unittest.TestCase):

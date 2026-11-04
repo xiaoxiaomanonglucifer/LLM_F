@@ -36,14 +36,16 @@ class GraphIndex:
                 self.entity_articles[entity].add(article_id)
                 self.entity_df[entity] += 1
                 # 共享同一实体的法条互为邻居，权重为共享实体数
-                for other in self.entity_articles[entity]:
+                for other in sorted(self.entity_articles[entity]):
                     if other != article_id:
                         adjacency[article_id][other] += 1
                         adjacency[other][article_id] += 1
 
-        # 每个法条只保留共享实体最多的 20 个邻居，控制子图规模
+        # 每个法条只保留共享实体最多的 20 个邻居；同分按 article_id 排序，
+        # 避免 Python 哈希随机化导致图上下文与 Cypher 导出不可复现。
         self.adjacency: dict[str, list[tuple[str, int]]] = {
-            aid: counter.most_common(20) for aid, counter in adjacency.items()
+            aid: sorted(counter.items(), key=lambda item: (-item[1], item[0]))[:20]
+            for aid, counter in adjacency.items()
         }
 
     @classmethod
@@ -72,7 +74,7 @@ class GraphIndex:
             idf = math.log((total + 1) / (self.entity_df[entity] + 1)) + 1.0
             # 实体越长信息量越大（如“县级以上人民政府自然资源主管部门”）
             weight = idf * min(len(entity), 10) / 5.0
-            for article_id in article_ids:
+            for article_id in sorted(article_ids):
                 scores[article_id] += weight
 
         # 一跳子图：优先从实体命中的法条出发，只取共享 ≥2 个实体的邻居；

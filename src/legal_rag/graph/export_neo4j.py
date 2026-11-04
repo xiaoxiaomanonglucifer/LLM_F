@@ -16,7 +16,15 @@ from .index import GraphIndex
 
 
 def _q(text: str) -> str:
-    return "'" + str(text).replace("\\", "\\\\").replace("'", "\\'") + "'"
+    escaped = (
+        str(text)
+        .replace("\\", "\\\\")
+        .replace("'", "\\'")
+        .replace("\r", "\\r")
+        .replace("\n", "\\n")
+        .replace("\t", "\\t")
+    )
+    return "'" + escaped + "'"
 
 
 def build_statements(triples: list[dict], adjacency: dict[str, list[str]], with_related: bool) -> list[str]:

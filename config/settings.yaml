@@ -26,7 +26,7 @@ embedding:
   model: BAAI/bge-m3
   batch_size: 16
   normalize: true
-  device: cpu
+  device: cuda
   max_seq_length: 512
 
 vector_store:
@@ -50,9 +50,12 @@ retrieval:
 
 generation:
   # Ollama 的 OpenAI 兼容端点；GPU 节点换成 vLLM 的 /v1 地址即可
-  base_url: http://127.0.0.1:11434/v1
-  api_key: ollama
-  model: qwen2.5:7b-instruct
+  base_url: http://127.0.0.1:8000/v1
+  api_key: not-needed
+  model: Qwen/Qwen2.5-7B-Instruct
+  backend: vllm
+  # 共享 GPU 显存不足，服务加载 Qwen2.5-7B-Instruct-AWQ（int4）；留空表示 bf16 原权重
+  quantization: awq-int4
   temperature: 0.1
   top_p: 0.9
   seed: 42

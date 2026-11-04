@@ -180,6 +180,10 @@ def run(
         "questions_count": len(questions),
         "prompt_version": PROMPT_VERSION,
         "decoding_params": llm.decoding_params,
+        "generation_service": {
+            key: cfg["generation"].get(key)
+            for key in ("base_url", "model", "backend", "quantization")
+        },
         "retrieval": {
             "top_k": cfg["retrieval"]["top_k"],
             "candidate_k": cfg["retrieval"]["candidate_k"],

@@ -20,6 +20,7 @@ results/
 logs/*
 !logs/reproduce_*.json
 !logs/reproduce_*.log
+!logs/neo4j_import_*.json
 _extract/
 deploy/neo4j/data/
 deploy/neo4j/logs/
@@ -29,3 +30,6 @@ deploy/neo4j/import/
 .env
 .env.*
 !.env.example
+
+# 本机工具链（JDK/Maven/Neo4j 验证，不入库）
+.runtime/

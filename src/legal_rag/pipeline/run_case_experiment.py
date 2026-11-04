@@ -31,6 +31,30 @@ def _case_graph_path(cfg: dict[str, Any]) -> Path:
     return Path(cfg["paths"]["cases_dir"]) / "graph" / "edges.jsonl"
 
 
+def _citation_details(result: dict[str, Any]) -> list[dict[str, Any]]:
+    law = result["steps"]["law_application"]
+    retrieved = {item["article_id"]: item for item in law.get("retrieved", [])}
+    details: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in law.get("evidence", []):
+        article_id = item.get("article_id")
+        if not article_id or article_id in seen:
+            continue
+        seen.add(article_id)
+        hit = retrieved.get(article_id, {})
+        details.append(
+            {
+                "article_id": article_id,
+                "citation": item.get("citation", ""),
+                "score": hit.get("score"),
+                "ranks": hit.get("ranks") or {},
+                "role": item.get("role"),
+                "source": item.get("source"),
+            }
+        )
+    return details
+
+
 def _build_case_runtime(
     cfg: dict[str, Any], groups: list[str], embedding_model: str | None = None
 ):
@@ -112,6 +136,10 @@ def run(
         "questions_count": len(questions),
         "prompt_version": CASE_PROMPT_VERSION,
         "decoding_params": llm.decoding_params,
+        "generation_service": {
+            key: cfg["generation"].get(key)
+            for key in ("base_url", "model", "backend", "quantization")
+        },
         "case_count": len(case_retriever.case_ids),
         "case_graph": case_graph.stats(),
         "retrieval": {
@@ -148,6 +176,7 @@ def run(
                         group,
                         exclude_case_id=item.get("exclude_case_id") or item.get("case_id"),
                     )
+                    citation_details = _citation_details(result)
                     record = {
                         "question_id": item["id"],
                         "category": item.get("category"),
@@ -159,7 +188,8 @@ def run(
                         "confidence": result["confidence"],
                         "steps": result["steps"],
                         "similar_cases": result["similar_cases"],
-                        "citations": result["citations"],
+                        "citations": citation_details,
+                        "citation_strings": result["citations"],
                         "prompt_hash": result.get("prompt_hash"),
                         "prompt_version": CASE_PROMPT_VERSION,
                         "decoding_params": llm.decoding_params,

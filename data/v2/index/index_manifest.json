@@ -1,21 +1,21 @@
 {
  "index_version": "1.0",
- "built_at": "2026-10-31T13:50:34+08:00",
+ "built_at": "2026-11-03T18:03:05+08:00",
  "articles_file": "data/v2/articles.jsonl",
- "articles_sha256": "666a31d816ad487d3976ea3b26bbebf6ce48a128f32b89315d62e2b83d23067c",
+ "articles_sha256": "6c52e7ea3fbd7914a4be628e05b00ee879c6b0824089a34f8d9e3c5c75b1e768",
  "article_count": 597,
- "embedding_model": "hashing",
- "embedding_model_debug": true,
- "embedding_dim": 512,
+ "embedding_model": "BAAI/bge-m3",
+ "embedding_model_debug": false,
+ "embedding_dim": 1024,
  "embedding_normalized": true,
  "embedding_max_seq_length": 512,
- "device": "cpu",
+ "device": "cuda",
  "vector_store": {
   "provider": "chroma",
   "collection": "legal_articles_hn_v2",
   "distance": "cosine",
-  "path": "C:\\Users\\ASUS\\AppData\\Local\\legal_rag\\chroma\\860000b492",
-  "configured_path": "E:\\演绎\\LLM\\大作业\\data\\v2\\index\\chroma"
+  "path": "/data_disk/tjh/zp/LLM_FIN/data/v2/index/chroma",
+  "configured_path": "/data_disk/tjh/zp/LLM_FIN/data/v2/index/chroma"
  },
  "bm25": {
   "k1": 1.5,
@@ -23,5 +23,5 @@
   "char_bigram": true
  },
  "debug_limit": null,
- "elapsed_sec": 6.7
+ "elapsed_sec": 19.4
 }

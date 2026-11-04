@@ -311,23 +311,26 @@
 | 模块 | 状态 | 产物 |
 |---|---|---|
 | v2 配置与语料 | 完成 | `config/settings_v2.yaml`、`config/corpus_catalog_v2.yaml`；`data/v2/` 11 部、597 条 |
-| v2 索引与法条图谱 | 完成（调试嵌入器） | `data/v2/index/`、`data/v2/graph/` 559 条三元组 |
+| v2 索引与法条图谱 | 完成（BGE-M3 1024 维） | `data/v2/index/`、`data/v2/graph/` 559 条三元组 + Neo4j Cypher |
 | 案例采集与解析 | 完成试点 | `data/cases/v1/cases.jsonl` 11 案；`raw/` 脱敏原文、`manifest.json`、`stats.json` |
 | 案件图谱 | 完成 | `data/cases/v1/graph/` 30 节点、180 边；行为/地类/条款索引 |
 | 相似案例检索 | 完成 | BM25 + 行为/地类/项目性质/面积结构化打分；默认不读罚款结果 |
 | 五步案件问答 | 完成 | `src/legal_rag/cases/case_qa.py`：事实→定性→法条→裁量→结论 |
 | 案件实验执行器 | 完成 | `python -m legal_rag.pipeline.run_case_experiment`；G0/G1/G2/G2-case/G2-graph |
 | 案件评测题 | 完成试点 | `data/cases/v1/questions.jsonl` 17 题（11 案改写 + 6 边界题） |
-| 单元测试 | 完成 | `tests/test_cases.py`；全仓 29 项 unittest 通过 |
+| 单元测试 | 完成 | `tests/test_cases.py`；全仓 32 项 unittest 通过（试点时为 29 项） |
 
 当前限制（如实写入交付说明）：
 
 - 案例仍是 11 份试点，未达到 80–100 份；统计检验暂不做结论。
-- 本机索引为 `hashing` 调试嵌入器，正式实验必须在 GPU 节点用 BGE-M3 重建；
-  本机 mock 结果只验证流程，不作为论文数据。
-- Qwen2.5-7B-Instruct 尚未在本机正式跑；`run_meta.mock=true` 的结果不得进入正式表格。
+- GPU 节点已于 2026-11-03 用 BGE-M3 重建 v2 索引并完成 `case-main-v1`；
+  本机 `hashing` + mock 结果只验证流程，不作为论文数据。
+- Qwen2.5-7B-Instruct 已于 2026-11-03 在 GPU 节点运行（AWQ int4，`mock=false`）；
+  `dev-server-v1` 是 v1 dev 集对照，不是正式结果。
 - 4 份永州台账案例只抽到总面积、未抽到地类，系统会明确要求补充地类，不臆造金额。
 - 2004/2021 等历史行为只给出旧法条号与“不套用现行幅度”的提示，历史裁量金额需按行为时标准另行核定。
+- `湘自资规〔2022〕1号` 的罚款档位目前硬编码在 `cases/schema.py`，尚未作为可检索文档进入
+  `data/v2/articles.jsonl`；R3 做引用准确率时需按外部政策依据单独处理，详见 `docs/r3_handoff.md`。
 
 ## 附录：已核实的公开来源（样例）
 

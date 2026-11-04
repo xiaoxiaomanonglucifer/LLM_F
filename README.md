@@ -9,9 +9,12 @@
 - **v2（2026-10-31，试点）**：范围收窄为**湖南省·非法占地行政处罚**；
   `data/v2/` 11 部国家核心法 + 湖南地方立法、597 条；`data/cases/v1/` 11 份公开处罚决定书；
   案件图谱 30 节点/180 边；17 道案件评测题；G0/G1/G2/G2-case/G2-graph 五组流水线打通。
-  正式实验仍需在 GPU 节点用 BGE-M3 + Qwen2.5-7B-Instruct 重跑。
+  2026-11-03 已在 GPU 节点用 BGE-M3 + Qwen2.5-7B-Instruct（AWQ int4）完成
+  `case-main-v1`（5 组 × 17 题，当前校验器 774 项检查 0 失败）。正式评测集（≥60 题）
+  与 2 次重复仍待 R3/R1 交付，当前结果不能直接支撑 H1 统计结论。
 
-交付对照与待办见 `docs/r2_delivery.md`，语料与索引变更见 `CHANGELOG.md`。
+交付对照与待办见 `docs/r2_delivery.md`，R3 交接见
+[`docs/r3_handoff.md`](docs/r3_handoff.md)，语料与索引变更见 `CHANGELOG.md`。
 v2 路线、已确认边界与当前限制见
 [`docs/route_v2_hunan_illegal_land.md`](docs/route_v2_hunan_illegal_land.md)。
 
@@ -30,6 +33,7 @@ data/cases/v1/      案例层：cases.jsonl、raw/*.txt、manifest.json、stats.
 data/eval/dev/      流程联调用小题集（非正式评测集，正式集由 R3 交付 data/eval/v1/）
 scripts/            reproduce.py（一键复现）
 docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
+                    r3_handoff.md（R3 评测交接）、
                     route_v2_hunan_illegal_land.md（答辩后 v2 路线、决策与实施状态）
 CHANGELOG.md        语料/索引/图谱/流水线变更登记
 src/legal_rag/
@@ -49,7 +53,8 @@ tests/              标准库 unittest（含 v2 案例层测试）
 ```bash
 # 0. 环境（本机复用已有 venv；新机器按 requirements.txt 安装）
 export PYTHONPATH=src
-PY="E:/演绎/LLM/第二次作业/rag_home/.venv/Scripts/python.exe"
+PY="<你的 Python 解释器>"
+# GPU 节点示例：PY=/data_disk/tjh/conda_envs/LLM_F/bin/python
 
 # 1. 采集法规（支持断点续跑；已有 raw+meta 的会跳过）
 $PY -m legal_rag.corpus.collect --min-docs 50
@@ -82,6 +87,9 @@ $PY -m legal_rag.cases.build_case_graph       # 重建案件图谱与 Cypher
 $PY -m legal_rag.pipeline.run_case_experiment \
   --groups G0,G1,G2,G2-case,G2-graph --mock --run-id case-smoke
 # 正式跑：去掉 --mock，确认索引清单为 BGE-M3 且模型服务已启动
+
+# 5c. v2 单题五步问答（输出 facts/characterization/law_application/discretion/conclusion）
+$PY -m legal_rag.pipeline.ask_case "未经批准占用永久基本农田建厂房会怎么罚" --group G2
 
 # 6. 测试
 $PY -m unittest discover -s tests -v
