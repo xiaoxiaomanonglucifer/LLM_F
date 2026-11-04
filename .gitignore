@@ -11,11 +11,9 @@ models/
 *.safetensors
 *.gguf
 
-# 索引与中间产物（可由 data/v1、data/v2 重建）
+# 索引与中间产物（可由 data/v1 重建）
 data/v1/index/chroma/
 data/v1/index/*.pkl
-data/v2/index/chroma/
-data/v2/index/*.pkl
 results/
 logs/*
 !logs/reproduce_*.json
@@ -33,3 +31,7 @@ deploy/neo4j/import/
 
 # 本机工具链（JDK/Maven/Neo4j 验证，不入库）
 .runtime/
+
+# 开题报告与本地归档（不公开/不入库）
+大模型开题报告-*.docx
+*.tar.gz

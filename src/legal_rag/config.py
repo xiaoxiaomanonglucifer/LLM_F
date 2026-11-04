@@ -31,7 +31,7 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def load_settings(path: Path | None = None) -> dict[str, Any]:
-    """加载配置；LEGAL_RAG_SETTINGS 可切换到 v2 等独立数据集。"""
+    """加载配置；LEGAL_RAG_SETTINGS 可指定其他配置文件。"""
     chosen = path or os.environ.get("LEGAL_RAG_SETTINGS") or DEFAULT_SETTINGS
     chosen = Path(chosen)
     if not chosen.is_absolute():
