@@ -12,10 +12,9 @@
 - 仓库内只有 `data/eval/dev/questions.jsonl`（7 题，联调用）；正式评测集
   `data/eval/v1/questions.jsonl`（≥60 题）由 R3 交付，v1 正式主实验待跑。
 
-交付对照与待办见 `docs/r2_delivery.md`，R3 交接见
-[`docs/r3_handoff.md`](docs/r3_handoff.md)，演示操作见
-[`docs/demo_manual.md`](docs/demo_manual.md)，GPU → CPU 拉取与演示交接见
-[`docs/handoff_gpu_to_cpu.md`](docs/handoff_gpu_to_cpu.md)，语料与索引变更见 `CHANGELOG.md`。
+交付对照见 `docs/r2_delivery.md`，R3 评测交接见
+[`docs/r3_handoff.md`](docs/r3_handoff.md)，接口字段见
+[`docs/data_contract.md`](docs/data_contract.md)，语料与索引变更见 `CHANGELOG.md`。
 
 ## 目录结构
 
@@ -28,9 +27,7 @@ data/eval/dev/      流程联调用小题集（非正式评测集，正式集由
 results/            dev-server-v1（7 题 × 3 组 × 2 次）、repro-server-1（全流程复现）
 scripts/            reproduce.py（一键复现）、verify_graph_export.py（图谱导出校验）
 docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
-                    r3_handoff.md（R3 评测交接）、demo_manual.md（演示操作手册）、
-                    handoff_gpu_to_cpu.md（GPU → CPU 演示交接）、
-                    handoff_gpu_server.md（GPU 节点复现手册）
+                    r3_handoff.md（R3 评测交接）
 CHANGELOG.md        语料/索引/图谱/流水线变更登记
 src/legal_rag/
   corpus/           FLK 客户端、docx 读取、按条解析、语料构建

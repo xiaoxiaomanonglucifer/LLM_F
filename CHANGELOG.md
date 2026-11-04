@@ -8,8 +8,9 @@
 状态：仓库只保留 v1 全国国土资源法规 RAG；v1 语料、索引、图谱与结果未改动。
 
 - 移除 v1 之外的数据线、案例层及其代码、脚本、测试、结果和文档，避免依赖已不存在的路径。
-- `README.md`、`docs/r2_delivery.md`、`docs/r3_handoff.md`、`docs/handoff_gpu_server.md`、
-  `docs/handoff_gpu_to_cpu.md`、`docs/demo_manual.md`、`docs/data_contract.md` 同步收敛为 v1 口径。
+- `README.md`、`docs/r2_delivery.md`、`docs/r3_handoff.md`、`docs/data_contract.md` 同步收敛为 v1 口径。
+- 删除 `logs/` 与 `docs/demo_manual.md`、`docs/handoff_gpu_server.md`、`docs/handoff_gpu_to_cpu.md`：
+  R3 交接只需要接口契约、交付说明与评测交接，运行日志和演示/部署手册不随仓库分发。
 - 当前单元测试 14 项通过；v1 索引清单仍为 BGE-M3 / 1024 维 / 4,104 条。
 
 ## GPU 节点正式运行 — 2026-11-03
@@ -48,9 +49,8 @@
 ### 4. 一键复现留档（repro-server-1）
 
 - `python scripts/reproduce.py --skip-collect --embedding-model BAAI/bge-m3
-  --run-id repro-server-1`：5/5 步成功，211.3s；当时 29 项单测 OK；日志
-  `logs/reproduce_20261103-184956.{json,log}`。
-- 结果保留在 `results/repro-server-1/` 与 `logs/`；归档压缩包已随 v1 收敛移除。
+  --run-id repro-server-1`：5/5 步成功，211.3s；当时 29 项单测 OK。
+- 结果保留在 `results/repro-server-1/`；运行日志不随仓库分发。
 
 ### 5. 已知限制
 
@@ -86,7 +86,7 @@
   25,648 关系（APPLIES_TO 2,064 / REGULATES 6,282 / PENALTY 1,025 / RELATED_TO 16,277），
   导入 166.9s。
 - `scripts/verify_graph_export.py` 对 triples/Cypher/DB 计数做 21 项校验，0 失败；
-  结果 `logs/neo4j_import_v1.json`。
+  导入日志不随仓库分发。
 
 ### 4. 边界
 
@@ -170,8 +170,7 @@
 
 - 单元测试：`python -m unittest discover -s tests` → 14 项通过。
 - 一键复现：`scripts/reproduce.py --skip-collect --embedding-model hashing --mock
-  --run-id repro-local-1` → 5 步全部 ok，总耗时 14.2s；
-  记录 `logs/reproduce_20261027-184739.json` / `.log`。
+  --run-id repro-local-1` → 5 步全部 ok，总耗时 14.2s（运行日志默认忽略，不入库）。
 - 联调实验：
   - `results/dev-mock/`：7 题 × G0/G1/G2，模拟生成器，验证证据注入与分组隔离。
   - `results/dev-llm-0.5b/`：2 题真实生成（Ollama qwen2.5:0.5b），答案方向正确，
@@ -191,4 +190,4 @@ $PY scripts/reproduce.py --skip-collect --embedding-model hashing --mock --run-i
 $PY scripts/reproduce.py --embedding-model <BGE-M3 路径> --run-id full-v1
 ```
 
-产物写入 `logs/reproduce_<时间戳>.json|log`；任一步失败脚本以退出码 1 结束。
+本地日志默认写入 `logs/`（已 gitignore，不随仓库分发）；任一步失败脚本以退出码 1 结束。

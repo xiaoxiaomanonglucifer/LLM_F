@@ -15,10 +15,7 @@ models/
 data/v1/index/chroma/
 data/v1/index/*.pkl
 results/
-logs/*
-!logs/reproduce_*.json
-!logs/reproduce_*.log
-!logs/neo4j_import_*.json
+logs/
 _extract/
 deploy/neo4j/data/
 deploy/neo4j/logs/

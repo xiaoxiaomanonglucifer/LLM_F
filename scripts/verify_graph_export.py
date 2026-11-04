@@ -6,7 +6,7 @@
     --cypher data/v1/graph/neo4j_import.cypher
 
   # 校验嵌入式 / 在线 Neo4j 的计数（原样导入 JSON 或本脚本留档 JSON 均可）
-  python scripts/verify_graph_export.py ... --db-counts logs/neo4j_import_v1.json
+  python scripts/verify_graph_export.py ... --db-counts db_counts.json
 
   NEO4J_PASSWORD=... python scripts/verify_graph_export.py ... \
     --neo4j-uri bolt://127.0.0.1:7687 --neo4j-user neo4j

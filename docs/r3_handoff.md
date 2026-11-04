@@ -34,9 +34,9 @@
 | v1 索引清单 | `data/v1/index/index_manifest.json` | BGE-M3 / 1024 / 4,104 | `a9eef9d9…e362` |
 | v1 三元组 | `data/v1/graph/triples.jsonl` | 3,476 条法条 / 630 实体 | `539ff727…` |
 | v1 图谱 Cypher | `data/v1/graph/neo4j_import.cypher` | 29,128 条语句 | `6df843e2…` |
-| Neo4j 导入校验 | `logs/neo4j_import_v1.json` | 4,106 节点 / 25,648 关系 | 21 项校验 0 失败 |
+| Neo4j 导入校验 | 嵌入式 Neo4j 5.26 实例（日志不随仓库分发） | 4,106 节点 / 25,648 关系 | 21 项校验 0 失败 |
 | dev 对照结果 | `results/dev-server-v1/` | 7 题 × 3 组 × 2 次 = 42 条 | **非正式**，只用于链路联调 |
-| 全流程复现 | `results/repro-server-1/`、`logs/reproduce_20261103-184956.{json,log}` | 5/5 步 / 211.3s | 当时 29 项测试；当前 14 项 |
+| 全流程复现 | `results/repro-server-1/` | 5/5 步 / 211.3s | 当时 29 项测试；当前 14 项 |
 | 接口契约 | `docs/data_contract.md` | — | 字段以该文件为准 |
 | 图谱校验 | `scripts/verify_graph_export.py` | — | 对比 triples/Cypher/DB 计数 |
 | 一键复现 | `scripts/reproduce.py` | — | 采集→切分→图谱→索引→测试→dev 实验 |
@@ -169,8 +169,7 @@ $PY -m unittest discover -s tests          # 当前 14 项
 ```bash
 $PY scripts/verify_graph_export.py \
   --triples data/v1/graph/triples.jsonl \
-  --cypher data/v1/graph/neo4j_import.cypher \
-  --db-counts logs/neo4j_import_v1.json
+  --cypher data/v1/graph/neo4j_import.cypher
 ```
 
 ### 6.3 跑 v1 正式题库（需 vLLM 服务）

@@ -15,10 +15,10 @@
 | 1 | 法规语料采集与版本化 | 完成 | `config/corpus_catalog.yaml`、`data/v1/manifest.json`、`data/v1/raw/`、`data/v1/meta/`、`CHANGELOG.md` |
 | 2 | 按条切分语料 | 完成 | `src/legal_rag/corpus/article_parser.py`、`data/v1/articles.jsonl`（4,104 条） |
 | 3 | BGE-M3 向量化 + Chroma 构建 | 完成（2026-11-03 GPU 节点） | 4,104 条，BGE-M3 1024 维；`data/v1/index/index_manifest.json` |
-| 4 | Neo4j 图谱构建 | 完成（Cypher + 嵌入式 Neo4j 实际导入校验） | 29,128 条语句；`scripts/verify_graph_export.py`；`logs/neo4j_import_v1.json` |
+| 4 | Neo4j 图谱构建 | 完成（Cypher + 嵌入式 Neo4j 实际导入校验） | 29,128 条语句；`scripts/verify_graph_export.py`；导入 4,106 节点 / 25,648 关系 |
 | 5 | 检索-生成流水线 | 完成并联调 | `src/legal_rag/retrieval/`、`pipeline/`、`generation/`；G0/G1/G2 |
 | 6 | 推理服务部署 | 完成（vLLM + AWQ int4） | OpenAI 兼容客户端，`base_url=http://127.0.0.1:8000/v1`，`Qwen/Qwen2.5-7B-Instruct` |
-| 7 | 可复现运行脚本 | 完成 | `scripts/reproduce.py`；GPU 节点记录 `logs/reproduce_20261103-184956.json` |
+| 7 | 可复现运行脚本 | 完成 | `scripts/reproduce.py`；GPU 节点结果 `results/repro-server-1/` |
 | 8 | Git 提交记录 | 完成 | 具体提交号见 `git log` |
 | 9 | 全流程重跑记录 | GPU 节点复现完成 | `repro-server-1`（5/5 步，211.3s）、`dev-server-v1` |
 | 10 | 语料变更登记 | 完成 | `CHANGELOG.md`（含 12 部缺失清单与哈希变化说明） |
@@ -96,13 +96,13 @@ $PY -m legal_rag.pipeline.ask "村里盖房子占了农用地要办什么手续"
    $PY scripts/reproduce.py --skip-collect --embedding-model BAAI/bge-m3 --run-id repro-server-1
    ```
 
-   5/5 步成功（当时 29 项单测；当前 14 项），211.3s；日志
-   `logs/reproduce_20261103-184956.{json,log}`。
+   5/5 步成功（当时 29 项单测；当前 14 项），211.3s；结果保留在
+   `results/repro-server-1/`，运行日志不随仓库分发。
 
 5. **Neo4j 图谱与导入校验**：v1 Cypher 已重新生成（29,128 条语句），
    并用 Neo4j 5.26.0 嵌入式实例实际导入：
    4,106 节点 / 25,648 关系；`scripts/verify_graph_export.py` 对 triples/Cypher/DB
-   计数做 21 项校验，全部通过（`logs/neo4j_import_v1.json`）。Docker 在线服务因当前
+   计数做 21 项校验，全部通过。Docker 在线服务因当前
    节点无 `docker` 组权限未启动；演示环境仍按 `deploy/neo4j` 的 compose 启动，
    密码只从 `NEO4J_PASSWORD` 读取。
 

@@ -48,7 +48,7 @@
 
 - `data/v1/graph/neo4j_import.cypher`：可导入 Neo4j 的 MERGE 语句；
 - `scripts/verify_graph_export.py --triples ... --cypher ...`：校验 triples 与 Cypher 一致；
-- `logs/neo4j_import_v1.json`：嵌入式 Neo4j 5.26 的实际导入计数与校验结果。
+- 嵌入式 Neo4j 5.26 实际导入结果为 4,106 节点 / 25,648 关系；运行日志不随仓库分发。
 
 ## 2. 评测集（R3 交付，R2 只读）
 
