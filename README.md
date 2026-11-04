@@ -14,7 +14,8 @@
   与 2 次重复仍待 R3/R1 交付，当前结果不能直接支撑 H1 统计结论。
 
 交付对照与待办见 `docs/r2_delivery.md`，R3 交接见
-[`docs/r3_handoff.md`](docs/r3_handoff.md)，语料与索引变更见 `CHANGELOG.md`。
+[`docs/r3_handoff.md`](docs/r3_handoff.md)，演示操作见
+[`docs/demo_manual.md`](docs/demo_manual.md)，语料与索引变更见 `CHANGELOG.md`。
 v2 路线、已确认边界与当前限制见
 [`docs/route_v2_hunan_illegal_land.md`](docs/route_v2_hunan_illegal_land.md)。
 
@@ -31,9 +32,9 @@ data/v2/            v2 语料：11 部国家核心法 + 湖南地方立法、597
 data/cases/v1/      案例层：cases.jsonl、raw/*.txt、manifest.json、stats.json、
                     graph/（节点/边/三元组/Cypher）、questions.jsonl
 data/eval/dev/      流程联调用小题集（非正式评测集，正式集由 R3 交付 data/eval/v1/）
-scripts/            reproduce.py（一键复现）
+scripts/            reproduce.py（一键复现）、demo_replay.py（无 GPU 离线回放）
 docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
-                    r3_handoff.md（R3 评测交接）、
+                    r3_handoff.md（R3 评测交接）、demo_manual.md（演示操作手册）、
                     route_v2_hunan_illegal_land.md（答辩后 v2 路线、决策与实施状态）
 CHANGELOG.md        语料/索引/图谱/流水线变更登记
 src/legal_rag/
