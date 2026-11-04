@@ -25,7 +25,7 @@
 | 5 | 检索-生成流水线 | 完成并联调 | `src/legal_rag/retrieval/`、`pipeline/`、`generation/`；G0/G1/G2 |
 | 6 | 推理服务部署 | 完成（vLLM + AWQ int4） | OpenAI 兼容客户端，`base_url=http://127.0.0.1:8000/v1`，`Qwen/Qwen2.5-7B-Instruct` |
 | 7 | 可复现运行脚本 | 完成 | `scripts/reproduce.py`；GPU 节点记录 `logs/reproduce_20261103-184956.json` |
-| 8 | Git 提交记录 | 部分完成（当前工作区待提交） | 初始提交 `fac7de4` 等历史记录已存在；本轮 R3 交接相关修改尚未提交，交付前需形成固定 commit |
+| 8 | Git 提交记录 | 已完成 | 交付提交 `75422c4`；历史提交 `fac7de4`、`a985187`、`d3908a6`、`980da77` |
 | 9 | 全流程重跑记录 | GPU 节点复现完成 | `repro-server-1`（5/5 步，211.3s）、`case-main-v1`、`dev-server-v1` |
 | 10 | 语料变更登记 | 完成 | `CHANGELOG.md`（v1，含 12 部缺失清单） |
 

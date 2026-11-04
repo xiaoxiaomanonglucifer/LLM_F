@@ -66,8 +66,8 @@ Neo4j 图谱构建；检索-生成流水线实现与推理服务部署。
 | 8 | 推理服务部署 | 已完成 | vLLM 0.6.3.post1 + Qwen2.5-7B-Instruct AWQ int4，OpenAI 兼容端点；`run_meta.generation_service` 留痕 | 共享 GPU 显存限制导致 int4 量化，需在报告中如实说明 |
 | 9 | 可复现运行脚本 | 已完成 | `scripts/reproduce.py`（采集→切分→三元组→索引→单测→dev 实验）；`scripts/validate_case_results.py`；`scripts/verify_graph_export.py` | 脚本已更新，需重跑一次留下与当前代码一致的记录 |
 | 10 | 全流程重跑记录 | 部分完成 | `logs/reproduce_20261103-184956.{json,log}`：5/5 步成功、211.3s、BGE-M3 非 mock；`repro-server-1` | 该次记录仍写 29 项单测，当前为 32 项；且在图谱排序/转义修复之后未再重跑 |
-| 11 | Git 提交记录 | 部分完成 | 已有初始提交 `fac7de4`、v2 路线 `a985187`、交付文档 `d3908a6`、v2 案例层 `980da77` | 当前工作区有大量未提交修改与新文件（含本轮图谱校验、案例校验、文档） |
-| 12 | 变更登记与接口契约 | 已完成 | `CHANGELOG.md`、`docs/data_contract.md`、`docs/r2_delivery.md` | 文档中的测试数、GPU 状态、“待跑”表述需统一刷新 |
+| 11 | Git 提交记录 | 已完成 | 初始提交 `fac7de4`、v2 路线 `a985187`、交付文档 `d3908a6`、v2 案例层 `980da77`、R3 交接 `75422c4` | `results-server.tar.gz` 与开题报告 docx 为本地未跟踪文件，按约定不入库 |
+| 12 | 变更登记与接口契约 | 已完成 | `CHANGELOG.md`、`docs/data_contract.md`、`docs/r2_delivery.md`、`docs/r3_handoff.md` | 无（测试数、GPU 状态已统一刷新） |
 
 ## 3. 已完成的关键节点
 
@@ -117,14 +117,15 @@ Neo4j 图谱构建；检索-生成流水线实现与推理服务部署。
 - v1 在本轮 `reproduce.py` 中被重写，补齐了 `jurisdiction` 字段并更新了时间戳。
   条数、条文文本、三元组集合未变，但 `articles_sha256` 已变化（`03d3e2ee…`）。
   这是既成事实，需在 CHANGELOG 和报告中说明；后续不得再就地改 v1。
-- 当前工作区未提交。Git 提交记录本身是 R2 的交付物之一，不能只留在本地。
+- 已形成交付提交 `75422c4`；此后仅剩 `results-server.tar.gz` 与开题报告 docx 两个
+  本地未跟踪文件，Git 提交记录本身是 R2 的交付物之一。
 
 ### 4.5 文档时效
 
 - 本轮（2026-11-03 R3 交接准备）已刷新 README、`handoff_gpu_server.md`、
   `r2_delivery.md` 与 `route_v2_hunan_illegal_land.md` 中的 GPU 状态与测试数；
   `handoff_gpu_server.md` 已改为 32 项，`r2_delivery.md` 已区分 29 项（当时）与 32 项（收尾后）。
-- 当前工作区仍未形成固定 commit；这是交付 R3 前最后一个必须由组长确认的动作。
+- 已形成交付提交 `75422c4`；后续文档若再改动，追加小提交而非改写该基线。
 
 ## 5. 后续怎么做
 
@@ -132,9 +133,9 @@ Neo4j 图谱构建；检索-生成流水线实现与推理服务部署。
 
 | 序号 | 任务 | 具体动作 | 验收标准 |
 |---|---|---|---|
-| P0-1 | 提交当前工作区 | 逐项审查 `git status`，提交源码、测试、脚本、文档、CHANGELOG、正式日志；`results-server.tar.gz` 与权重/索引不入库 | `git status` 干净；提交信息说明本轮修复与交付 |
+| P0-1 | 提交当前工作区 | 逐项审查 `git status`，提交源码、测试、脚本、文档、CHANGELOG、正式日志；`results-server.tar.gz` 与权重/索引不入库 | 已完成，交接提交 `75422c4` |
 | P0-2 | 重跑一键复现 | 在 GPU 节点执行 `python scripts/reproduce.py --skip-collect --embedding-model BAAI/bge-m3 --run-id repro-server-2` | 5/5 步成功；单测为 32 项；新日志写入 `logs/` |
-| P0-3 | 刷新文档 | 统一 README、`r2_delivery.md`、`handoff_gpu_server.md`、CHANGELOG 中的测试数、GPU 状态、复现记录 | 文档数字与当前代码/日志一致 |
+| P0-3 | 刷新文档 | 统一 README、`r2_delivery.md`、`handoff_gpu_server.md`、CHANGELOG 中的测试数、GPU 状态、复现记录 | 已完成，见 `75422c4` 及后续文档提交 |
 | P0-4 | 确认评测主线 | 与 R1/R3 明确：期末以 v1 全领域为主，还是以 v2 湖南案例为主；两者评测集口径不同，不能混算 | 形成一句结论并写入 CHANGELOG/周会记录 |
 | P0-5 | 准备正式重跑环境 | 确认 vLLM 服务、BGE-M3、索引 manifest、固定解码参数；确认 `mock=false` | `run_meta` 可复现，无调试嵌入器警告 |
 
@@ -174,7 +175,7 @@ Neo4j 图谱构建；检索-生成流水线实现与推理服务部署。
 
 ## 6. R2 验收清单
 
-- [ ] 工作区已提交，`git status` 干净；无权重、索引缓存、密钥、`.env` 入库。
+- [x] 工作区已提交（`75422c4`），仅剩 `results-server.tar.gz` 与开题报告 docx 两个约定不入库文件；无权重、索引缓存、密钥、`.env` 入库。
 - [ ] `python -m unittest discover -s tests` 通过（当前 32 项）。
 - [ ] `reproduce.py` 以 BGE-M3 非 mock 重跑成功，日志与当前代码一致。
 - [ ] v1/v2 图谱 `verify_graph_export.py` 各 21 项校验 0 失败。
