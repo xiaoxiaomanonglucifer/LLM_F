@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff541ea01a0ae8472293d0a",
+ "catalog_title": "城镇排水与污水处理条例",
+ "title": "城镇排水与污水处理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-08-08",
+ "effective_date": "2026-08-15",
+ "bbbs": "ff8081819ff541ea01a0ae8472293d0a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff541ea01a0ae8472293d0a",
+ "detail_file": "data/v1/meta/n-ff8081819ff541ea01a0ae8472293d0a.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff541ea01a0ae8472293d0a.docx",
+ "sha256": "8055f9ba5c854221c3f6d7d511e79bcf60099b58922ad2f107ee388ef9e4aa0b",
+ "bytes": 24323,
+ "flk_oss_word_path": "prod/20260808/030d8df00a3a4f7285a0a01abb3d156d.docx",
+ "collected_at": "2026-11-05T09:07:15+08:00",
+ "collector_version": "1.0"
+}

@@ -4,14 +4,21 @@
 法规语料采集与版本化 → 按条切分 → 向量/关键词/图谱索引 → 混合检索 →
 带条文引用的生成 → G0/G1/G2 对照实验输出。
 
-当前快照（v1，2026-10-27 冻结，2026-11-03 GPU 节点重建正式索引）：
+当前语料版本为 **v1**（2026-11-05 建成）：
 
-- 75 部现行有效法规、4,104 条、519,496 字；法律 29、行政法规 29、地方性法规 17。
-- 图谱覆盖 3,694 条法条（90.0%，Qwen2.5-7B-Instruct 抽取）；Cypher 28,453 条语句，
-  11 项结构校验通过；规则抽取版归档为 `data/v1/graph/triples_rule.jsonl`。
-- 索引为 BGE-M3 1024 维、4,104 条，`embedding_model_debug=false`。
+- 178 部现行有效法规、10,069 条、1,273,548 字；法律 52、行政法规 86、地方性法规 40。
+  其中全国性法规 138 部（8,241 条）、云南省地方性法规 15 部（764 条）、
+  昆明市地方性法规 25 部（1,064 条）。
+- 索引为 BGE-M3 1024 维、10,069 条，`embedding_model_debug=false`，
+  集合 `legal_articles_v1`。
+- 图谱为 `Qwen/Qwen2.5-7B-Instruct` LLM 抽取，正式文件
+  `data/v1/graph/triples.jsonl`：8,943 条三元组（覆盖 88.82%），
+  10,737 个实体（主体 3,198、行为 7,406、处罚 133）；Cypher 68,707 条语句，
+  11 项结构校验 0 失败，规则兜底 3 条。
 - 仓库内只有 `data/eval/dev/questions.jsonl`（7 题，联调用）；正式评测集
-  `data/eval/v1/questions.jsonl`（≥60 题）由 R3 交付，v1 正式主实验待跑。
+  `data/eval/v1/questions.jsonl`（≥60 题）由 R3 交付，正式主实验待跑。
+- 原 75 部 / 4,104 条旧快照及其索引、图谱、结果已于 2026-11-05 删除，
+  当前 `data/v1/` 即唯一交付版本。
 
 交付对照见 `docs/r2_delivery.md`，R3 评测交接见
 [`docs/r3_handoff.md`](docs/r3_handoff.md)，接口字段见
@@ -20,14 +27,12 @@
 ## 目录结构
 
 ```
-config/             settings.yaml（v1）、corpus_catalog.yaml
-data/v1/            冻结语料：raw/*.docx、meta/*.json、manifest.json、
+config/             settings.yaml（当前配置）、corpus_catalog.yaml（178 部目录）
+data/v1/            v1 语料：raw/*.docx、meta/*.json、manifest.json、
                     documents.jsonl、articles.jsonl、corpus_stats.json、
-                    index/（Chroma + BM25 + index_manifest.json）、
-                    graph/triples.jsonl（LLM 抽取，正式）、triples_rule.jsonl（规则版归档）
+                    index/（Chroma + BM25 + manifest）、graph/triples.jsonl（LLM 抽取）
 data/eval/dev/      流程联调用小题集（非正式评测集，正式集由 R3 交付 data/eval/v1/）
-results/            dev-server-v1（规则图谱）、dev-llm-graph（当前 LLM 图谱）、
-                    repro-server-1（全流程复现）
+results/            本机 dev 冒烟：dev-v1-smoke（mock）、dev-v1-llm（真实生成，未入库）
 scripts/            reproduce.py（一键复现）、verify_graph_export.py（图谱导出校验）
 docs/               data_contract.md（接口契约）、r2_delivery.md（R2 交付说明）、
                     r3_handoff.md（R3 评测交接）
@@ -48,17 +53,19 @@ tests/              标准库 unittest（14 项）
 ```bash
 # 0. 环境（本机复用已有 venv；新机器按 requirements.txt 安装）
 export PYTHONPATH=src
+export LEGAL_RAG_SETTINGS=config/settings.yaml
 PY="<你的 Python 解释器>"
 # GPU 节点示例：PY=/data_disk/tjh/conda_envs/LLM_F/bin/python
 
 # 1. 采集法规（支持断点续跑；已有 raw+meta 的会跳过）
-$PY -m legal_rag.corpus.collect --min-docs 50
+$PY -m legal_rag.corpus.collect --min-docs 178
 
 # 2. 按条切分
 $PY -m legal_rag.corpus.build
 
 # 3. 三元组抽取（正式产物为 LLM 抽取；无模型服务时用 --method rule 生成对照版）
-$PY -m legal_rag.graph.extract --method llm --workers 4
+$PY -m legal_rag.graph.extract --method llm --workers 4 \
+  --out data/v1/graph/triples.jsonl
 
 # 4. 构建索引（正式实验用 BGE-M3；本地无权重时用 --embedding-model 覆盖）
 $PY -m legal_rag.index.build_index
@@ -76,34 +83,40 @@ $PY -m legal_rag.pipeline.run_experiment \
 # 6. 单题问答（G0 无检索；G1 稠密 + BM25；G2 再加图谱）
 $PY -m legal_rag.pipeline.ask "村里盖房子占了农用地要办什么手续" --group G2 --show-evidence
 
-# 7. 测试
-$PY -m unittest discover -s tests -v
+# 7. 测试（tests/ 无 __init__.py，需从 tests/ 目录运行）
+cd tests && PYTHONPATH=../src $PY test_core.py && cd ..
 
 # 8. 一键复现（采集可选跳过，自动跑切分/图谱/索引/测试/dev 实验）
 $PY scripts/reproduce.py --skip-collect --embedding-model hashing --mock --run-id repro-local-1
 ```
 
-> `data/v1/index/chroma/` 与 `data/v1/index/*.pkl` 默认不入库；新机器拉取后需按第 4 步
-> 重建索引。`results/dev-server-v1/` 与 `results/repro-server-1/` 已随仓库提交；
-> 后续新产生的 `results/<run_id>/` 默认被 `.gitignore` 忽略。
+> `data/v1/index/chroma/`、`data/v1/index/*.pkl` 与 `*.progress.jsonl` 默认不入库；
+> 新机器拉取后需按第 4 步重建索引。
+> 图谱抽取默认写 `triples_llm.jsonl`，正式化时用 `--out` 指定
+> `data/v1/graph/triples.jsonl`（本仓库已按此生成正式文件）。
+> 无外网时，加载已缓存的 BGE-M3 需设置 `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1`。
 
 ## 实验归因控制（硬约束）
 
 - G0/G1/G2 使用**同一生成器、同一解码参数、同一提示词模板**，唯一变量是检索信号：
   G0 无检索；G1 稠密 + BM25；G2 稠密 + BM25 + 图谱一跳子图。
 - G0 不引用条文；无可靠依据时应明确说明“现有知识库中没有找到条文依据”。
-- 解码参数固定在 `config/settings.yaml`：`temperature=0.1, top_p=0.9, seed=42, max_new_tokens=1024`。
+- 解码参数固定在 `config/settings.yaml`：`temperature=0.1, top_p=0.9, seed=42,
+  max_new_tokens=1024`；检索参数 `top_k=5, candidate_k=30, rrf_k=60`。
 - 每条结果记录 `prompt_hash`、`decoding_params`、检索证据与名次，`run_meta.json` 记录配置快照。
 - 正式实验必须使用索引清单中记录的嵌入模型；若命令行覆盖模型，程序会打印警告，
   该结果只能用于流程验证。
 
 ## 语料与合规
 
-- 来源：国家法律法规数据库（flk.npc.gov.cn）；自然资源部政策文本未纳入 v1。
+- 来源：国家法律法规数据库（flk.npc.gov.cn）；自然资源部政策文本未纳入。
+- 范围：全国性国土资源相关法律/行政法规 + 云南省/昆明市相关地方性法规；
+  选择以与土地、矿产、水、森林、草原、湿地、海洋、能源、生态环境、
+  国土空间规划及资源行政执法相关的现行有效文本为准。
 - 依据《著作权法》第五条，法律法规及国家机关行政性文件不适用著作权法，可自由复制、
   分发与加工。
 - 语料按 `data/v1/` 版本管理，任何变更写入 `CHANGELOG.md`（原因、时间、操作人）。
-- v1 已冻结，不在原目录就地改写；扩数据应新建版本目录并登记。
+- 后续扩数据应新建版本目录并登记，不在当前 `data/v1/` 就地改写。
 
 ## 运行环境说明
 

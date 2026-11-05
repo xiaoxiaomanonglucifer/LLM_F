@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f40f952c30f20",
+ "catalog_title": "国家赔偿费用管理条例",
+ "title": "国家赔偿费用管理条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-01-17",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40f952c30f20",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40f952c30f20",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f40f952c30f20.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f40f952c30f20.docx",
+ "sha256": "f1d7612142eddbaae09d76ac11c23a04645d9d176bd1ce44577f90ca2180d155",
+ "bytes": 20585,
+ "flk_oss_word_path": "prod/20110117/c7db3f32637f4e76815126f8b6cbcffc.docx",
+ "collected_at": "2026-11-05T09:11:24+08:00",
+ "collector_version": "1.0"
+}

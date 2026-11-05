@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-e29e88f12bc041d48b8b9086c4a4ece7",
+ "catalog_title": "中华人民共和国渔业法",
+ "title": "中华人民共和国渔业法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2025-12-27",
+ "effective_date": "2026-05-01",
+ "bbbs": "e29e88f12bc041d48b8b9086c4a4ece7",
+ "source_url": "https://flk.npc.gov.cn/detail?id=e29e88f12bc041d48b8b9086c4a4ece7",
+ "detail_file": "data/v1/meta/n-e29e88f12bc041d48b8b9086c4a4ece7.json",
+ "raw_file": "data/v1/raw/n-e29e88f12bc041d48b8b9086c4a4ece7.docx",
+ "sha256": "cdeaaf75a9992bc98642fbe6c004f790506549a4afaf223e3bf2b7b5eb365fa4",
+ "bytes": 30412,
+ "flk_oss_word_path": "prod/20251227/8db6ad681d0741ed93102a23846608b4.docx",
+ "collected_at": "2026-11-05T09:05:39+08:00",
+ "collector_version": "1.0"
+}

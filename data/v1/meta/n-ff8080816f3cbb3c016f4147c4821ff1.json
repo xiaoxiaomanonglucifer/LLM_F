@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f4147c4821ff1",
+ "catalog_title": "优化营商环境条例",
+ "title": "优化营商环境条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2019-10-22",
+ "effective_date": "2020-01-01",
+ "bbbs": "ff8080816f3cbb3c016f4147c4821ff1",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4147c4821ff1",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f4147c4821ff1.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f4147c4821ff1.docx",
+ "sha256": "d60afde00b22d62e54b9bf1dc1d7a770f7d58a6ee182045f6f7f72ee26f70e27",
+ "bytes": 32126,
+ "flk_oss_word_path": "prod/20191022/512cffea334d4316afccf5810a7d8abf.docx",
+ "collected_at": "2026-11-05T09:11:34+08:00",
+ "collector_version": "1.0"
+}

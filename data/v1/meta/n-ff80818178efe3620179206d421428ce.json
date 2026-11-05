@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff80818178efe3620179206d421428ce",
+ "catalog_title": "中华人民共和国乡村振兴促进法",
+ "title": "中华人民共和国乡村振兴促进法",
+ "level": "法律",
+ "domain": "土地管理",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2021-04-29",
+ "effective_date": "2021-06-01",
+ "bbbs": "ff80818178efe3620179206d421428ce",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff80818178efe3620179206d421428ce",
+ "detail_file": "data/v1/meta/n-ff80818178efe3620179206d421428ce.json",
+ "raw_file": "data/v1/raw/n-ff80818178efe3620179206d421428ce.docx",
+ "sha256": "d800388967062de348974cb82bc215accd20ee8bcaa98c8a7886f0a8850ec075",
+ "bytes": 29539,
+ "flk_oss_word_path": "prod/20210429/b11a8925757c4d9893102b8ee45175dc.docx",
+ "collected_at": "2026-11-05T09:06:41+08:00",
+ "collector_version": "1.0"
+}

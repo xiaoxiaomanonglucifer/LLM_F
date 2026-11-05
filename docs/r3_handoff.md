@@ -1,6 +1,6 @@
 # R2 → R3 交接说明（v1）
 
-> 交接人：R2 曾平 ｜ 日期：2026-11-04 ｜ 范围：v1 全国国土资源法规 RAG
+> 交接人：R2 曾平 ｜ 日期：2026-11-05 ｜ 范围：v1 全国性 + 云南/昆明国土资源法规 RAG
 > 目的：R3 拿到本仓库后，不依赖 R2 口头解释，即可开始评测集构建、指标实现与结果复核。
 > 本文只覆盖 R2 交付的工程、数据、结果与已知缺口；评测集、LLM-as-judge、
 > Kappa 与统计检验由 R3/R1 负责。
@@ -9,11 +9,10 @@
 
 **可以交接的部分：**
 
-- v1 法规语料（75 部 / 4,104 条）、BGE-M3 索引、法条图谱；
+- v1 法规语料（178 部 / 10,069 条）、BGE-M3 索引、法条图谱；
 - G0/G1/G2 检索-生成流水线与单题问答/实验入口；
-- `dev-server-v1`（规则图谱）与 `dev-llm-graph`（当前 LLM 图谱）非正式对照结果；
-- `repro-server-1` 全流程复现留档与图谱导出校验工具；
-- 数据接口契约与结果字段说明。
+- v1 图谱 dev 冒烟（仅链路验证，非正式结果）；
+- 图谱导出校验工具、数据接口契约与结果字段说明。
 
 **仍由 R3/R1 完成的部分：**
 
@@ -23,55 +22,50 @@
 - McNemar / 配对 t / Bonferroni、功效复核与最终统计结论；
 - v1 正式主实验 `main-v1`（≥60 题 × G0/G1/G2 × repeats≥2）。
 
-**当前不能声称“正式结果已交付”：** 仓库内只有 7 题 dev 集对照，
-`dev-server-v1`、`dev-llm-graph` 与 `repro-server-1` 都不是正式主实验。
+**当前不能声称“正式结果已交付”：** 仓库内只有 7 题 dev 集对照、
+`results/dev-v1-smoke/`（mock）与 `results/dev-v1-llm/`（真实 LLM）链路冒烟，
+都不是正式主实验。
 
 ## 1. 交付包清单
 
 | 内容 | 路径 | 规模 | sha256 / 说明 |
 |---|---|---|---|
-| v1 法条 | `data/v1/articles.jsonl` | 75 部 / 4,104 条 | `03d3e2ee…b70a` |
-| v1 语料清单 | `data/v1/manifest.json`、`data/v1/corpus_stats.json` | 75 部 / 519,496 字 | 结构告警 0 |
-| v1 索引清单 | `data/v1/index/index_manifest.json` | BGE-M3 / 1024 / 4,104 | `a9eef9d9…e362` |
-| v1 三元组 | `data/v1/graph/triples.jsonl` | 3,694 条法条 / 4,757 实体（LLM 抽取） | `3b131ede…` |
-| 规则版归档 | `data/v1/graph/triples_rule.jsonl` | 3,476 条 / 630 实体 | `539ff727…`，仅对照 |
-| v1 图谱 Cypher | `data/v1/graph/neo4j_import.cypher` | 28,453 条语句 | `d6adfc0b…` |
-| 图谱结构校验 | `scripts/verify_graph_export.py` | 8,451 节点 / 24,755 关系（预期） | 11 项校验 0 失败 |
-| Neo4j 实际导入 | 规则版嵌入式 Neo4j 5.26 实例（历史） | 4,106 节点 / 25,648 关系 | 21 项校验 0 失败；不适用于 LLM 版 |
-| dev 对照结果 | `results/dev-server-v1/`、`results/dev-llm-graph/` | 7 题 × 3 组 × 2 次 / 7 题 × 3 组 × 1 次 | **非正式**；后者为当前 LLM 图谱 |
-| 全流程复现 | `results/repro-server-1/` | 5/5 步 / 211.3s | 规则图谱；当时 29 项测试，当前 14 项 |
+| 法条 | `data/v1/articles.jsonl` | 178 部 / 10,069 条 | `articles_sha256=64cfe766…7bd338`（见索引清单） |
+| 语料清单 | `data/v1/manifest.json`、`data/v1/corpus_stats.json` | 178 部 / 1,273,548 字 | 结构告警 0；0 缺失 / 0 错误 |
+| 索引清单 | `data/v1/index/index_manifest.json` | BGE-M3 / 1024 / 10,069 | `legal_articles_v1`，built_at `2026-11-05T10:47:43+08:00` |
+| 三元组 | `data/v1/graph/triples.jsonl` | 8,943 条 / 10,737 实体（LLM 抽取，覆盖 88.82%） | `37d58468…0bb75d` |
+| 图谱 Cypher | `data/v1/graph/neo4j_import.cypher` | 68,707 条语句（4 约束 + 68,703 数据） | `26216333…0bfe5c`；预期 19,680 节点 / 59,760 关系 |
+| 图谱结构校验 | `scripts/verify_graph_export.py` | — | 11 项校验 0 失败；摘要 `data/v1/graph/verify_summary.json` |
+| mock 冒烟 | `results/dev-v1-smoke/`（本机） | 7 题 × 3 组 × 1 次 | **非正式**；未入库；G2 7/7 有图谱上下文 |
+| LLM 冒烟 | `results/dev-v1-llm/`（本机） | 7 题 × 3 组 × 1 次，mock=false | **非正式**；未入库；G2 7/7 有图谱上下文 |
 | 接口契约 | `docs/data_contract.md` | — | 字段以该文件为准 |
-| 图谱校验 | `scripts/verify_graph_export.py` | — | 对比 triples/Cypher/DB 计数 |
 | 一键复现 | `scripts/reproduce.py` | — | 采集→切分→图谱→索引→测试→dev 实验 |
 
-> `results/dev-server-v1/`、`results/dev-llm-graph/` 与 `results/repro-server-1/`
-> 已随仓库提交；后续新产生的 `results/<run_id>/` 默认被 `.gitignore` 忽略。
-> Chroma、BM25 缓存不入库，跨机器需重建索引。
+> Chroma、BM25 缓存与 `*.progress.jsonl` 不入库，跨机器需重建索引。
+> 新产生的 `results/<run_id>/` 默认被 `.gitignore` 忽略。
 
 ## 2. 版本状态
 
 | 项目 | 状态 | 规模 | 用途 |
 |---|---|---|---|
-| v1 语料 | 冻结（2026-10-27） | 75 部 / 4,104 条 / 519,496 字 | 法条问答主实验 |
-| v1 索引 | 正式（2026-11-03 GPU） | BGE-M3 / 1024 / 4,104 | G1/G2 稠密检索 |
-| v1 图谱 | 正式（2026-11-04 切换 LLM 抽取） | 3,694 条三元组 / 4,757 实体 / 28,453 条 Cypher | G2 图谱信号与 Neo4j 演示 |
+| v1 语料 | 当前（2026-11-05） | 178 部 / 10,069 条 / 1,273,548 字 | 正式问答主实验 |
+| v1 索引 | 正式（2026-11-05 GPU） | BGE-M3 / 1024 / 10,069 | G1/G2 稠密检索 |
+| v1 图谱 | 正式（2026-11-05 LLM 抽取） | 8,943 条三元组 / 10,737 实体 / 68,707 条 Cypher | G2 图谱信号与 Neo4j 演示 |
 | 正式题库 | **未交付** | `data/eval/v1/questions.jsonl` 待 R3 | 正式主实验 |
 
 规则：
 
-1. `data/v1/` 已冻结，不再就地改写；扩数据请新建版本目录并在 CHANGELOG 登记。
-2. 不要复用 `dev-server-v1`、`repro-server-1` 作为正式 `run_id`；正式实验用新 `run_id`。
-3. 单题问答用 `pipeline.ask`，实验用 `pipeline.run_experiment`，运行前确认使用 `config/settings.yaml`。
+1. `data/v1/` 为当前唯一交付版本；后续扩数据请新建版本目录并在 CHANGELOG 登记，
+   不就地改写 v1。
+2. 不要复用 `dev-v1-smoke` 作为正式 `run_id`；正式实验用新 `run_id`（建议 `main-v1`）。
+3. 单题问答用 `pipeline.ask`，实验用 `pipeline.run_experiment`；
+   运行前设置 `LEGAL_RAG_SETTINGS=config/settings.yaml`。
 
-### 2.1 v1 语料哈希变化说明
+### 2.1 哈希与版本说明
 
-2026-11-03 的 `reproduce.py` 给 v1 的 `documents/articles` 补齐了 `jurisdiction` 字段，
-并重写了 `parsed_at/extracted_at`，因此 `articles_sha256` 从 `6a54c73f…` 变为
-`03d3e2ee…`。当时条数、条文文本、三元组集合均未变化。R3 评测时应使用当前仓库的
-`data/v1/index/index_manifest.json` 和 `data/v1/articles.jsonl`，不要引用旧哈希。
-
-> 2026-11-04 图谱另行从规则版切换为 LLM 版（见 §4.4）；该切换不影响
-> `articles.jsonl` 与索引哈希，但会改变 `triples.jsonl`、G2 上下文和结果排序。
+- `data/v1/articles.jsonl` 的 sha256 记录在 `data/v1/index/index_manifest.json`
+  （`articles_sha256`，当前 `64cfe766…7bd338`）。
+- 重新采集或重建索引会改变哈希；正式实验前以当前仓库的索引清单为准。
 
 ### 2.2 组别与检索信号
 
@@ -83,13 +77,12 @@
 
 > 开题报告把 G1 描述为“向量检索增强”；实现中 G1 已包含 BM25 混合检索，
 > G2 才额外加入图谱。报告中应按本表描述，避免把 G1 写成纯向量检索。
-> 当前 G2 使用 LLM 图谱；`dev-server-v1`、`repro-server-1` 的 G2 使用规则图谱，
-> 不要与当前图谱结果混用。三组必须使用同一生成器、同一解码参数、同一提示词模板，
-> 仅检索上下文不同；`prompt_version` 应一致，`prompt_hash` 因上下文不同而不同。
+> 三组必须使用同一生成器、同一解码参数、同一提示词模板，仅检索上下文不同；
+> `prompt_version` 应一致，`prompt_hash` 因上下文不同而不同。
 
 ## 3. 结果文件怎么用
 
-### 3.1 v1 法规结果
+### 3.1 法规结果
 
 路径：`results/<run_id>/<group>_r<repeat>.jsonl`，组别 `G0/G1/G2`。
 
@@ -124,7 +117,9 @@
 R3 在结果表里只能使用同时满足以下条件的结果：
 
 - `run_meta.mock == false`；
-- 索引 `embedding_model == BAAI/bge-m3`、`embedding_dim == 1024`、`embedding_model_debug == false`；
+- 索引 `embedding_model == BAAI/bge-m3`、`embedding_dim == 1024`、
+  `embedding_model_debug == false`、`article_count == 10069`、
+  `vector_store.collection == legal_articles_v1`；
 - 查询嵌入模型与索引 manifest 一致（运行日志无“查询嵌入模型与索引模型不一致”警告）；
 - `decoding_params` 为 `temperature=0.1, top_p=0.9, seed=42, max_tokens=1024`；
 - `questions_sha256` 与实际题库一致；
@@ -151,34 +146,34 @@ R3 在结果表里只能使用同时满足以下条件的结果：
 ### 4.1 正式评测集尚未交付
 
 `data/eval/v1/questions.jsonl` 不存在，仓库内只有 `data/eval/dev/questions.jsonl`（7 题）。
-`dev-server-v1`（规则图谱）与 `dev-llm-graph`（当前 LLM 图谱）都是 7 题 dev 对照，
-**不能**用于 H1 正式统计。
+`results/dev-v1-smoke/`（mock）与 `results/dev-v1-llm/`（真实 LLM）**不能**用于
+H1 正式统计。
 
 ### 4.2 语料规模与开题预估不一致
 
-开题报告预计 2 万~5 万文本块，实际按“条”切分为 4,104 条 / 51.9 万字。
-原因是检索单位固定为“条”（条内款/项不拆），且目录为 75 部现行有效法规；
-未通过拆条或复制文本虚增规模。实验与评测一律以 4,104 条为准，
-报告中的规模数字应按实测口径修正。
+开题报告预计 2 万~5 万文本块，v1 实际按“条”切分为 10,069 条 / 127.4 万字。
+原因是检索单位固定为“条”（条内款/项不拆），且目录限定为全国性相关法规
+与云南省/昆明市地方性法规，未纳入全国其他省市的地方性法规；未通过拆条或复制文本
+虚增规模。实验与评测一律以 10,069 条为准，报告中的规模数字应按实测口径修正。
 
-### 4.3 12 部法规缺失
+### 4.3 目录筛选
 
-FLK 精确标题检索未返回现行有效（`sxx=3`）的同名版本，未用失效/近似文本替代。
-清单与原因见 `CHANGELOG.md` 和 `data/v1/manifest.json` 的 `missing[]`。
-R3 出题时应避开这 12 部法规，或将其作为“知识库未覆盖”的边界题单独统计。
+目录以 FLK 现行有效版本为准；旧目录中 12 部无现行有效精确匹配的法规未纳入，
+已被新法替代的旧文本以现行法为准（如耕地占用税暂行条例→耕地占用税法，
+矿产资源登记类旧办法→矿产资源法及实施条例）。R3 出题应以
+`data/v1/manifest.json` 的 178 部目录为准，范围外问题放入对抗题单列。
 
-### 4.4 图谱抽取方式（已切换为 LLM）
+### 4.4 图谱抽取方式
 
 当前正式 `data/v1/graph/triples.jsonl` 为 LLM 抽取（`method=llm`，
-`Qwen/Qwen2.5-7B-Instruct`，AWQ int4），与开题报告一致。4,104 条中
-3,696 条有效、407 条空、1 条规则兜底、0 错误；写入 3,694 条，覆盖 90.0%。
-主体、行为全部通过原文逐字回验；处罚按 16 类规范化，70/801 条规范名不逐字出现
-（如“吊销资质证书/营业执照”→“吊销许可证”，“给予处分”→“行政处分”）。
-
-规则版 `data/v1/graph/triples_rule.jsonl` 仅作对照归档。`dev-server-v1` 与
-`repro-server-1` 的 G2 使用规则图谱；`dev-llm-graph` 使用当前 LLM 图谱。
-Neo4j 侧：当前 Cypher 已通过 11 项结构校验，预期 8,451 节点 / 24,755 关系；
-本节点未重新实际导入，历史 4,106 / 25,648 计数属于规则版。
+`Qwen/Qwen2.5-7B-Instruct`，AWQ int4），与开题报告一致。10,069 条中
+`llm_ok` 8,940、`llm_empty` 1,126、`rule_fallback` 3、`error` 0，写入 8,943 条，
+覆盖 88.82%（全国 7,295/8,241、昆明 939/1,064、云南 709/764）。
+实体 10,737 个（主体 3,198、行为 7,406、处罚 133），关系 59,760 条。
+主体 10,944 处、行为 14,401 处均可逐字匹配（1 处行为因条文跨行，
+去除换行后可匹配）；处罚按规范化类型输出。抽取状态详见 `triples.stats.json`。
+`verify_graph_export.py` 对 Cypher 的 11 项结构校验 0 失败（68,707 条语句，
+预期 19,680 节点 / 59,760 关系）；Neo4j 实际导入待部署机。
 
 R3 的三元组抽检建议：按法规层级/领域分层抽取不少于 10% 的法条（且不少于 100 条），
 逐条核对主体、行为是否在原文中有依据、处罚类型是否可对应；处罚允许规范化，
@@ -189,23 +184,24 @@ R3 的三元组抽检建议：按法规层级/领域分层抽取不少于 10% �
 | 事项 | 口径 |
 |---|---|
 | 生成模型 | `Qwen/Qwen2.5-7B-Instruct`，共享 GPU 上使用 AWQ int4；量化标记见 `run_meta.generation_service` |
-| Neo4j | 规则版曾用嵌入式 5.26 导入校验；LLM 版当前 11 项结构校验，实际导入待部署机；在线 Docker 容器未启动；G2 实验用离线 `GraphIndex` |
-| G0 | 不检索、不引用；引用准确率/Recall@5 对 G0 记 N/A 或 0，需在报告中统一 |
-| 结果目录 | `dev-server-v1`、`dev-llm-graph` 与 `repro-server-1` 已入库；新 `run_id` 默认被 gitignore |
+| Neo4j | Cypher 当前 11 项结构校验；实际导入待部署机；在线 Docker 容器未启动；G2 实验用离线 `GraphIndex` |
+| G0 | 设计上不检索、不引用；真实 LLM 冒烟中 G0 仍有 4/7 引用条文（参数知识），引用准确率/Recall@5 记 N/A 或 0 并披露泄漏现象 |
+| 结果目录 | 新 `run_id` 默认被 gitignore；`dev-v1-smoke`（mock）与 `dev-v1-llm`（真实 LLM）仅本机链路验证 |
 | 提示词版本 | 当前 `prompt_version=1.0`；改提示词需同步升版本并登记 CHANGELOG |
+| 适用范围 | 全国 8,241 条、云南 764 条、昆明 1,064 条；昆明/云南法规只适用于当地 |
 
 ## 5. R3 起步任务（建议顺序）
 
-1. 读 `docs/data_contract.md` 与本文，确认 v1 是当前唯一主线。
+1. 读 `docs/data_contract.md` 与本文，确认 `data/v1/` 是当前唯一主线。
 2. 用 `data/v1/articles.jsonl` 起草 ≥60 题（30 常规 / 20 边界 / 10 对抗），
    参考答案必须带条文号，落入 `data/eval/v1/questions.jsonl`；R1 复核题干与答案严谨性。
 3. 为每题补 `reference_answer`、`reference_citations`，并把 citation 映射到
-   `article_id`；避开 12 部缺失法规，范围外问题放入对抗题单列。
+   `article_id`；范围外问题放入对抗题单列。
 4. 按开题完成标注：4 名组员全员参与、双人交叉复核，报告 Cohen's Kappa（目标 ≥0.8）；
    另对 LLM-as-judge 人工抽检 20%，报告人工与自动评分的一致性。
 5. 完成三元组质量抽检：按 §4.4 的建议抽样，核对主体/行为原文依据与处罚类型；
    结果写入评测报告。
-6. 先用 `dev-llm-graph` 跑通指标脚本，再申请 GPU 跑正式 `main-v1`（`repeats=2`）；
+6. 先用 dev 冒烟跑通指标脚本，再申请 GPU 跑正式 `main-v1`（`repeats=2`）；
    统计按 §3.4 执行，并报告两次运行一致性。
 7. 把新题库路径、哈希、类别分布、变更原因/时间/操作人写入 CHANGELOG，
    并通知 R2 复核接口字段。R3 交付物：评测集与标注记录（含 Kappa）、
@@ -218,13 +214,16 @@ R3 的三元组抽检建议：按法规层级/领域分层抽取不少于 10% �
 ```bash
 cd /data_disk/tjh/zp/LLM_FIN
 export PYTHONPATH=src
+export LEGAL_RAG_SETTINGS=config/settings.yaml
 PY=/data_disk/tjh/conda_envs/LLM_F/bin/python
 
-$PY -m unittest discover -s tests          # 当前 14 项
+cd tests && PYTHONPATH=../src $PY test_core.py   # 当前 14 项
+cd ..
 ```
 
 > 本机无 GPU 时：把 settings 中 `embedding.device` 改为 `cpu` 可跑 BGE-M3 检索，
 > 但生成仍需可用的 vLLM/OpenAI 兼容端点；不要用 `--mock` 结果做正式评测。
+> 无外网时加载缓存权重需设置 `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1`。
 
 ### 6.2 图谱导出校验
 
@@ -237,38 +236,41 @@ $PY scripts/verify_graph_export.py \
 > 不带 `--db-counts` 时执行 11 项结构校验；要复现 21 项，需要额外提供已导入
 > Neo4j 的计数 JSON（`--db-counts`）或 Bolt 连接（`--neo4j-uri`）。
 
-### 6.3 跑 v1 正式题库（需 vLLM 服务）
+### 6.3 跑正式题库（需 vLLM 服务）
 
 ```bash
 export PYTHONPATH=src
+export LEGAL_RAG_SETTINGS=config/settings.yaml
 $PY -m legal_rag.pipeline.run_experiment \
   --questions data/eval/v1/questions.jsonl \
   --groups G0,G1,G2 --repeats 2 --run-id main-v1
 ```
 
 前置：vLLM 在 `http://127.0.0.1:8000/v1` 提供 `Qwen/Qwen2.5-7B-Instruct`；
-索引为 BGE-M3/1024；`--embedding-model` 默认读 settings。
+索引为 BGE-M3/1024/10,069；`--embedding-model` 默认读 settings。
 
 ### 6.4 跑通 dev 链路（无正式题库时）
 
 ```bash
 $PY -m legal_rag.pipeline.run_experiment \
   --questions data/eval/dev/questions.jsonl \
-  --groups G0,G1,G2 --repeats 1 --run-id dev-check
+  --groups G0,G1,G2 --repeats 1 --run-id dev-check-v1
 ```
 
-### 6.5 另一台机器重建索引
+### 6.5 另一台机器重建 v1
 
 ```bash
 export PYTHONPATH=src
-$PY -m legal_rag.corpus.collect --min-docs 50
+export LEGAL_RAG_SETTINGS=config/settings.yaml
+$PY -m legal_rag.corpus.collect --min-docs 178
 $PY -m legal_rag.corpus.build
 $PY -m legal_rag.index.build_index --embedding-model BAAI/bge-m3
-$PY -m legal_rag.graph.extract --method llm --workers 4
+$PY -m legal_rag.graph.extract --method llm --workers 4 \
+  --out data/v1/graph/triples.jsonl
 ```
 
 重建会覆盖 `index_manifest.json` 与正式 `triples.jsonl`；正式实验前确认清单仍是
-BGE-M3/1024，图谱 `method=llm`。无模型服务时可用 `--method rule` 生成对照，
+BGE-M3/1024/10,069，图谱 `method=llm`。无模型服务时可用 `--method rule` 生成对照，
 但不要把它当作正式图谱。
 
 ## 7. R3 交接验收清单
@@ -276,18 +278,19 @@ BGE-M3/1024，图谱 `method=llm`。无模型服务时可用 `--method rule` 生
 - [ ] 能读取 `data/v1/articles.jsonl`，字段与 `data_contract.md` 一致。
 - [ ] 能运行 14 项单测，以及 `verify_graph_export.py` 的结构校验
       （默认 11 项；提供 DB 计数时 21 项）。
-- [ ] 能说明 `dev-server-v1`、`dev-llm-graph`、`repro-server-1` 都不是正式结果。
+- [ ] 能说明 `results/dev-v1-smoke/`（mock）与 `results/dev-v1-llm/`（真实 LLM）
+      都不是正式结果。
 - [ ] 能按 3.2 节把 gold citation 映射到 `article_id`，并处理 G0 的 N/A。
 - [ ] 知道正式题库缺失，先交付 ≥60 题（30 常规 / 20 边界 / 10 对抗），
       且经 R1 复核、4 人标注、双人交叉复核、Kappa ≥0.8。
 - [ ] 知道 judge 为 0–3 分、≥2 判正确，并人工抽检 20% 校准。
-- [ ] 知道 12 部法规缺失与 4,104 条与开题预估的差异。
-- [ ] 知道图谱是 LLM 抽取；主体/行为逐字回验，处罚为 16 类规范化；
-      规则版 `triples_rule.jsonl` 仅归档。
-- [ ] 知道正式图谱 Neo4j 实际导入待部署机，当前只有 11 项结构校验。
+- [ ] 知道 v1 规模为 178 部 / 10,069 条，低于开题预估；
+      并知道全国/云南/昆明三种适用范围。
+- [ ] 知道图谱是 LLM 抽取；空结果与规则兜底数量见 `triples.stats.json`。
+- [ ] 知道 Neo4j 实际导入待部署机，当前只有 11 项结构校验。
 - [ ] 知道 H1/H0/边界假设与统计方案（McNemar + 配对 t、α=0.05、效应量、
       Bonferroni、功效复核）。
-- [ ] 正式实验使用新 `run_id`，`repeats=2`，并报告两次运行一致性。
+- [ ] 正式实验使用新 `run_id`（建议 `main-v1`），`repeats=2`，并报告两次运行一致性。
 - [ ] 完成三元组抽检并写入评测报告。
 - [ ] 新题库版本写入 CHANGELOG（原因/时间/操作人/哈希/类别分布），不覆盖 `data/v1/`。
 

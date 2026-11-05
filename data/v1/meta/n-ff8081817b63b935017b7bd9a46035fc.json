@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081817b63b935017b7bd9a46035fc",
+ "catalog_title": "建设工程抗震管理条例",
+ "title": "建设工程抗震管理条例",
+ "level": "行政法规",
+ "domain": "国土空间规划",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2021-07-19",
+ "effective_date": "2021-09-01",
+ "bbbs": "ff8081817b63b935017b7bd9a46035fc",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081817b63b935017b7bd9a46035fc",
+ "detail_file": "data/v1/meta/n-ff8081817b63b935017b7bd9a46035fc.json",
+ "raw_file": "data/v1/raw/n-ff8081817b63b935017b7bd9a46035fc.docx",
+ "sha256": "d98bd40d721478ccd1c95eb6baa6b4237991caa3bb708e3417e9697f7c8a536b",
+ "bytes": 23565,
+ "flk_oss_word_path": "prod/20210719/0aebf4405d274600acc07f40b12df806.docx",
+ "collected_at": "2026-11-05T09:10:17+08:00",
+ "collector_version": "1.0"
+}

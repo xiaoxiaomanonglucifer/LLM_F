@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f135f46016f1d9b1ffe15aa",
+ "catalog_title": "中华人民共和国电力法",
+ "title": "中华人民共和国电力法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-12-29",
+ "effective_date": "2018-12-29",
+ "bbbs": "ff8080816f135f46016f1d9b1ffe15aa",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d9b1ffe15aa",
+ "detail_file": "data/v1/meta/n-ff8080816f135f46016f1d9b1ffe15aa.json",
+ "raw_file": "data/v1/raw/n-ff8080816f135f46016f1d9b1ffe15aa.docx",
+ "sha256": "469a4b399705dbf4c1106c1eb0bd4f7abc23ccc725ccfeda456909f409c6ea2b",
+ "bytes": 23796,
+ "flk_oss_word_path": "prod/20181229/33ac771937164dda8e93ca3ebac9cb29.docx",
+ "collected_at": "2026-11-05T09:06:27+08:00",
+ "collector_version": "1.0"
+}

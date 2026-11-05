@@ -1,0 +1,36 @@
+{
+ "bbbs": "ff8080816eb1afb8016eba32157f6258",
+ "ossFile": {
+  "ossWordPath": "prod/20190807/33f5e02def23436db9df6de748819602.docx",
+  "ossWordOfdPath": "prod/20190807/33f5e02def23436db9df6de748819602.ofd",
+  "ossWordOfdSize": 137552,
+  "ossPdfPath": "prod/20190807/8fc77c5cd523411b998920cb2049c9f2.pdf",
+  "ossPdfOfdPath": "prod/20190807/8fc77c5cd523411b998920cb2049c9f2.ofd",
+  "ossPdfOfdSize": 634698
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8080816eb1afb8016eba32157f6258",
+   "title": "昆明市节约能源条例",
+   "gbrq": "2019-08-07",
+   "highLight": true
+  },
+  {
+   "bbbs": "4028abcc61277793016127e5fe62251a",
+   "title": "昆明市节约能源条例",
+   "gbrq": null,
+   "highLight": false
+  }
+ ],
+ "xgzl": [],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "昆明市人民代表大会常务委员会",
+ "gbrq": "2019-08-07",
+ "sxrq": "2019-08-07",
+ "title": "昆明市节约能源条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

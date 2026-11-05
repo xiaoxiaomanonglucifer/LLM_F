@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f135f46016f1cfbf44a1258",
+ "catalog_title": "中华人民共和国节约能源法",
+ "title": "中华人民共和国节约能源法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-10-26",
+ "effective_date": "2018-10-26",
+ "bbbs": "ff8080816f135f46016f1cfbf44a1258",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1cfbf44a1258",
+ "detail_file": "data/v1/meta/n-ff8080816f135f46016f1cfbf44a1258.json",
+ "raw_file": "data/v1/raw/n-ff8080816f135f46016f1cfbf44a1258.docx",
+ "sha256": "ffde89def4ee6f57f2928cc73248804c307a53122b1d77617124000cad6e0abb",
+ "bytes": 30763,
+ "flk_oss_word_path": "prod/20181026/b05f7bcfaaa84a3c8ed27d39525e1787.docx",
+ "collected_at": "2026-11-05T09:05:53+08:00",
+ "collector_version": "1.0"
+}

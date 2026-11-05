@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-ff8081817d99878a017dc15587cf668b",
+ "catalog_title": "昆明市城市供水用水管理条例",
+ "title": "昆明市城市供水用水管理条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2021-12-09",
+ "effective_date": "2022-01-01",
+ "bbbs": "ff8081817d99878a017dc15587cf668b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081817d99878a017dc15587cf668b",
+ "detail_file": "data/v1/meta/km-ff8081817d99878a017dc15587cf668b.json",
+ "raw_file": "data/v1/raw/km-ff8081817d99878a017dc15587cf668b.docx",
+ "sha256": "699a908070675e554349c867696c085b1daea4958e7e123a442d502ecb94b879",
+ "bytes": 63372,
+ "flk_oss_word_path": "prod/20211209/5e098a57411c4e8880ce5f43363a9128.docx",
+ "collected_at": "2026-11-05T09:13:24+08:00",
+ "collector_version": "1.0"
+}

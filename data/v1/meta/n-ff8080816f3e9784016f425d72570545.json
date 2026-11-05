@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3e9784016f425d72570545",
+ "catalog_title": "中华人民共和国防汛条例",
+ "title": "中华人民共和国防汛条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-01-08",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e9784016f425d72570545",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e9784016f425d72570545",
+ "detail_file": "data/v1/meta/n-ff8080816f3e9784016f425d72570545.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3e9784016f425d72570545.docx",
+ "sha256": "4c77255dd8050d762a3e8cdde533f6b857ee420a27cf2ba9d91957bb42c55581",
+ "bytes": 27502,
+ "flk_oss_word_path": "prod/20110108/2cffb94873df44e19dd7589d247ddcf3.docx",
+ "collected_at": "2026-11-05T09:08:08+08:00",
+ "collector_version": "1.0"
+}

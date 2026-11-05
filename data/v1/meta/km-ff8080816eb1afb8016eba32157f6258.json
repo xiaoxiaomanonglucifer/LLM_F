@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-ff8080816eb1afb8016eba32157f6258",
+ "catalog_title": "昆明市节约能源条例",
+ "title": "昆明市节约能源条例",
+ "level": "地方性法规",
+ "domain": "矿产资源",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2019-08-07",
+ "effective_date": "2019-08-07",
+ "bbbs": "ff8080816eb1afb8016eba32157f6258",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816eb1afb8016eba32157f6258",
+ "detail_file": "data/v1/meta/km-ff8080816eb1afb8016eba32157f6258.json",
+ "raw_file": "data/v1/raw/km-ff8080816eb1afb8016eba32157f6258.docx",
+ "sha256": "74eddc5c87dd597970f4dedd14990f07f80dc8151f11bfcd546bae12e064d5e8",
+ "bytes": 60648,
+ "flk_oss_word_path": "prod/20190807/33f5e02def23436db9df6de748819602.docx",
+ "collected_at": "2026-11-05T09:12:32+08:00",
+ "collector_version": "1.0"
+}

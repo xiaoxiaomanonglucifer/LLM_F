@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-2c909fdd678bf17901678bf74e1106bd",
+ "catalog_title": "中华人民共和国农业法",
+ "title": "中华人民共和国农业法",
+ "level": "法律",
+ "domain": "土地管理",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2012-12-28",
+ "effective_date": "2013-01-01",
+ "bbbs": "2c909fdd678bf17901678bf74e1106bd",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74e1106bd",
+ "detail_file": "data/v1/meta/n-2c909fdd678bf17901678bf74e1106bd.json",
+ "raw_file": "data/v1/raw/n-2c909fdd678bf17901678bf74e1106bd.docx",
+ "sha256": "b3009b2a7a9f2fd58d08099357f07efede5e3faca0010005e2a9d0df8a77c01f",
+ "bytes": 31910,
+ "flk_oss_word_path": "prod/20121228/aeda345580f745cd8ca1eadc2d0e05af.docx",
+ "collected_at": "2026-11-05T09:06:32+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f414513241f87",
+ "catalog_title": "重大行政决策程序暂行条例",
+ "title": "重大行政决策程序暂行条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2019-04-20",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f414513241f87",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414513241f87",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f414513241f87.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f414513241f87.docx",
+ "sha256": "4f83c2ad1830fc7386c011e0600a45f1b73e46a2a7d4dd6b6707a7a728344b62",
+ "bytes": 24431,
+ "flk_oss_word_path": "prod/20190420/13c156b07a8d4fc0b863607d4a81a676.docx",
+ "collected_at": "2026-11-05T09:11:05+08:00",
+ "collector_version": "1.0"
+}

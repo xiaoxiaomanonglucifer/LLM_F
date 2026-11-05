@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f135f46016f1d06082912c2",
+ "catalog_title": "中华人民共和国循环经济促进法",
+ "title": "中华人民共和国循环经济促进法",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-10-26",
+ "effective_date": "2018-10-26",
+ "bbbs": "ff8080816f135f46016f1d06082912c2",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d06082912c2",
+ "detail_file": "data/v1/meta/n-ff8080816f135f46016f1d06082912c2.json",
+ "raw_file": "data/v1/raw/n-ff8080816f135f46016f1d06082912c2.docx",
+ "sha256": "9624af1ab182747649146e7e5785fb6091e40c2c4199c73287b0d679d8f83102",
+ "bytes": 24740,
+ "flk_oss_word_path": "prod/20181026/c07ec6cc530d47ac8dc2283491e82146.docx",
+ "collected_at": "2026-11-05T09:05:58+08:00",
+ "collector_version": "1.0"
+}

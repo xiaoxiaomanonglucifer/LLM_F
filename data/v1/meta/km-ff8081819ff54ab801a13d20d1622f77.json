@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-ff8081819ff54ab801a13d20d1622f77",
+ "catalog_title": "昆明市城镇排水与污水处理条例",
+ "title": "昆明市城镇排水与污水处理条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2026-09-30",
+ "effective_date": "2026-09-30",
+ "bbbs": "ff8081819ff54ab801a13d20d1622f77",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54ab801a13d20d1622f77",
+ "detail_file": "data/v1/meta/km-ff8081819ff54ab801a13d20d1622f77.json",
+ "raw_file": "data/v1/raw/km-ff8081819ff54ab801a13d20d1622f77.docx",
+ "sha256": "7117e865dc9769b3acb09d4e07f564275178c37bfd4525155877dc7569b4b4f0",
+ "bytes": 24591,
+ "flk_oss_word_path": "prod/20260930/c6d272bedac74b778263155f9588feb8.docx",
+ "collected_at": "2026-11-05T09:12:03+08:00",
+ "collector_version": "1.0"
+}

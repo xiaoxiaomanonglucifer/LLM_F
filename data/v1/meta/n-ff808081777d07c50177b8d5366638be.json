@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808081777d07c50177b8d5366638be",
+ "catalog_title": "中华人民共和国渔业法实施细则",
+ "title": "中华人民共和国渔业法实施细则",
+ "level": "行政法规",
+ "domain": "海域海岛",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2020-11-29",
+ "effective_date": "2020-11-29",
+ "bbbs": "ff808081777d07c50177b8d5366638be",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808081777d07c50177b8d5366638be",
+ "detail_file": "data/v1/meta/n-ff808081777d07c50177b8d5366638be.json",
+ "raw_file": "data/v1/raw/n-ff808081777d07c50177b8d5366638be.docx",
+ "sha256": "90d7e013d92361ec219a59b51ef255c70a08d5654f9a0351fd633c865028bf77",
+ "bytes": 28925,
+ "flk_oss_word_path": "prod/20201129/eef25e1fd6d2434eb3f6208136192afa.docx",
+ "collected_at": "2026-11-05T09:09:10+08:00",
+ "collector_version": "1.0"
+}

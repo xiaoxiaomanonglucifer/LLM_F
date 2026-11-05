@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-96630961659b4d87a65b7b1c595097fa",
+ "catalog_title": "中华人民共和国生态环境法典",
+ "title": "中华人民共和国生态环境法典",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会",
+ "promulgation_date": "2026-03-12",
+ "effective_date": "2026-08-15",
+ "bbbs": "96630961659b4d87a65b7b1c595097fa",
+ "source_url": "https://flk.npc.gov.cn/detail?id=96630961659b4d87a65b7b1c595097fa",
+ "detail_file": "data/v1/meta/n-96630961659b4d87a65b7b1c595097fa.json",
+ "raw_file": "data/v1/raw/n-96630961659b4d87a65b7b1c595097fa.docx",
+ "sha256": "b12745139ef577ff3f61fdeca22e08c3f7ce9979f964599eaf4a618089158224",
+ "bytes": 243471,
+ "flk_oss_word_path": "prod/20260312/8fb65d57872d486289a9b485fd6c8fc0.docx",
+ "collected_at": "2026-11-05T09:05:20+08:00",
+ "collector_version": "1.0"
+}

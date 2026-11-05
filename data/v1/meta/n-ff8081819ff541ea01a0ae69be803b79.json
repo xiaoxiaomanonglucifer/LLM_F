@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff541ea01a0ae69be803b79",
+ "catalog_title": "水库大坝安全管理条例",
+ "title": "水库大坝安全管理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-01-30",
+ "effective_date": "2026-03-20",
+ "bbbs": "ff8081819ff541ea01a0ae69be803b79",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff541ea01a0ae69be803b79",
+ "detail_file": "data/v1/meta/n-ff8081819ff541ea01a0ae69be803b79.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff541ea01a0ae69be803b79.docx",
+ "sha256": "901b05810d82bbf1169fbbf85368a92e4a62d2bd4e31960ea250c529375c65bd",
+ "bytes": 20609,
+ "flk_oss_word_path": "prod/20260130/3c5c0f129b844cc2b0a129668927fab4.docx",
+ "collected_at": "2026-11-05T09:07:34+08:00",
+ "collector_version": "1.0"
+}

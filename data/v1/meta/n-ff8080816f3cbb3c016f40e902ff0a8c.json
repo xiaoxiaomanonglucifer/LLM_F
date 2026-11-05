@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f40e902ff0a8c",
+ "catalog_title": "城市市容和环境卫生管理条例",
+ "title": "城市市容和环境卫生管理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-03-01",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40e902ff0a8c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40e902ff0a8c",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f40e902ff0a8c.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f40e902ff0a8c.docx",
+ "sha256": "9fc5deb86338501494d9464a5878f7884fab6268876a99936fb895133521e58c",
+ "bytes": 25503,
+ "flk_oss_word_path": "prod/20170301/d44162c1e6354f539863f123c47888f2.docx",
+ "collected_at": "2026-11-05T09:11:00+08:00",
+ "collector_version": "1.0"
+}

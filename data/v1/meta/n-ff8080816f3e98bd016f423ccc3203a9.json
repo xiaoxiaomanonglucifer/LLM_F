@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3e98bd016f423ccc3203a9",
+ "catalog_title": "水产资源繁殖保护条例",
+ "title": "水产资源繁殖保护条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "1979-02-10",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e98bd016f423ccc3203a9",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e98bd016f423ccc3203a9",
+ "detail_file": "data/v1/meta/n-ff8080816f3e98bd016f423ccc3203a9.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3e98bd016f423ccc3203a9.docx",
+ "sha256": "49bf782a9dd90835f049a3e52ccbf9b9bac041ea92ba8f27205f5dfb6dcf517e",
+ "bytes": 31940,
+ "flk_oss_word_path": "prod/19790210/89db1918417549cc89ed54f63c3f15a6.docx",
+ "collected_at": "2026-11-05T09:09:05+08:00",
+ "collector_version": "1.0"
+}

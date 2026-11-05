@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-2c909fdd678bf17901678bf708a60573",
+ "catalog_title": "中华人民共和国可再生能源法",
+ "title": "中华人民共和国可再生能源法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2009-12-26",
+ "effective_date": "2010-04-01",
+ "bbbs": "2c909fdd678bf17901678bf708a60573",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf708a60573",
+ "detail_file": "data/v1/meta/n-2c909fdd678bf17901678bf708a60573.json",
+ "raw_file": "data/v1/raw/n-2c909fdd678bf17901678bf708a60573.docx",
+ "sha256": "628bafbceea05e94937848c33127a3f8579d1716b18313cf4ea8a6d437b04699",
+ "bytes": 20473,
+ "flk_oss_word_path": "prod/20091226/21b8ee1df392496e8206b959573f81a7.docx",
+ "collected_at": "2026-11-05T09:05:48+08:00",
+ "collector_version": "1.0"
+}

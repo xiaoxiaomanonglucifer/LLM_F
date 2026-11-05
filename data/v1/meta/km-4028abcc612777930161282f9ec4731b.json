@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc612777930161282f9ec4731b",
+ "catalog_title": "昆明市城市管理综合行政执法条例",
+ "title": "昆明市城市管理综合行政执法条例",
+ "level": "地方性法规",
+ "domain": "行政程序",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc612777930161282f9ec4731b",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc612777930161282f9ec4731b",
+ "detail_file": "data/v1/meta/km-4028abcc612777930161282f9ec4731b.json",
+ "raw_file": "data/v1/raw/km-4028abcc612777930161282f9ec4731b.docx",
+ "sha256": "63fe469d505d5f7cd80d3b58e520adcbb49ea64cadd8427d704dae7661470372",
+ "bytes": 27265,
+ "flk_oss_word_path": "prod/19700101/2822c20fa0d849aaa3f1077cc5cc748b.docx",
+ "collected_at": "2026-11-05T09:13:29+08:00",
+ "collector_version": "1.0"
+}

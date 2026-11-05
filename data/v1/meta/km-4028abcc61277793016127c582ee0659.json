@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc61277793016127c582ee0659",
+ "catalog_title": "昆明市城市道路管理条例",
+ "title": "昆明市城市道路管理条例",
+ "level": "地方性法规",
+ "domain": "国土空间规划",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc61277793016127c582ee0659",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc61277793016127c582ee0659",
+ "detail_file": "data/v1/meta/km-4028abcc61277793016127c582ee0659.json",
+ "raw_file": "data/v1/raw/km-4028abcc61277793016127c582ee0659.docx",
+ "sha256": "31ccce419d6edc57d014dd46b92e823e2ab4d4f2c3feb283e143937e107881d4",
+ "bytes": 22477,
+ "flk_oss_word_path": "prod/19700101/50b28b54236c49b7bc466bf5eb7af18c.docx",
+ "collected_at": "2026-11-05T09:13:10+08:00",
+ "collector_version": "1.0"
+}

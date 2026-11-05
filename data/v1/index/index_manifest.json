@@ -1,9 +1,9 @@
 {
  "index_version": "1.0",
- "built_at": "2026-11-03T18:51:02+08:00",
+ "built_at": "2026-11-05T10:47:43+08:00",
  "articles_file": "data/v1/articles.jsonl",
- "articles_sha256": "03d3e2eecb25934d3d14dba7fc962de7047500b40eb1da781b10cf166375b70a",
- "article_count": 4104,
+ "articles_sha256": "64cfe76616e3563dc867b1fe05e0135b9b6d332a7f180034a7dbcbde6c7bd338",
+ "article_count": 10069,
  "embedding_model": "BAAI/bge-m3",
  "embedding_model_debug": false,
  "embedding_dim": 1024,
@@ -23,5 +23,5 @@
   "char_bigram": true
  },
  "debug_limit": null,
- "elapsed_sec": 63.7
+ "elapsed_sec": 112.0
 }

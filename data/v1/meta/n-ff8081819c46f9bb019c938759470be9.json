@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819c46f9bb019c938759470be9",
+ "catalog_title": "供水条例",
+ "title": "供水条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-02-11",
+ "effective_date": "2026-06-01",
+ "bbbs": "ff8081819c46f9bb019c938759470be9",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819c46f9bb019c938759470be9",
+ "detail_file": "data/v1/meta/n-ff8081819c46f9bb019c938759470be9.json",
+ "raw_file": "data/v1/raw/n-ff8081819c46f9bb019c938759470be9.docx",
+ "sha256": "49af41cf48606c08f247abca8be2aca05114924abd8da0c8a357118860756376",
+ "bytes": 23390,
+ "flk_oss_word_path": "prod/20260211/53bb43d7a09f421890fc3cf02caa81c7.docx",
+ "collected_at": "2026-11-05T09:07:29+08:00",
+ "collector_version": "1.0"
+}

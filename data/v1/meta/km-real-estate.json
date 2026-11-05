@@ -18,5 +18,6 @@
  "bytes": 25935,
  "flk_oss_word_path": "prod/19700101/4afc3753dcab4d909efeac8c320d63b4.docx",
  "collected_at": "2026-10-27T18:32:58+08:00",
- "collector_version": "1.0"
+ "collector_version": "1.0",
+ "jurisdiction": "昆明"
 }

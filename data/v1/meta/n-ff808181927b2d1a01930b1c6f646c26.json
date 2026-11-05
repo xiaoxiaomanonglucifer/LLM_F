@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808181927b2d1a01930b1c6f646c26",
+ "catalog_title": "中华人民共和国能源法",
+ "title": "中华人民共和国能源法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2024-11-08",
+ "effective_date": "2025-01-01",
+ "bbbs": "ff808181927b2d1a01930b1c6f646c26",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181927b2d1a01930b1c6f646c26",
+ "detail_file": "data/v1/meta/n-ff808181927b2d1a01930b1c6f646c26.json",
+ "raw_file": "data/v1/raw/n-ff808181927b2d1a01930b1c6f646c26.docx",
+ "sha256": "7fbc73b537c88f6722c5262f124d6c4be5db85463f03833c783c081f57e97880",
+ "bytes": 27058,
+ "flk_oss_word_path": "prod/20241108/a1017a57af894d7f9c2c371cb28b8da7.docx",
+ "collected_at": "2026-11-05T09:05:44+08:00",
+ "collector_version": "1.0"
+}

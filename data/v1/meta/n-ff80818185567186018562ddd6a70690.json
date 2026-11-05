@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff80818185567186018562ddd6a70690",
+ "catalog_title": "中华人民共和国野生动物保护法",
+ "title": "中华人民共和国野生动物保护法",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2022-12-30",
+ "effective_date": "2023-05-01",
+ "bbbs": "ff80818185567186018562ddd6a70690",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff80818185567186018562ddd6a70690",
+ "detail_file": "data/v1/meta/n-ff80818185567186018562ddd6a70690.json",
+ "raw_file": "data/v1/raw/n-ff80818185567186018562ddd6a70690.docx",
+ "sha256": "b3440429cc01dfdb41f03dcde6b5d5fbe5053aebfeb31d082c90d6d1022eebc7",
+ "bytes": 27060,
+ "flk_oss_word_path": "prod/20221230/b9bd00ce0daa4c40acd4ac2415137fc4.docx",
+ "collected_at": "2026-11-05T09:05:34+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff54a6401a0ae6e3d322483",
+ "catalog_title": "中华人民共和国河道管理条例",
+ "title": "中华人民共和国河道管理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-01-30",
+ "effective_date": "2026-03-20",
+ "bbbs": "ff8081819ff54a6401a0ae6e3d322483",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54a6401a0ae6e3d322483",
+ "detail_file": "data/v1/meta/n-ff8081819ff54a6401a0ae6e3d322483.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff54a6401a0ae6e3d322483.docx",
+ "sha256": "8e11d1031ab9a047a3fd1debdd6bf90bb581d2de2e167eaf87be85a0c0051ff4",
+ "bytes": 23939,
+ "flk_oss_word_path": "prod/20260130/53710de6b98c4c229a7173e3d1a09240.docx",
+ "collected_at": "2026-11-05T09:07:39+08:00",
+ "collector_version": "1.0"
+}

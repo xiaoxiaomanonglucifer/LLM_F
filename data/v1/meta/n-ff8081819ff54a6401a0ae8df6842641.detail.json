@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff54a6401a0ae8df6842641",
+ "ossFile": {
+  "ossWordPath": "prod/20260808/acdfe3bf31954530a81768de45377ab6.docx",
+  "ossWordOfdPath": "prod/20260808/acdfe3bf31954530a81768de45377ab6.ofd",
+  "ossWordOfdSize": 130287,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54a6401a0ae8df6842641",
+   "title": "碳排放权交易管理暂行条例",
+   "gbrq": "2026-08-08",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8081818d736ac1018dcfae95612eae",
+   "title": "碳排放权交易管理暂行条例",
+   "gbrq": "2024-01-25",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "ee512b717e034d458c074af3ee4464f3",
+   "title": "中华人民共和国国务院令第843号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "4be3c7c2df194081a950fcfb8537dcc8",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "1409257a09354a9381d781319d700900",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-08-08",
+ "sxrq": "2026-08-15",
+ "title": "碳排放权交易管理暂行条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

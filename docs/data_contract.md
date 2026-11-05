@@ -2,7 +2,8 @@
 
 所有接口文件均为 UTF-8 JSONL，一行一条记录；字段新增向后兼容，删除/改名需升版本并写入 CHANGELOG。
 
-> R3 的完整交接包、结果字段用法、指标口径与已知缺口见 `docs/r3_handoff.md`。
+> 当前唯一主线为 `data/v1/`（178 部 / 10,069 条）。R3 的完整交接包、结果字段用法、
+> 指标口径与已知缺口见 `docs/r3_handoff.md`。
 
 ## 1. 语料（R2 交付）
 
@@ -14,8 +15,8 @@
 | doc_id | str | 法规标识（catalog 中的 id） |
 | law_title | str | 法规全称 |
 | level | str | 法律 / 行政法规 / 地方性法规 |
-| domain | str | 土地管理 / 国土空间规划 / ... |
-| jurisdiction | str | 预留字段；v1 当前为空字符串 |
+| domain | str | 土地管理 / 矿产资源 / 国土空间规划 / ... |
+| jurisdiction | str | 适用范围：`全国` / `云南` / `昆明`（全部非空） |
 | article_no | str | 如 `第四十四条` |
 | article_num | int | 条序号（用于排序与统计） |
 | chapter / section | str\|null | 章 / 节标题 |
@@ -26,10 +27,13 @@
 | source_url | str | 原始页面 |
 | sha256 | str | 原始 docx 哈希 |
 
+规模：178 部 / 10,069 条 / 1,273,548 字；全国 8,241 条、云南 764 条、昆明 1,064 条。
+
 ### data/v1/manifest.json
 
-采集清单：`documents[]`，每部法规的 `doc_id/title/level/domain/bbbs/dates/sha256/raw_file/meta_file`，
-以及 `missing[]`（无现行有效版本）与 `errors[]`。
+采集清单：`documents[]`，每部法规的
+`doc_id/title/level/domain/jurisdiction/bbbs/dates/sha256/raw_file/detail_file`，
+以及 `missing[]`（无现行有效版本）与 `errors[]`。当前为 178 部成功、0 缺失、0 错误。
 
 ### data/v1/graph/triples.jsonl
 
@@ -41,18 +45,20 @@
 | subjects | str[] | 主体 |
 | actions | str[] | 行为 |
 | penalties | str[] | 处罚 |
-| method | str | `rule` 或 `llm`；当前正式 `triples.jsonl` 为 `llm`（Qwen2.5-7B-Instruct） |
+| method | str | `rule` 或 `llm`；正式 `triples.jsonl` 为 `llm`（Qwen2.5-7B-Instruct） |
 | model | str | LLM 抽取时的模型名（规则为空） |
 | extracted_at | str | 抽取时间（ISO 8601，带时区） |
 
-规则抽取旧版归档为 `triples_rule.jsonl` / `triples_rule.stats.json`，仅作对照，不参与正式链路。
-
+`triples.stats.json` 记录抽取状态、覆盖率、实体数与关系数。
+正式图谱为 8,943 条三元组（覆盖 88.82%）、10,737 个实体；
+Cypher 68,707 条语句，预期 19,680 节点 / 59,760 关系。
 图谱导出与导入校验：
 
-- `data/v1/graph/neo4j_import.cypher`：可导入 Neo4j 的 MERGE 语句；
+- `data/v1/graph/neo4j_import.cypher`：可导入 Neo4j 的 MERGE 语句
+  （sha256 `26216333…0bfe5c`）；
 - `scripts/verify_graph_export.py --triples ... --cypher ...`：校验 triples 与 Cypher 一致；
-- 规则版图谱在嵌入式 Neo4j 5.26 的导入结果为 4,106 节点 / 25,648 关系；
-  LLM 版 Cypher 已通过 11 项结构校验，实际导入计数以部署机重新导入为准。
+- 当前 LLM 版 Cypher 已完成 11 项结构校验（摘要
+  `data/v1/graph/verify_summary.json`）；Neo4j 实际导入计数以部署机重新导入为准。
 
 ## 2. 评测集（R3 交付，R2 只读）
 
@@ -66,7 +72,8 @@
 | reference_answer | 正式集必填 | 参考答案（含条文依据） |
 | reference_citations | 正式集必填 | 条文引用数组，用于引用准确率与 Recall@N；需能映射到 `article_id` |
 
-当前仓库只有 `data/eval/dev/questions.jsonl`（7 题，联调用），正式集由 R3 交付。
+当前仓库只有 `data/eval/dev/questions.jsonl`（7 题，联调用），正式集由 R3 交付到
+`data/eval/v1/questions.jsonl`。
 
 ## 3. 实验结果（R2 产出，R3 消费）
 
@@ -99,7 +106,9 @@ generation_service（base_url/model/backend/quantization）。
 
 - 同一 `run_id` 下每组每次重复一个文件，不覆盖历史目录。
 - `--resume` 依据 `question_id` 断点续跑；正式实验前清空或换新 `run_id`。
+- 运行前设置 `LEGAL_RAG_SETTINGS=config/settings.yaml`。
 - 正式数据必须满足：`index_manifest.embedding_model == 运行日志中的查询模型`，
-  且 `run_meta.mock == false`。
-- `results/dev-server-v1/` 与 `results/repro-server-1/` 已随仓库提交；新 `run_id`
-  默认被 `.gitignore` 忽略；跨机器交接需单独拷贝或按命令重跑。
+  且 `run_meta.mock == false`、`index_manifest.article_count == 10069`、
+  `index_manifest.vector_store.collection == legal_articles_v1`。
+- 本机 `results/dev-v1-smoke/` 为流程联调冒烟，不得作为正式结果；
+  新 `run_id` 默认被 `.gitignore` 忽略。

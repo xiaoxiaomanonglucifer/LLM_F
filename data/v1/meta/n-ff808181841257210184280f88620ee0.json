@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808181841257210184280f88620ee0",
+ "catalog_title": "中华人民共和国黄河保护法",
+ "title": "中华人民共和国黄河保护法",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2022-10-30",
+ "effective_date": "2023-04-01",
+ "bbbs": "ff808181841257210184280f88620ee0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181841257210184280f88620ee0",
+ "detail_file": "data/v1/meta/n-ff808181841257210184280f88620ee0.json",
+ "raw_file": "data/v1/raw/n-ff808181841257210184280f88620ee0.docx",
+ "sha256": "72389b27273d130a633884c77cb9597e8c39e2872d106549be0fd601f75e569c",
+ "bytes": 39184,
+ "flk_oss_word_path": "prod/20221030/319b84499c944dd48b2341aaf64a58c7.docx",
+ "collected_at": "2026-11-05T09:05:24+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff541ea01a0ae87ec833d1c",
+ "catalog_title": "黄河水量调度条例",
+ "title": "黄河水量调度条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-08-08",
+ "effective_date": "2026-08-15",
+ "bbbs": "ff8081819ff541ea01a0ae87ec833d1c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff541ea01a0ae87ec833d1c",
+ "detail_file": "data/v1/meta/n-ff8081819ff541ea01a0ae87ec833d1c.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff541ea01a0ae87ec833d1c.docx",
+ "sha256": "2e58955a4c13b901eb6f084511de9c2a3ab77d559ce167503a9b967a6ca6eee1",
+ "bytes": 20089,
+ "flk_oss_word_path": "prod/20260808/4d9ab94c0e8f49e686d157e2487c638d.docx",
+ "collected_at": "2026-11-05T09:07:24+08:00",
+ "collector_version": "1.0"
+}

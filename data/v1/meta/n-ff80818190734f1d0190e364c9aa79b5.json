@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff80818190734f1d0190e364c9aa79b5",
+ "catalog_title": "稀土管理条例",
+ "title": "稀土管理条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2024-06-22",
+ "effective_date": "2024-10-01",
+ "bbbs": "ff80818190734f1d0190e364c9aa79b5",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff80818190734f1d0190e364c9aa79b5",
+ "detail_file": "data/v1/meta/n-ff80818190734f1d0190e364c9aa79b5.json",
+ "raw_file": "data/v1/raw/n-ff80818190734f1d0190e364c9aa79b5.docx",
+ "sha256": "0440e2aa0afedd4521934216bf6c7c9e9275c167bc01b561d5cf506bcf2c5847",
+ "bytes": 20454,
+ "flk_oss_word_path": "prod/20240622/1b03918ac1cb42ed972f5b9d97bd9812.docx",
+ "collected_at": "2026-11-05T09:09:20+08:00",
+ "collector_version": "1.0"
+}

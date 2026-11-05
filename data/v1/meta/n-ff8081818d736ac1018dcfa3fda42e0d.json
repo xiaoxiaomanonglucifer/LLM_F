@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081818d736ac1018dcfa3fda42e0d",
+ "catalog_title": "煤矿安全生产条例",
+ "title": "煤矿安全生产条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2024-01-24",
+ "effective_date": "2024-05-01",
+ "bbbs": "ff8081818d736ac1018dcfa3fda42e0d",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818d736ac1018dcfa3fda42e0d",
+ "detail_file": "data/v1/meta/n-ff8081818d736ac1018dcfa3fda42e0d.json",
+ "raw_file": "data/v1/raw/n-ff8081818d736ac1018dcfa3fda42e0d.docx",
+ "sha256": "e730c46f6e7a80888fd149a4dcd809fe2cdb16029bbf4fdfbadbc8116f9608e0",
+ "bytes": 30844,
+ "flk_oss_word_path": "prod/20240124/5847288612134a389b9e110600891917.docx",
+ "collected_at": "2026-11-05T09:09:53+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808081777d0c940177b849e10d2bd1",
+ "catalog_title": "城市房地产开发经营管理条例",
+ "title": "城市房地产开发经营管理条例",
+ "level": "行政法规",
+ "domain": "土地管理",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2020-11-29",
+ "effective_date": "2020-11-29",
+ "bbbs": "ff808081777d0c940177b849e10d2bd1",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808081777d0c940177b849e10d2bd1",
+ "detail_file": "data/v1/meta/n-ff808081777d0c940177b849e10d2bd1.json",
+ "raw_file": "data/v1/raw/n-ff808081777d0c940177b849e10d2bd1.docx",
+ "sha256": "0b884afe88f0326779a483b8d354d73b1d46b6d3410d64d93b59659a5d283c59",
+ "bytes": 22418,
+ "flk_oss_word_path": "prod/20201129/63d339065bfd4681920faad05ccea758.docx",
+ "collected_at": "2026-11-05T09:10:08+08:00",
+ "collector_version": "1.0"
+}

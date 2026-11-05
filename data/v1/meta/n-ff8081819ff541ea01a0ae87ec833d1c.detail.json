@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff541ea01a0ae87ec833d1c",
+ "ossFile": {
+  "ossWordPath": "prod/20260808/4d9ab94c0e8f49e686d157e2487c638d.docx",
+  "ossWordOfdPath": "prod/20260808/4d9ab94c0e8f49e686d157e2487c638d.ofd",
+  "ossWordOfdSize": 130070,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff541ea01a0ae87ec833d1c",
+   "title": "黄河水量调度条例",
+   "gbrq": "2026-08-08",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8080816f3cbb3c016f413cce891e46",
+   "title": "黄河水量调度条例",
+   "gbrq": "2006-07-24",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "8f01e26000a7492ba3b8d87165f6f39c",
+   "title": "中华人民共和国国务院令第843号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "dbaad12da47e42e18b95f34a69334fe3",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "0b8112dd66e7419d82893b46e4fa0f39",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-08-08",
+ "sxrq": "2026-08-15",
+ "title": "黄河水量调度条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

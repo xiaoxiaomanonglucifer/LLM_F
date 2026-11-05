@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808181865ee3360187bdb3430e764c",
+ "catalog_title": "中华人民共和国青藏高原生态保护法",
+ "title": "中华人民共和国青藏高原生态保护法",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2023-04-26",
+ "effective_date": "2023-09-01",
+ "bbbs": "ff808181865ee3360187bdb3430e764c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181865ee3360187bdb3430e764c",
+ "detail_file": "data/v1/meta/n-ff808181865ee3360187bdb3430e764c.json",
+ "raw_file": "data/v1/raw/n-ff808181865ee3360187bdb3430e764c.docx",
+ "sha256": "feddb4a09b1773a104852d734c22e819359d7f26cc16bf1dbb240ea58efda9c3",
+ "bytes": 27020,
+ "flk_oss_word_path": "prod/20230426/0067c76761c44e50b26a92c8e8581e15.docx",
+ "collected_at": "2026-11-05T09:05:29+08:00",
+ "collector_version": "1.0"
+}

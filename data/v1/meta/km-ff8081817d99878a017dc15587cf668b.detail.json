@@ -1,0 +1,56 @@
+{
+ "bbbs": "ff8081817d99878a017dc15587cf668b",
+ "ossFile": {
+  "ossWordPath": "prod/20211209/5e098a57411c4e8880ce5f43363a9128.docx",
+  "ossWordOfdPath": "prod/20211209/5e098a57411c4e8880ce5f43363a9128.ofd",
+  "ossWordOfdSize": 143193,
+  "ossPdfPath": "prod/20211209/f43adcfd59ff4521a1ac81e8b0e5a64b.pdf",
+  "ossPdfOfdPath": "prod/20211209/f43adcfd59ff4521a1ac81e8b0e5a64b.ofd",
+  "ossPdfOfdSize": 799369
+ },
+ "xgwj": [],
+ "lsyg": null,
+ "xgzl": [
+  {
+   "fileId": "ff8081817e6c466b017e7aa4e1b6066d",
+   "title": "公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff8081817e6c4d1f017e7aa4bac4065a",
+   "title": "决议",
+   "titleHighLight": null,
+   "busiType": "批准决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff8081817e6c4949017e7aa4ced00613",
+   "title": "说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ff8081817e6c4d1f017e7aa4c53b065c",
+   "title": "审查结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "昆明市人民代表大会常务委员会",
+ "gbrq": "2021-12-09",
+ "sxrq": "2022-01-01",
+ "title": "昆明市城市供水用水管理条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

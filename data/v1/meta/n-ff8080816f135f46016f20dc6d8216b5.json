@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f135f46016f20dc6d8216b5",
+ "catalog_title": "中华人民共和国港口法",
+ "title": "中华人民共和国港口法",
+ "level": "法律",
+ "domain": "海域海岛",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2018-12-29",
+ "effective_date": "2018-12-29",
+ "bbbs": "ff8080816f135f46016f20dc6d8216b5",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20dc6d8216b5",
+ "detail_file": "data/v1/meta/n-ff8080816f135f46016f20dc6d8216b5.json",
+ "raw_file": "data/v1/raw/n-ff8080816f135f46016f20dc6d8216b5.docx",
+ "sha256": "e11ec05d1862cc793a5369733e535d194833958380872ade8f825059c36fec99",
+ "bytes": 23272,
+ "flk_oss_word_path": "prod/20181229/cd2a15be61f645dbbc2129b60dca1db4.docx",
+ "collected_at": "2026-11-05T09:06:46+08:00",
+ "collector_version": "1.0"
+}

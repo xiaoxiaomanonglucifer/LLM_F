@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff54ab801a0ae861e042cd0",
+ "catalog_title": "地下水管理条例",
+ "title": "地下水管理条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-08-08",
+ "effective_date": "2026-08-15",
+ "bbbs": "ff8081819ff54ab801a0ae861e042cd0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54ab801a0ae861e042cd0",
+ "detail_file": "data/v1/meta/n-ff8081819ff54ab801a0ae861e042cd0.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff54ab801a0ae861e042cd0.docx",
+ "sha256": "45c0a16dfe156a2fc11aae3b8970a7b1b1a8edd7ce65d87bd9ba838a7fd6fce3",
+ "bytes": 25297,
+ "flk_oss_word_path": "prod/20260808/47bd1f32919548f59b41baa3d9398a51.docx",
+ "collected_at": "2026-11-05T09:07:10+08:00",
+ "collector_version": "1.0"
+}

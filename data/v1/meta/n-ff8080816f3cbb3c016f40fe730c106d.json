@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f40fe730c106d",
+ "catalog_title": "中华人民共和国海洋倾废管理条例",
+ "title": "中华人民共和国海洋倾废管理条例",
+ "level": "行政法规",
+ "domain": "海域海岛",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2017-03-01",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f40fe730c106d",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40fe730c106d",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f40fe730c106d.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f40fe730c106d.docx",
+ "sha256": "40fb4bdc5d50307f296ac6edbe3fad8b3d5f46899b66346cc2e5f9dafff80d9e",
+ "bytes": 25772,
+ "flk_oss_word_path": "prod/20170301/d6f181f351994c7e819d48e8162bc1f1.docx",
+ "collected_at": "2026-11-05T09:09:34+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff54a6401a0ae8bd2772622",
+ "ossFile": {
+  "ossWordPath": "prod/20260808/9802b30e5a5c475992b20db1f8a37252.docx",
+  "ossWordOfdPath": "prod/20260808/9802b30e5a5c475992b20db1f8a37252.ofd",
+  "ossWordOfdSize": 166892,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54a6401a0ae8bd2772622",
+   "title": "南水北调工程供用水管理条例",
+   "gbrq": "2026-08-08",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8080816f3cbb3c016f41239251196c",
+   "title": "南水北调工程供用水管理条例",
+   "gbrq": "2014-02-16",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "304141947608444a9bc5996735a0e60d",
+   "title": "中华人民共和国国务院令第843号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "490fa07cceb841f48237feacc6bd0bec",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "6e32df2cddc34a14b0d7057c2f6a2083",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-08-08",
+ "sxrq": "2026-08-15",
+ "title": "南水北调工程供用水管理条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

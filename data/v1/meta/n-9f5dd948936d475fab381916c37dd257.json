@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-9f5dd948936d475fab381916c37dd257",
+ "catalog_title": "中华人民共和国国家发展规划法",
+ "title": "中华人民共和国国家发展规划法",
+ "level": "法律",
+ "domain": "国土空间规划",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会",
+ "promulgation_date": "2026-03-12",
+ "effective_date": "2026-03-12",
+ "bbbs": "9f5dd948936d475fab381916c37dd257",
+ "source_url": "https://flk.npc.gov.cn/detail?id=9f5dd948936d475fab381916c37dd257",
+ "detail_file": "data/v1/meta/n-9f5dd948936d475fab381916c37dd257.json",
+ "raw_file": "data/v1/raw/n-9f5dd948936d475fab381916c37dd257.docx",
+ "sha256": "1003bd3a48ace7d559f8f04699e5d1a4734203a06a23baedbcdb5ff4864c5a77",
+ "bytes": 20096,
+ "flk_oss_word_path": "prod/20260312/81defa9282bc4d9da56382d55c2bcd2d.docx",
+ "collected_at": "2026-11-05T09:06:17+08:00",
+ "collector_version": "1.0"
+}

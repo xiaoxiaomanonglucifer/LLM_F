@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff808081736ba7420173e71ef7563753",
+ "catalog_title": "中华人民共和国契税法",
+ "title": "中华人民共和国契税法",
+ "level": "法律",
+ "domain": "土地管理",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2020-08-11",
+ "effective_date": "2021-09-01",
+ "bbbs": "ff808081736ba7420173e71ef7563753",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808081736ba7420173e71ef7563753",
+ "detail_file": "data/v1/meta/n-ff808081736ba7420173e71ef7563753.json",
+ "raw_file": "data/v1/raw/n-ff808081736ba7420173e71ef7563753.docx",
+ "sha256": "9972b9a0c0ac5d2ad9b303d1fec816b3252d4e1488e9ae55bb6e4a9418cb726a",
+ "bytes": 16675,
+ "flk_oss_word_path": "prod/20200811/3a257bbd41174d509b97e724b5ff8014.docx",
+ "collected_at": "2026-11-05T09:06:56+08:00",
+ "collector_version": "1.0"
+}

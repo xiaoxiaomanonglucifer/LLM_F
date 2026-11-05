@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819c230fa1019c455847f251c9",
+ "catalog_title": "森林草原防灭火条例",
+ "title": "森林草原防灭火条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2025-11-16",
+ "effective_date": "2026-01-01",
+ "bbbs": "ff8081819c230fa1019c455847f251c9",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819c230fa1019c455847f251c9",
+ "detail_file": "data/v1/meta/n-ff8081819c230fa1019c455847f251c9.json",
+ "raw_file": "data/v1/raw/n-ff8081819c230fa1019c455847f251c9.docx",
+ "sha256": "4abb3e62803771b35362c7f55bbd4482b88dcbb42dd6e9f19f5460760075ad30",
+ "bytes": 28350,
+ "flk_oss_word_path": "prod/20251116/f31cee9c0d714dc4b21f19f81b942126.docx",
+ "collected_at": "2026-11-05T09:08:22+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081818a1cb546018a6e3495ce6d4a",
+ "catalog_title": "海洋观测预报管理条例",
+ "title": "海洋观测预报管理条例",
+ "level": "行政法规",
+ "domain": "海域海岛",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2023-07-20",
+ "effective_date": "2023-07-20",
+ "bbbs": "ff8081818a1cb546018a6e3495ce6d4a",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818a1cb546018a6e3495ce6d4a",
+ "detail_file": "data/v1/meta/n-ff8081818a1cb546018a6e3495ce6d4a.json",
+ "raw_file": "data/v1/raw/n-ff8081818a1cb546018a6e3495ce6d4a.docx",
+ "sha256": "ae3f3d5d96e04796e00a8f8059975d76b3312199bc3cc408367b2318047f4edf",
+ "bytes": 24384,
+ "flk_oss_word_path": "prod/20230720/8d5ce6ae2b5248aea978078a6f1c76a3.docx",
+ "collected_at": "2026-11-05T09:09:44+08:00",
+ "collector_version": "1.0"
+}

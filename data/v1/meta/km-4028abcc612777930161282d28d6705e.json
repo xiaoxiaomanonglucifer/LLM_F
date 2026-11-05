@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc612777930161282d28d6705e",
+ "catalog_title": "昆明市气象灾害防御条例",
+ "title": "昆明市气象灾害防御条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2017-12-13",
+ "effective_date": "2018-01-01",
+ "bbbs": "4028abcc612777930161282d28d6705e",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc612777930161282d28d6705e",
+ "detail_file": "data/v1/meta/km-4028abcc612777930161282d28d6705e.json",
+ "raw_file": "data/v1/raw/km-4028abcc612777930161282d28d6705e.docx",
+ "sha256": "ec7791ebcb50d03c8e595d4aa2bf0bcfd73c908bd72c4b97b231b046dec0609a",
+ "bytes": 58921,
+ "flk_oss_word_path": "prod/20171213/3e7d10fae57b41eaa64cde11ab9e7df9.docx",
+ "collected_at": "2026-11-05T09:12:36+08:00",
+ "collector_version": "1.0"
+}

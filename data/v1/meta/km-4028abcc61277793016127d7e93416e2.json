@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc61277793016127d7e93416e2",
+ "catalog_title": "昆明市公园条例",
+ "title": "昆明市公园条例",
+ "level": "地方性法规",
+ "domain": "国土空间规划",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc61277793016127d7e93416e2",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc61277793016127d7e93416e2",
+ "detail_file": "data/v1/meta/km-4028abcc61277793016127d7e93416e2.json",
+ "raw_file": "data/v1/raw/km-4028abcc61277793016127d7e93416e2.docx",
+ "sha256": "a8a1ee97a7f769701bce5a5ee5d12eb8c3e78f1a231aa9a98b1a83a1685a22b4",
+ "bytes": 19120,
+ "flk_oss_word_path": "prod/19700101/d8afeea6ebb44144a199b3d002a825a3.docx",
+ "collected_at": "2026-11-05T09:13:00+08:00",
+ "collector_version": "1.0"
+}

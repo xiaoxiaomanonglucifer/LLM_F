@@ -1,5 +1,7 @@
-# 全局配置（R2 维护）
-# 任何影响实验结果的参数改动都必须写入 CHANGELOG.md
+# v1 全局配置（R2 维护）
+# 口径：全国性国土资源相关法律/行政法规 + 云南省/昆明市相关地方性法规。
+# 使用方式：LEGAL_RAG_SETTINGS=config/settings.yaml <命令>
+# 注意：检索/生成参数已固定，任何变动需登记 CHANGELOG。
 paths:
   data_dir: data/v1
   raw_dir: data/v1/raw
@@ -37,24 +39,20 @@ vector_store:
 bm25:
   k1: 1.5
   b: 0.75
-  # jieba 分词 + 中文二元字符，提升条文号/机构名的召回
   use_char_bigram: true
 
 retrieval:
   top_k: 5
   candidate_k: 30
   rrf_k: 60
-  # G1/G2 使用的信号；G0 不检索
   g1_signals: [dense, bm25]
   g2_signals: [dense, bm25, graph]
 
 generation:
-  # Ollama 的 OpenAI 兼容端点；GPU 节点换成 vLLM 的 /v1 地址即可
   base_url: http://127.0.0.1:8000/v1
   api_key: not-needed
   model: Qwen/Qwen2.5-7B-Instruct
   backend: vllm
-  # 共享 GPU 显存不足，服务加载 Qwen2.5-7B-Instruct-AWQ（int4）；留空表示 bf16 原权重
   quantization: awq-int4
   temperature: 0.1
   top_p: 0.9
@@ -71,12 +69,10 @@ graph:
   uri: bolt://127.0.0.1:7687
   user: neo4j
   database: neo4j
-  # 密码只从环境变量 NEO4J_PASSWORD 读取，不写入仓库
   max_hops: 1
   extract_model: qwen2.5:7b-instruct
   extract_batch_articles: 8
 
 evaluation:
-  # 由 R3 交付；R2 只读取并产出 results
   questions_file: data/eval/v1/questions.jsonl
   output_format_version: "1.0"

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff54a6401a0ae8d4d292634",
+ "catalog_title": "生态环境监测条例",
+ "title": "生态环境监测条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-08-08",
+ "effective_date": "2026-08-15",
+ "bbbs": "ff8081819ff54a6401a0ae8d4d292634",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff54a6401a0ae8d4d292634",
+ "detail_file": "data/v1/meta/n-ff8081819ff54a6401a0ae8d4d292634.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff54a6401a0ae8d4d292634.docx",
+ "sha256": "ffeb9f617ab4d0d9f78e61007a6a75c38b4d840c183db4c00dfa38ec0b78fa88",
+ "bytes": 22001,
+ "flk_oss_word_path": "prod/20260808/9bfaacac6ae447b2878a029845790d0f.docx",
+ "collected_at": "2026-11-05T09:10:22+08:00",
+ "collector_version": "1.0"
+}

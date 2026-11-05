@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-2c909fdd678bf17901678bf6b19e04f1",
+ "catalog_title": "中华人民共和国矿山安全法",
+ "title": "中华人民共和国矿山安全法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2009-08-27",
+ "effective_date": "2009-08-27",
+ "bbbs": "2c909fdd678bf17901678bf6b19e04f1",
+ "source_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf6b19e04f1",
+ "detail_file": "data/v1/meta/n-2c909fdd678bf17901678bf6b19e04f1.json",
+ "raw_file": "data/v1/raw/n-2c909fdd678bf17901678bf6b19e04f1.docx",
+ "sha256": "6b17e09c4feedb5b4ae7c22de16de1bd06558e89800027326d1dda92e1dfed36",
+ "bytes": 20622,
+ "flk_oss_word_path": "prod/20090827/e63e1dba451941908dd0a3ca4f92a422.docx",
+ "collected_at": "2026-11-05T09:07:05+08:00",
+ "collector_version": "1.0"
+}

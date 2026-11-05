@@ -18,5 +18,6 @@
  "bytes": 25290,
  "flk_oss_word_path": "prod/20260203/0db573fb888d4a3c9406c9871d2d2a0d.docx",
  "collected_at": "2026-10-27T18:31:11+08:00",
- "collector_version": "1.0"
+ "collector_version": "1.0",
+ "jurisdiction": "全国"
 }

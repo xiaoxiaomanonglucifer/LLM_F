@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-ff808181a0bc9b0a01a13d22b5222a1c",
+ "catalog_title": "昆明市城镇绿化条例",
+ "title": "昆明市城镇绿化条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2026-09-30",
+ "effective_date": "2026-09-30",
+ "bbbs": "ff808181a0bc9b0a01a13d22b5222a1c",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff808181a0bc9b0a01a13d22b5222a1c",
+ "detail_file": "data/v1/meta/km-ff808181a0bc9b0a01a13d22b5222a1c.json",
+ "raw_file": "data/v1/raw/km-ff808181a0bc9b0a01a13d22b5222a1c.docx",
+ "sha256": "d0a1126eb97b9cf454551649cf8f08d86b4a1e5fe2e1b351c9cdc114b0279d55",
+ "bytes": 21445,
+ "flk_oss_word_path": "prod/20260930/15ab9793b00f44df981d88e556b4f026.docx",
+ "collected_at": "2026-11-05T09:12:17+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff541ea01a0ae6370e43ad3",
+ "ossFile": {
+  "ossWordPath": "prod/20260130/69667466acb449eb857c7000a2498593.docx",
+  "ossWordOfdPath": "prod/20260130/69667466acb449eb857c7000a2498593.ofd",
+  "ossWordOfdSize": 107134,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff541ea01a0ae6370e43ad3",
+   "title": "城市绿化条例",
+   "gbrq": "2026-01-30",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8080816f3cbb3c016f40e77eaa0a39",
+   "title": "城市绿化条例",
+   "gbrq": "2017-03-01",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "d9010bb4edd84704963d1e8497475213",
+   "title": "中华人民共和国国务院令第829号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "2df303413ec34ba5a92ed2674e97b8a8",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "db25d742fd7e4e62b0ce8d96d302d7d0",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-01-30",
+ "sxrq": "2026-03-20",
+ "title": "城市绿化条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

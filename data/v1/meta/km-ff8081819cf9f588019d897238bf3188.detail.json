@@ -1,0 +1,85 @@
+{
+ "bbbs": "ff8081819cf9f588019d897238bf3188",
+ "ossFile": {
+  "ossWordPath": "prod/20260402/6a83ef2ca5f74148927f32df74979675.docx",
+  "ossWordOfdPath": "prod/20260402/6a83ef2ca5f74148927f32df74979675.ofd",
+  "ossWordOfdSize": 154871,
+  "ossPdfPath": "prod/20260402/f5277928101a4f3d90339762ba0f42ce.pdf",
+  "ossPdfOfdPath": "prod/20260402/f5277928101a4f3d90339762ba0f42ce.ofd",
+  "ossPdfOfdSize": 360937
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819cf9f588019d897238bf3188",
+   "title": "昆明市地下水保护条例",
+   "gbrq": "2026-04-02",
+   "highLight": true
+  },
+  {
+   "bbbs": "4028abcc61277793016127dc93441b5c",
+   "title": "昆明市地下水保护条例",
+   "gbrq": null,
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "afd3e217a7dd4e1eb28b009811674146",
+   "title": "昆明市人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "05e11726d43448bdaeb6d0159246e177",
+   "title": "云南省人民代表大会常务委员会关于批准《昆明市地下水保护条例》的决议",
+   "titleHighLight": null,
+   "busiType": "批准决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "498bbb3167c941e68e4ca7ee019e5ad4",
+   "title": "关于《昆明市地下水保护条例（修订草案）》的起草说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "a5ccae9ea1fc48abb52e8c3e302bae7e",
+   "title": "昆明市人民代表大会法制委员会关于《昆明市地下水保护条例（修订草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "73e37e72fdcb41d4b69e7fcd46389b69",
+   "title": "昆明市人民代表大会农业与农村委员会关于《昆明市地下水保护条例（修订草案）》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "fdf2a7cfdc1243b39f39c67defd3861d",
+   "title": "云南省人民代表大会法制委员会关于《昆明市地下水保护条例》审查结果的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "昆明市人民代表大会常务委员会",
+ "gbrq": "2026-04-02",
+ "sxrq": "2026-05-01",
+ "title": "昆明市地下水保护条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

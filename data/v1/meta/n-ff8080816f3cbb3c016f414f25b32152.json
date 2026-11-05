@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f414f25b32152",
+ "catalog_title": "电力设施保护条例",
+ "title": "电力设施保护条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2011-01-08",
+ "effective_date": null,
+ "bbbs": "ff8080816f3cbb3c016f414f25b32152",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414f25b32152",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f414f25b32152.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f414f25b32152.docx",
+ "sha256": "af86524567c77ae6ac0aa737ebba8f0ae77069db6125ab49ca74f7d9f9d2deed",
+ "bytes": 25156,
+ "flk_oss_word_path": "prod/20110108/e95b396c9d6b40c5b768a5f4b14d01cc.docx",
+ "collected_at": "2026-11-05T09:10:03+08:00",
+ "collector_version": "1.0"
+}

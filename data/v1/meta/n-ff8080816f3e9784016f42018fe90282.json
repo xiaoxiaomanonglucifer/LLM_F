@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3e9784016f42018fe90282",
+ "catalog_title": "电力供应与使用条例",
+ "title": "电力供应与使用条例",
+ "level": "行政法规",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2019-03-02",
+ "effective_date": null,
+ "bbbs": "ff8080816f3e9784016f42018fe90282",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3e9784016f42018fe90282",
+ "detail_file": "data/v1/meta/n-ff8080816f3e9784016f42018fe90282.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3e9784016f42018fe90282.docx",
+ "sha256": "3148452777f55900d22b05b7f3ae0816450a128f9fcfefc14c581ff3b0a6895e",
+ "bytes": 22601,
+ "flk_oss_word_path": "prod/20190302/e837b8edc3c34beba8f92b8ae10eea12.docx",
+ "collected_at": "2026-11-05T09:09:58+08:00",
+ "collector_version": "1.0"
+}

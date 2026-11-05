@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc61277793016127d4cae113d1",
+ "catalog_title": "昆明市森林防火条例",
+ "title": "昆明市森林防火条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2013-12-27",
+ "effective_date": null,
+ "bbbs": "4028abcc61277793016127d4cae113d1",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc61277793016127d4cae113d1",
+ "detail_file": "data/v1/meta/km-4028abcc61277793016127d4cae113d1.json",
+ "raw_file": "data/v1/raw/km-4028abcc61277793016127d4cae113d1.docx",
+ "sha256": "6f139f40a9555477b36ddc30909461484b188bd6f3c44b0306b5b9b7a98fcfdf",
+ "bytes": 30131,
+ "flk_oss_word_path": "prod/20131227/1510cc2a13fb485294779f1693c277a7.docx",
+ "collected_at": "2026-11-05T09:12:41+08:00",
+ "collector_version": "1.0"
+}

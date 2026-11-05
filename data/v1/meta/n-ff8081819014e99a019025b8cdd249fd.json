@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819014e99a019025b8cdd249fd",
+ "catalog_title": "公平竞争审查条例",
+ "title": "公平竞争审查条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2024-06-06",
+ "effective_date": "2024-08-01",
+ "bbbs": "ff8081819014e99a019025b8cdd249fd",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819014e99a019025b8cdd249fd",
+ "detail_file": "data/v1/meta/n-ff8081819014e99a019025b8cdd249fd.json",
+ "raw_file": "data/v1/raw/n-ff8081819014e99a019025b8cdd249fd.docx",
+ "sha256": "8395959b206e4d5ac66527bbfad394582e23ec3c49d3b41d6d99fa6ceaa06748",
+ "bytes": 19065,
+ "flk_oss_word_path": "prod/20240606/2b51cb60e17e4ca4aa5d227d7a76b7f2.docx",
+ "collected_at": "2026-11-05T09:11:39+08:00",
+ "collector_version": "1.0"
+}

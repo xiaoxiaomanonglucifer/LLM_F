@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-4028abcc61277793016127e820f52757",
+ "catalog_title": "昆明市燃气管理条例",
+ "title": "昆明市燃气管理条例",
+ "level": "地方性法规",
+ "domain": "矿产资源",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": null,
+ "effective_date": null,
+ "bbbs": "4028abcc61277793016127e820f52757",
+ "source_url": "https://flk.npc.gov.cn/detail?id=4028abcc61277793016127e820f52757",
+ "detail_file": "data/v1/meta/km-4028abcc61277793016127e820f52757.json",
+ "raw_file": "data/v1/raw/km-4028abcc61277793016127e820f52757.docx",
+ "sha256": "8fc86405a98d53076d45f168aeb5a0f5e026b5fab71016ff820a7d1c67006ed9",
+ "bytes": 31688,
+ "flk_oss_word_path": "prod/19700101/4177408477f844319eb7945c65532068.docx",
+ "collected_at": "2026-11-05T09:13:15+08:00",
+ "collector_version": "1.0"
+}

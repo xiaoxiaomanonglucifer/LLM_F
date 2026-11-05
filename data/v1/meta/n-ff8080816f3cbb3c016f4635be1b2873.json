@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8080816f3cbb3c016f4635be1b2873",
+ "catalog_title": "中华人民共和国资源税法",
+ "title": "中华人民共和国资源税法",
+ "level": "法律",
+ "domain": "矿产资源",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2019-08-26",
+ "effective_date": "2020-09-01",
+ "bbbs": "ff8080816f3cbb3c016f4635be1b2873",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f4635be1b2873",
+ "detail_file": "data/v1/meta/n-ff8080816f3cbb3c016f4635be1b2873.json",
+ "raw_file": "data/v1/raw/n-ff8080816f3cbb3c016f4635be1b2873.docx",
+ "sha256": "550a798fe179878653104ba4e2b424cd113350c49f0162a148af9e63fac5f5fa",
+ "bytes": 26921,
+ "flk_oss_word_path": "prod/20190826/5b65ca9db79142c6a2beb1e73dd276a8.docx",
+ "collected_at": "2026-11-05T09:06:03+08:00",
+ "collector_version": "1.0"
+}

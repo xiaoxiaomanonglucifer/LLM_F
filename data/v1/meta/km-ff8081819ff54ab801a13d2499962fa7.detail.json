@@ -1,0 +1,117 @@
+{
+ "bbbs": "ff8081819ff54ab801a13d2499962fa7",
+ "ossFile": {
+  "ossWordPath": "prod/20260930/bc04dc051d1a4480bd5fe4d6508dc8b7.docx",
+  "ossWordOfdPath": "prod/20260930/bc04dc051d1a4480bd5fe4d6508dc8b7.ofd",
+  "ossWordOfdSize": 195787,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54ab801a13d2499962fa7",
+   "title": "昆明市大气污染防治条例",
+   "gbrq": "2026-09-30",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff80808175265dd40176840c4c820342",
+   "title": "昆明市大气污染防治条例",
+   "gbrq": "2020-12-11",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "f858c21f3cf74d04ad6fa8c2cede470e",
+   "title": "昆明市人民代表大会常务委员会公告",
+   "titleHighLight": null,
+   "busiType": "公告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "ab94243e12c24d378c8ea41c50c13a9f",
+   "title": "昆明市人民代表大会常务委员会关于废止和修改《昆明市九乡风景名胜区保护条例》等13件地方性法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "doc",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "e4d3295c2e8f4bb8b26fc1f50fa9d627",
+   "title": "云南省人民代表大会常务委员会关于批准《昆明市人民代表大会常务委员会关于废止和修改〈昆明市九乡风景名胜区保护条例〉等13件地方性法规的决定》的决议",
+   "titleHighLight": null,
+   "busiType": "批准决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "a0132ad1484144f1976f28cc9a2736b2",
+   "title": "《关于废止和修改〈昆明市九乡风景名胜区保护条例〉等13件地方性法规的决定（草案）》的说明",
+   "titleHighLight": null,
+   "busiType": "草案的说明",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "613539c17a0f448ea35c0e6817fb2ca8",
+   "title": "昆明市人民代表大会法制委员会关于《昆明市人民代表大会常务委员会关于废止和修改〈昆明市九乡风景名胜区保护条例〉等13件地方性法规的决定（草案）》审议结果的报告",
+   "titleHighLight": null,
+   "busiType": "审议结果的报告",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "5384b726873c41ec811a86d016d28694",
+   "title": "昆明市人民代表大会财政经济委员会对修改《昆明市再生资源回收管理条例》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "f307b9a75c1641a68e9cb4243224f59e",
+   "title": "昆明市人民代表大会城乡建设环境保护委员会对废止《昆明市机动车排气污染防治条例》等3件地方性法规和修改《昆明市大气污染防治条例》等6件地方性法规审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "773736a198dc4394afb6e9e365a141a8",
+   "title": "昆明市人民代表大会教育科学文化卫生委员会对修改《昆明市爱国卫生工作条例》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "3c9843f18c9a4c71b337d6ef0934934d",
+   "title": "昆明市人民代表大会农业与农村委员会对废止《昆明市轿子山国家级自然保护区条例》和修改《昆明市清水海保护条例》审议意见的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "1c0236b9ac8c4b948fa859090424aff6",
+   "title": "云南省人民代表大会法制委员会关于《昆明市人民代表大会常务委员会关于废止和修改〈昆明市九乡风景名胜区保护条例〉等13件地方性法规的决定》审查结果的报告",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "docx",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "地方法规",
+ "zdjgName": "昆明市人民代表大会常务委员会",
+ "gbrq": "2026-09-30",
+ "sxrq": "2026-09-30",
+ "title": "昆明市大气污染防治条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

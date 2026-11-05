@@ -1,0 +1,23 @@
+{
+ "doc_id": "km-ff8081819cf9f588019d897238bf3188",
+ "catalog_title": "昆明市地下水保护条例",
+ "title": "昆明市地下水保护条例",
+ "level": "地方性法规",
+ "domain": "资源环境",
+ "jurisdiction": "昆明",
+ "priority": "normal",
+ "flxz": "地方法规",
+ "status_code": 3,
+ "issuing_body": "昆明市人民代表大会常务委员会",
+ "promulgation_date": "2026-04-02",
+ "effective_date": "2026-05-01",
+ "bbbs": "ff8081819cf9f588019d897238bf3188",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819cf9f588019d897238bf3188",
+ "detail_file": "data/v1/meta/km-ff8081819cf9f588019d897238bf3188.json",
+ "raw_file": "data/v1/raw/km-ff8081819cf9f588019d897238bf3188.docx",
+ "sha256": "3c8df578f692f61a765ffbc358c20ec8e307a81c311be226ca7db6cae2ea5844",
+ "bytes": 21462,
+ "flk_oss_word_path": "prod/20260402/6a83ef2ca5f74148927f32df74979675.docx",
+ "collected_at": "2026-11-05T09:12:22+08:00",
+ "collector_version": "1.0"
+}

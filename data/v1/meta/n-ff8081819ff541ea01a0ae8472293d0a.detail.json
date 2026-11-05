@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff541ea01a0ae8472293d0a",
+ "ossFile": {
+  "ossWordPath": "prod/20260808/030d8df00a3a4f7285a0a01abb3d156d.docx",
+  "ossWordOfdPath": "prod/20260808/030d8df00a3a4f7285a0a01abb3d156d.ofd",
+  "ossWordOfdSize": 172591,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff541ea01a0ae8472293d0a",
+   "title": "城镇排水与污水处理条例",
+   "gbrq": "2026-08-08",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8080816f3cbb3c016f411f06171886",
+   "title": "城镇排水与污水处理条例",
+   "gbrq": "2013-10-02",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "137c94b2b55847cd9d87f5cf2e68c2d6",
+   "title": "中华人民共和国国务院令第843号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "d2c874183e5a4a19802fc5dfa03185bf",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "98e375baf0e9496b8b8d459bdf2f3767",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-08-08",
+ "sxrq": "2026-08-15",
+ "title": "城镇排水与污水处理条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

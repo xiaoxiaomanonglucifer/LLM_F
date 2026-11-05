@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-11-03T18:49:57+08:00",
+ "generated_at": "2026-11-05T09:31:42+08:00",
  "parser_version": "1.0",
- "documents_total": 75,
- "documents_indexed": 75,
+ "documents_total": 178,
+ "documents_indexed": 178,
  "documents_below_min_articles": 0,
- "articles_total": 4104,
- "chars_total": 519496,
- "article_chars_avg": 126.6,
+ "articles_total": 10069,
+ "chars_total": 1273548,
+ "article_chars_avg": 126.5,
  "article_chars_min": 16,
- "article_chars_max": 1131,
- "articles_per_doc_avg": 54.7,
+ "article_chars_max": 2656,
+ "articles_per_doc_avg": 56.6,
  "documents_by_level": {
-  "地方性法规": 17,
-  "法律": 29,
-  "行政法规": 29
+  "地方性法规": 40,
+  "法律": 52,
+  "行政法规": 86
  },
  "documents_by_domain": {
-  "国土空间规划": 7,
-  "土地管理": 19,
-  "测绘地理信息": 5,
-  "海域海岛": 5,
-  "矿产资源": 9,
-  "行政程序": 8,
-  "资源环境": 22
+  "国土空间规划": 18,
+  "土地管理": 25,
+  "测绘地理信息": 6,
+  "海域海岛": 15,
+  "矿产资源": 22,
+  "行政程序": 18,
+  "资源环境": 74
  },
  "structure_issues": 0,
  "issue_details": []

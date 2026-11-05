@@ -1,0 +1,20 @@
+{
+  "triples": "data/v1/graph/triples.jsonl",
+  "cypher": "data/v1/graph/neo4j_import.cypher",
+  "triples_count": 8943,
+  "cypher_statements": 68707,
+  "articles": 8943,
+  "subjects": 3198,
+  "actions": 7406,
+  "penalties": 133,
+  "relationships": {
+    "APPLIES_TO": 10944,
+    "REGULATES": 14401,
+    "PENALTY": 2076,
+    "RELATED_TO": 32339
+  },
+  "db_counts": null,
+  "checks": 11,
+  "failures": [],
+  "status": "ok"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081818e750aac018ee15ec3cb5763",
+ "catalog_title": "节约用水条例",
+ "title": "节约用水条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2024-03-09",
+ "effective_date": "2024-05-01",
+ "bbbs": "ff8081818e750aac018ee15ec3cb5763",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818e750aac018ee15ec3cb5763",
+ "detail_file": "data/v1/meta/n-ff8081818e750aac018ee15ec3cb5763.json",
+ "raw_file": "data/v1/raw/n-ff8081818e750aac018ee15ec3cb5763.docx",
+ "sha256": "62bad924e334067b2dcccf43f3c4921b85d5f0b6902018eb2707d730af09d404",
+ "bytes": 23382,
+ "flk_oss_word_path": "prod/20240309/36f0b092898341dda410d79ff5b05d2d.docx",
+ "collected_at": "2026-11-05T09:07:44+08:00",
+ "collector_version": "1.0"
+}

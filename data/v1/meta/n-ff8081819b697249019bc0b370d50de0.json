@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819b697249019bc0b370d50de0",
+ "catalog_title": "行政执法监督条例",
+ "title": "行政执法监督条例",
+ "level": "行政法规",
+ "domain": "行政程序",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2025-12-17",
+ "effective_date": "2026-02-01",
+ "bbbs": "ff8081819b697249019bc0b370d50de0",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819b697249019bc0b370d50de0",
+ "detail_file": "data/v1/meta/n-ff8081819b697249019bc0b370d50de0.json",
+ "raw_file": "data/v1/raw/n-ff8081819b697249019bc0b370d50de0.docx",
+ "sha256": "43df6f0cd426f200928b994d770f6746486281b7c0cf5e5149c4c7c629a9eda7",
+ "bytes": 20328,
+ "flk_oss_word_path": "prod/20251217/b8640ecb9f894de98df43c4154de5842.docx",
+ "collected_at": "2026-11-05T09:11:10+08:00",
+ "collector_version": "1.0"
+}

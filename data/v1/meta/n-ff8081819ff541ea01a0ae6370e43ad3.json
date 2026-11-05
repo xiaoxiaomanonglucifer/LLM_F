@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081819ff541ea01a0ae6370e43ad3",
+ "catalog_title": "城市绿化条例",
+ "title": "城市绿化条例",
+ "level": "行政法规",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "normal",
+ "flxz": "行政法规",
+ "status_code": 3,
+ "issuing_body": "国务院",
+ "promulgation_date": "2026-01-30",
+ "effective_date": "2026-03-20",
+ "bbbs": "ff8081819ff541ea01a0ae6370e43ad3",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081819ff541ea01a0ae6370e43ad3",
+ "detail_file": "data/v1/meta/n-ff8081819ff541ea01a0ae6370e43ad3.json",
+ "raw_file": "data/v1/raw/n-ff8081819ff541ea01a0ae6370e43ad3.docx",
+ "sha256": "726fb9ea23626ba2d0d5d59ef3210108a67993bdb0e1337295156c38025c736a",
+ "bytes": 20097,
+ "flk_oss_word_path": "prod/20260130/69667466acb449eb857c7000a2498593.docx",
+ "collected_at": "2026-11-05T09:08:32+08:00",
+ "collector_version": "1.0"
+}

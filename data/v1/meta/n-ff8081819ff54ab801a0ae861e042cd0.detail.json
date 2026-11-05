@@ -1,0 +1,61 @@
+{
+ "bbbs": "ff8081819ff54ab801a0ae861e042cd0",
+ "ossFile": {
+  "ossWordPath": "prod/20260808/47bd1f32919548f59b41baa3d9398a51.docx",
+  "ossWordOfdPath": "prod/20260808/47bd1f32919548f59b41baa3d9398a51.ofd",
+  "ossWordOfdSize": 176762,
+  "ossPdfPath": null,
+  "ossPdfOfdPath": null,
+  "ossPdfOfdSize": null
+ },
+ "xgwj": [],
+ "lsyg": [
+  {
+   "bbbs": "ff8081819ff54ab801a0ae861e042cd0",
+   "title": "地下水管理条例",
+   "gbrq": "2026-08-08",
+   "highLight": true
+  },
+  {
+   "bbbs": "ff8081817d283644017d4569b4505da7",
+   "title": "地下水管理条例",
+   "gbrq": "2021-10-21",
+   "highLight": false
+  }
+ ],
+ "xgzl": [
+  {
+   "fileId": "68545efef90546e39cc2e01864407991",
+   "title": "中华人民共和国国务院令第843号",
+   "titleHighLight": null,
+   "busiType": "国务院令",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "dcdf7c7612354be5a782ba7ff0b490b2",
+   "title": "国务院关于修改和废止部分行政法规的决定",
+   "titleHighLight": null,
+   "busiType": "修改决定",
+   "fileType": "docx",
+   "titleHightLightList": null
+  },
+  {
+   "fileId": "9c6fdb9d160041c6acb7764f91a310e9",
+   "title": "其他",
+   "titleHighLight": null,
+   "busiType": "其他",
+   "fileType": "pdf",
+   "titleHightLightList": null
+  }
+ ],
+ "flfg": null,
+ "flxz": "行政法规",
+ "zdjgName": "国务院",
+ "gbrq": "2026-08-08",
+ "sxrq": "2026-08-15",
+ "title": "地下水管理条例",
+ "sxx": 3,
+ "content": null,
+ "xfFlag": 0
+}

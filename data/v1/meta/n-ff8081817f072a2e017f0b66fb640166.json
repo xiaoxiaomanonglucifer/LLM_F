@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081817f072a2e017f0b66fb640166",
+ "catalog_title": "中华人民共和国种子法",
+ "title": "中华人民共和国种子法",
+ "level": "法律",
+ "domain": "资源环境",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2021-12-24",
+ "effective_date": "2022-03-01",
+ "bbbs": "ff8081817f072a2e017f0b66fb640166",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081817f072a2e017f0b66fb640166",
+ "detail_file": "data/v1/meta/n-ff8081817f072a2e017f0b66fb640166.json",
+ "raw_file": "data/v1/raw/n-ff8081817f072a2e017f0b66fb640166.docx",
+ "sha256": "bdf1588c0487bd47fa8b39a7e1af23daec400cf77e9b91d52ed814790425db77",
+ "bytes": 37869,
+ "flk_oss_word_path": "prod/20211224/f4dd657f9770457aab061dbcdc108179.docx",
+ "collected_at": "2026-11-05T09:06:36+08:00",
+ "collector_version": "1.0"
+}

@@ -1,0 +1,23 @@
+{
+ "doc_id": "n-ff8081818c3ce0ed018cb4fd2ca92ec4",
+ "catalog_title": "中华人民共和国粮食安全保障法",
+ "title": "中华人民共和国粮食安全保障法",
+ "level": "法律",
+ "domain": "土地管理",
+ "jurisdiction": "全国",
+ "priority": "core",
+ "flxz": "法律",
+ "status_code": 3,
+ "issuing_body": "全国人民代表大会常务委员会",
+ "promulgation_date": "2023-12-29",
+ "effective_date": "2024-06-01",
+ "bbbs": "ff8081818c3ce0ed018cb4fd2ca92ec4",
+ "source_url": "https://flk.npc.gov.cn/detail?id=ff8081818c3ce0ed018cb4fd2ca92ec4",
+ "detail_file": "data/v1/meta/n-ff8081818c3ce0ed018cb4fd2ca92ec4.json",
+ "raw_file": "data/v1/raw/n-ff8081818c3ce0ed018cb4fd2ca92ec4.docx",
+ "sha256": "db5230bc6aab4586b9693fed304306538152668e6d981ff624f51b22c8a2acb2",
+ "bytes": 27625,
+ "flk_oss_word_path": "prod/20231229/626e9bb32adb406abb85f8eae17a8908.docx",
+ "collected_at": "2026-11-05T09:07:00+08:00",
+ "collector_version": "1.0"
+}
